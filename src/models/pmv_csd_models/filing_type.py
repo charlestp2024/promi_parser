@@ -14,16 +14,3 @@ class FilingType(BaseCsd):
     modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationship Fields ----------------------
-    subdocket = relationship(
-        "Subdocket",
-        back_populates="subdocket_filing_type",
-        cascade="all, delete-orphan",
-        lazy="select"
-    )
-
-    reminder_configurations = relationship(
-        "ReminderConfiguration",
-        back_populates="subdocket_filing_type",
-        cascade="all, delete-orphan",
-        lazy="select"
-    )

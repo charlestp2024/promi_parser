@@ -12,15 +12,12 @@ class SubdocketLogs(BaseCsd):
     logs = Column(String)
 
     subdocket_id = Column(Integer, ForeignKey("subdocket.id"))
-    subdocket = relationship("Subdocket", back_populates="subdocket_logs")
 
-    added_by = Column(CHAR(36), ForeignKey("user.id"))
-    added_by_user = relationship("User", back_populates="subdocket_logs_added")
+    added_by = Column(CHAR(36), ForeignKey("user.uuid"))
 
     tenant_id = Column(CHAR(36))
 
     added_date = Column(TIMESTAMP, server_default=func.now())
     modified_on = Column(TIMESTAMP, onupdate=func.now())
 
-    client_id = Column(CHAR(36), ForeignKey("client.id"))
-    client = relationship("Client", back_populates="subdocket_logs")
+    client_id = Column(CHAR(36), ForeignKey("client.uuid"))

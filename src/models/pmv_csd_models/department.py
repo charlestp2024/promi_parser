@@ -16,7 +16,6 @@ class Department(BaseCsd):
     client_id = Column(CHAR(36), ForeignKey("client.uuid"))
 
     # ---------------------- Relationships ----------------------
-    client = relationship("Client", back_populates="departments")
 
     subdocket = relationship(
         "Subdocket",

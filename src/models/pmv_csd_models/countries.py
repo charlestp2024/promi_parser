@@ -14,5 +14,3 @@ class Countries(BaseCsd):
     modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationships (add as needed) ----------------------
-    # Example: if Subdocket has country_id -> ForeignKey("countries.id")
-    # subdockets = relationship("Subdocket", back_populates="country", cascade="all, delete-orphan")

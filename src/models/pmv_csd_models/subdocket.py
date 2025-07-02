@@ -49,29 +49,22 @@ class Subdocket(BaseCsd):
 
     # ---------------- Foreign Keys & Relationships ----------------
 
-    client_id = Column(CHAR(36), ForeignKey("client.id"))
-    client = relationship("Client", back_populates="subdockets")
+    client_id = Column(CHAR(36), ForeignKey("client.uuid"))
+    client = relationship("Client", back_populates="subdocket")
 
-    department_id = Column(CHAR(36), ForeignKey("department.id"))
-    department = relationship("Department", back_populates="subdockets")
+    department_id = Column(CHAR(36), ForeignKey("department.uuid"))
+    department = relationship("Department", back_populates="subdocket")
 
     filing_entity_type_id = Column(Integer, ForeignKey("filing_entity_type.id"))
-    filing_entity_type = relationship("FilingEntityType", back_populates="subdockets")
 
-    type_of_filing_id = Column(Integer, ForeignKey("filing_type.id"))
-    filing_type = relationship("FilingType", back_populates="subdockets")
+    type_of_filing_id = Column(Integer, ForeignKey("subdocket_filing_type.id"))
 
     status_id = Column(Integer, ForeignKey("status.id"))
-    status = relationship("Status", back_populates="subdockets")
 
     patent_office_id = Column(Integer, ForeignKey("countries.id"))
-    patent_office = relationship("Countries", back_populates="patent_office_subdockets")
 
     country_of_filing_id = Column(Integer, ForeignKey("countries.id"))
-    country_of_filing = relationship("Countries", back_populates="filing_country_subdockets")
 
-    added_by = Column(CHAR(36), ForeignKey("user.id"))
-    added_by_user = relationship("User", foreign_keys=[added_by], back_populates="subdockets_added")
+    added_by = Column(CHAR(36), ForeignKey("user.uuid"))
 
-    archived_by = Column(CHAR(36), ForeignKey("user.id"))
-    archived_by_user = relationship("User", foreign_keys=[archived_by], back_populates="subdockets_archived")
+    archived_by = Column(CHAR(36), ForeignKey("user.uuid"))

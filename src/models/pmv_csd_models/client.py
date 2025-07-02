@@ -29,3 +29,6 @@ class Client(BaseCsd):
         cascade="all, delete-orphan",
         lazy="select",
     )
+    assignees = relationship(
+        "Assignee", back_populates="client", cascade="all, delete-orphan"
+    )

@@ -13,18 +13,7 @@ class ForeignFilingCountry(BaseCsd):
 
     # ---------------------- Foreign Keys & Relationships ----------------------
     subdocket_id = Column(Integer, ForeignKey("subdocket.id"))
-    subdocket = relationship(
-        "SubDocket",
-        back_populates="subdocketForeignFilingCountryMapping",
-        lazy="select"
-    )
 
     country_id = Column(Integer, ForeignKey("countries.id"))
-    countries = relationship(
-        "Countries",
-        back_populates="subdocket_foreign_filing_country_mapping",
-        lazy="select"
-    )
 
-    added_by = Column(Integer, ForeignKey("user.id"))
-    user = relationship("User", back_populates="foreign_filing_countries", lazy="select")
+    added_by = Column(Integer, ForeignKey("user.uuid"))

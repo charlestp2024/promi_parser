@@ -17,8 +17,8 @@ class Assignee(BaseCsd):
     modified_on = Column(TIMESTAMP)
 
     # ---------------------- Foreign Keys ----------------------
-    client_id = Column(CHAR(36), ForeignKey("client.id"))
-    added_by = Column(CHAR(36), ForeignKey("user.id"))
+    client_id = Column(CHAR(36), ForeignKey("client.uuid"))
+    added_by = Column(CHAR(36), ForeignKey("user.uuid"))
 
     # ---------------------- Relationships ----------------------
     client = relationship("Client", back_populates="assignees")

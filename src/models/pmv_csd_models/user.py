@@ -28,5 +28,9 @@ class User(BaseCsd):
         "UserClientMapping",
         back_populates="user",
         cascade="all, delete-orphan",
-        lazy="select"
+        lazy="select",
+    )
+
+    assignees = relationship(
+        "Assignee", back_populates="user", cascade="all, delete-orphan"
     )

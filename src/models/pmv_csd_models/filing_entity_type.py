@@ -13,9 +13,3 @@ class FilingEntityType(BaseCsd):
     modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationships ----------------------
-    subdocket = relationship(
-        "Subdocket",
-        back_populates="filing_entity_type",
-        cascade="all, delete-orphan",
-        lazy="select"
-    )

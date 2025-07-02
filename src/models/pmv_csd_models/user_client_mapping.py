@@ -15,7 +15,7 @@ class UserClientMapping(BaseCsd):
 
     tenant_id = Column(CHAR(36), nullable=False)
 
-    client_id = Column(CHAR(36), ForeignKey("client.id"))
+    client_id = Column(CHAR(36), ForeignKey("client.uuid"))
     client = relationship("Client", back_populates="user_client_mapping")
 
     active = Column(Boolean, default=True)
