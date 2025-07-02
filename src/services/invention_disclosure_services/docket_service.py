@@ -1,10 +1,12 @@
 from __future__ import annotations
-import uuid
+import uuid,os
 from datetime import datetime
 from typing import List
-
+from dotenv import load_dotenv,find_dotenv
 from sqlalchemy import func
 from sqlalchemy.orm import Session
+
+load_dotenv(find_dotenv(filename=".env.local"))
 
 # ----------------- Models ----------------- #
 from models.invention_disclosure_models import (
@@ -146,6 +148,9 @@ class DocketService:
             foreign_license_required=parse_bool(row.get(COLS.FOREIGN_FILING_COUNTRIES)),
             created_on=func.now(),
             modified_on=func.now(),
+            added_by=str(import_user.uuid),
+            appid=str(os.getenv("ININVENTION_CENTRE_APP_ID")),
+            deleted=False,
         )
 
         # ----------------- Assign Dates ----------------- #

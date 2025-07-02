@@ -1,15 +1,12 @@
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
+from dotenv import load_dotenv,find_dotenv
 from pathlib import Path
+print("Using env file:", find_dotenv(filename=".env.local"))
 
 
-base_dir = Path(os.getcwd())
-
-env_path = base_dir / "config" / ".env.local"
-
-load_dotenv(dotenv_path=env_path)
+load_dotenv(find_dotenv(filename=".env.local"))
 print("DB_USER:", os.getenv("DB_USER"))
 print("DB_PASSWORD:", os.getenv("DB_PASSWORD"))
 print("DB_HOST:", os.getenv("DB_HOST"))

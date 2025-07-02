@@ -1,7 +1,9 @@
 import pandas as pd
 from excel import excel_validate
 from services.start_parse import import_excel
+from dotenv import load_dotenv, find_dotenv
 
+load_dotenv(find_dotenv())
 DB_NAME = "pmv_invention_disclosure"
 TENANT_ID = "df234305-8a47-4b4d-8efb-716a6b695428"
 IMPORT_USER_UUID = "bf255bcc-e2db-4d47-8e3e-5b8b7b4f105d"
@@ -25,4 +27,4 @@ def process_excel(file_path: str, data_type: str = "client"):
 
 
 if __name__ == "__main__":
-    process_excel("D:/var/populated_patent_data_final.xlsx", data_type="client")
+    process_excel("C:/Work/Promive/populated_patent_data_final.xlsx", data_type="client")

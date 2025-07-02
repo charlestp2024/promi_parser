@@ -1,0 +1,2635 @@
+{
+    "Watson-Carpenter": {
+        "uuid": "875889b0-d554-4500-8f84-e2721baa2567",
+        "departments": {
+            "AI Solutions": "fce5bd30-5852-4b9d-8650-48cc4ad5ea5f",
+            "Robotics": "8fe8a0a4-004a-4813-a96e-2532b9a164d6",
+            "Civil Systems": "4bcc4373-ccaf-4de0-8c60-e8437d994697",
+            "Aerospace": "0caa00e1-101e-446f-b457-8b2871494952",
+            "Biomedical": "aff07806-5c39-456e-b816-b67b3dc5f370",
+            "Cybersecurity": "91586579-bc3e-4b34-bca4-009d9a21ef49"
+        },
+        "divisions": {
+            "Core Tech": "b3d75ccc-6242-4b4e-a574-b51f7d6b6eeb",
+            "R&D": "38363202-1e56-4672-8dcb-ffb0a64b4187",
+            "Engineering": "d00c2bdb-d068-42af-8eb1-f58cab9ab0a5",
+            "Product Dev": "777728e4-b619-416a-a2e5-a483a9b8953b"
+        }
+    },
+    "Mueller Group": {
+        "uuid": "0341f0da-1299-4a8c-9ca7-24ece23d678a",
+        "departments": {
+            "Cybersecurity": "01ae6972-0a78-4e23-a271-d913b153a833",
+            "AI Solutions": "e0adae3b-eb47-463e-8e70-8d1dae3f56c5",
+            "Robotics": "025446f4-25c6-4bdd-a645-27a21ef4d094",
+            "Biomedical": "fb38d6b9-6168-4fb9-8361-adb2b8e579c9",
+            "Aerospace": "6829b9d8-b7af-4400-9d9a-b3318244e2c2"
+        },
+        "divisions": {
+            "R&D": "5cece137-14b1-4f11-b24d-60b45f6d9ac7",
+            "Product Dev": "2f775aab-0728-4f73-a99a-59e1670d94b1",
+            "Engineering": "10841162-13f2-40fb-8d3c-b8ef31bc5468",
+            "Innovation Lab": "992cba38-8a4a-41e1-9dd9-18c7163ad840",
+            "Core Tech": "6746b829-e3c7-45ed-90ce-a7ffaeba7af2"
+        }
+    },
+    "Booker Ltd": {
+        "uuid": "c197971b-5c48-4e44-a696-52eb68be873b",
+        "departments": {
+            "Robotics": "d5091bf6-93dc-44e5-9f9e-50117996185c",
+            "Civil Systems": "68e708c0-4acf-445b-948f-8180088b648b",
+            "Aerospace": "eea2d577-2117-4b42-8937-18b90e5ad8d9",
+            "Biomedical": "edd9dd65-f9e7-4c0e-925e-5ae2fc59a376",
+            "AI Solutions": "3759153f-1d26-402a-9cc0-1cb93b374339"
+        },
+        "divisions": {
+            "Product Dev": "5b0e65d6-e7a4-4e79-b61a-5a2f3bfa198d",
+            "Innovation Lab": "23497ae6-d843-47d6-94f4-23ed61d2baa1",
+            "Core Tech": "eaaa08c8-c942-49c0-a1b1-8ba3ae06fa21",
+            "R&D": "dea7c2fb-e87c-4f68-b0e8-b0e52a752fc2",
+            "Engineering": "151fa250-e4ab-46d3-b239-50384401bc1b"
+        }
+    },
+    "Green-Green": {
+        "uuid": "f3f6a801-c580-46ff-b808-d2b1fd92b804",
+        "departments": {
+            "Cybersecurity": "b96d336b-96da-4221-805b-718f9226bbb2",
+            "Biomedical": "6c3f95ef-518a-4f56-887d-cfa436d36ff4",
+            "Civil Systems": "61349522-b6f1-48f7-8f89-55090983feef",
+            "AI Solutions": "df0d2c18-b151-40a3-8588-993cdf14b0c0",
+            "Aerospace": "529865ba-9428-47cb-92d6-685d5205ba9e",
+            "Robotics": "8e3d9ede-68af-4e8e-8a5a-b68ce35b44ba"
+        },
+        "divisions": {
+            "Product Dev": "530c6303-8389-4545-8c40-9c913943095a",
+            "Core Tech": "ca185477-7cd6-4afd-a83b-10ebbcaab8d1",
+            "Innovation Lab": "adc4ebcf-7412-4095-b497-1ca80b2bf5fa",
+            "R&D": "29417ac4-8115-4d45-b25c-337c9a1b8311",
+            "Engineering": "111d0db3-927b-45c0-b915-98a1fc6fb169"
+        }
+    },
+    "Jarvis-James": {
+        "uuid": "63d43cdd-bce1-4ce6-8ca5-c7b9c460922d",
+        "departments": {
+            "Robotics": "889e0a9b-566a-4d21-a866-87ed40741ddb",
+            "AI Solutions": "7dee0522-7101-4c9f-8a30-27e733098b24",
+            "Cybersecurity": "b4cfcb6d-0a10-4ca4-83aa-7c227a492118",
+            "Aerospace": "2cbb2f6d-0d7f-4b24-aebd-e7bd14eb6c93",
+            "Civil Systems": "0569e542-15d3-4d05-9267-242359210399",
+            "Biomedical": "7f2387b9-739e-48b7-a4e6-a97cc5b5becd"
+        },
+        "divisions": {
+            "Engineering": "6f180aa9-6aec-490f-a3ea-892b1a858c78",
+            "R&D": "14fc17a3-da9a-4993-87bc-3bd5219dcc1b",
+            "Core Tech": "d7042bc5-9185-4ae6-81a3-130c8ddc3ac2",
+            "Innovation Lab": "fd1779c9-333c-4664-b557-2d48bac85523",
+            "Product Dev": "247ae0c3-59bc-4961-8ede-636e23bcc0c1"
+        }
+    },
+    "Ramsey Inc": {
+        "uuid": "d5039922-ea33-4459-a0d4-89519390e550",
+        "departments": {
+            "Aerospace": "a66d6b01-dd75-4065-bbe1-9ea52fa3a9af",
+            "AI Solutions": "26862f7b-a541-4e5e-8ee3-ae7c71d12c3a",
+            "Biomedical": "7f28b3ec-d39a-4742-8481-78118bd946c9",
+            "Civil Systems": "1f8ffa4f-e23f-40bc-ac9d-45b4788c878f",
+            "Cybersecurity": "fd0809c4-b7f0-41b2-94ba-dac0cc300438",
+            "Robotics": "65b00d39-0ca1-4e54-93b9-ccea58e2d0f3"
+        },
+        "divisions": {
+            "Engineering": "1da036be-c40d-4ea4-9a4c-1f853cb6db1f",
+            "Core Tech": "2890dfb0-503b-4424-bc07-44e10911bb17",
+            "Innovation Lab": "5c4390d3-7d7c-4798-a4da-b2270cb3d5f5",
+            "R&D": "cb177bed-1e68-4e18-b5d1-473f2b70f91d",
+            "Product Dev": "3008bd70-aa9e-4b86-9472-8231aefbb300"
+        }
+    },
+    "Chang LLC": {
+        "uuid": "6307f222-83f9-4e91-8ee1-bdba5a29d8aa",
+        "departments": {
+            "Biomedical": "33a1fe00-be92-4039-ad96-bf1215592e44",
+            "Robotics": "93ee24a8-1ebd-4c45-917b-5c6a10909be7",
+            "AI Solutions": "104c546b-23fa-49fc-84ca-c4048bbadc83",
+            "Civil Systems": "90180a59-1f30-4168-b559-dabc24ff99d2",
+            "Cybersecurity": "18af739a-75af-4ac1-bbe6-1d68285eac43",
+            "Aerospace": "1c9cd347-4908-4e6b-a98a-6ca5778c4822"
+        },
+        "divisions": {
+            "Core Tech": "19d5f3e3-b41e-4d5c-8def-ace972f50f5f",
+            "Innovation Lab": "f82a2273-d014-48a9-835c-c28eb42cd861",
+            "Product Dev": "bb0e1ebd-8125-4dc2-9acb-c1de3db11f3c",
+            "Engineering": "181c8638-d41b-4da3-aa39-a4d7595bbe80",
+            "R&D": "c26d57e3-7f82-40d1-b1e4-bb8a544ece69"
+        }
+    },
+    "Fuller, Sanchez and Lopez": {
+        "uuid": "efd8c053-7658-4e2d-9cc3-090a2857740a",
+        "departments": {
+            "Cybersecurity": "cb75a98c-5be7-4af6-801d-e781d23509e5",
+            "AI Solutions": "53e6d0d0-1b75-4dc1-8c70-afff550145bf",
+            "Robotics": "80141a76-4661-4b98-b1a7-979ee03e7a30",
+            "Civil Systems": "5adf0a38-56c5-4247-b296-429a4d7236f1",
+            "Biomedical": "42d81bb0-7a13-4355-a265-ef6126144c43"
+        },
+        "divisions": {
+            "Product Dev": "0e94f8d1-94fa-42c2-bdd5-07892d5294c8",
+            "Innovation Lab": "f0093c54-411b-44d2-9480-076c52a4a323",
+            "Core Tech": "4dc6049f-8e17-4783-8454-ccdefb469888",
+            "R&D": "21d84809-90a7-4ad7-830f-7f37c6dc6f32",
+            "Engineering": "8bef40ba-4b9e-44c5-aa87-ae134ff38d44"
+        }
+    },
+    "Hernandez-Duncan": {
+        "uuid": "ec882dd2-75fd-4bed-852c-1d1f3757a801",
+        "departments": {
+            "Biomedical": "6ec2d6eb-2d03-452e-9625-46170b88a495",
+            "Aerospace": "05ed970a-58c2-479d-915e-92ca73441287",
+            "AI Solutions": "d3a1b709-3cb1-41a1-a243-12c263d1f715",
+            "Civil Systems": "76c23ec4-fefc-4f6b-8462-190364f0ebc3",
+            "Cybersecurity": "7d44a61f-fea7-44cb-9b01-ad7e1cf47dfe",
+            "Robotics": "62368563-f0fd-4156-981c-0cde9f1eb834"
+        },
+        "divisions": {
+            "Product Dev": "64bd81f6-8f64-485f-bc23-92f9c986f041",
+            "R&D": "9579ce72-04e6-4325-885e-8cb2731388ec",
+            "Engineering": "e4d80844-aa39-44c1-bf1a-57a34414ce3f",
+            "Innovation Lab": "bdbcbaa1-fd4b-45d7-a375-9e6f75bf1df1",
+            "Core Tech": "a5e23cf0-05eb-4b7b-9a68-915c4c6f65ce"
+        }
+    },
+    "Mata-Fuller": {
+        "uuid": "825ae48b-c3a6-4a85-a873-c4e9e8cc7c51",
+        "departments": {
+            "Robotics": "56cb9636-adba-4bc2-99cb-84f558cd7638",
+            "Civil Systems": "ffbb4247-90bd-44c2-8ea0-2bca201f3b9a",
+            "Biomedical": "4d87a7bb-0038-4da0-a7d0-00871d5e70ed",
+            "Cybersecurity": "9d6f7769-454b-4d32-b574-812953347700",
+            "AI Solutions": "53607a9a-7cad-4c0d-b9c9-97da27ae9e3f",
+            "Aerospace": "8e423d71-60fd-4162-8bcc-169cb25785c5"
+        },
+        "divisions": {
+            "R&D": "c58edceb-0670-4ab1-b435-69f969bbe6c2",
+            "Innovation Lab": "6fb24fdb-fa25-46e8-a29c-f3cece0a2545",
+            "Product Dev": "71bf9a02-1f66-4bb5-a1a6-7b0245e3202f",
+            "Core Tech": "d5610784-4a92-4e06-a474-c80f3b44b247",
+            "Engineering": "0363186d-7f3e-47d5-985d-cabfca5d0d01"
+        }
+    },
+    "Kennedy Ltd": {
+        "uuid": "383cca5e-b716-4cdd-acec-c6b4bcbc7120",
+        "departments": {
+            "Civil Systems": "820e4a13-6690-4fa2-8dc6-6a5498a350ec",
+            "Cybersecurity": "d3ccaa3d-2d24-4a47-b969-1ac3f23344db",
+            "Robotics": "f06f6abe-3b6b-497d-af9e-5a78a2064ed3",
+            "AI Solutions": "ee87b419-76da-4d3a-9b02-ab61b817b9e4",
+            "Biomedical": "4afe8daf-7069-43c1-9dfc-d45e52e109ec",
+            "Aerospace": "12c5b4ac-6cad-45e7-bce0-53815043d18f"
+        },
+        "divisions": {
+            "Engineering": "1002b727-5d28-408e-8b39-f389e2347958",
+            "R&D": "7d0df266-31dc-4d9d-9067-146ff30abfe9",
+            "Innovation Lab": "2385962e-2f60-40a4-b90a-49f96afd59ce",
+            "Product Dev": "341c7c87-87dc-4520-8ab5-e92d7728f8ea",
+            "Core Tech": "96d48246-8b91-4c95-9368-6c2a4443a819"
+        }
+    },
+    "Schaefer, Green and Morris": {
+        "uuid": "62a30e2a-d109-46f6-8d9e-0573c09a8649",
+        "departments": {
+            "Civil Systems": "d74f2895-0502-459c-a1ff-d117f76f23b1",
+            "Robotics": "f4ca0151-a572-4b63-aa64-9b4ae4a203fb",
+            "Aerospace": "e286ba9c-677d-4c3d-81dc-7eac867e0092",
+            "AI Solutions": "f2ac993c-0614-4d81-887e-d0e1b1663c97",
+            "Cybersecurity": "b3a1e38c-f0b4-4f68-92ab-3bbbb01dfcf6",
+            "Biomedical": "446f504c-757e-4e5d-806a-e4244f945950"
+        },
+        "divisions": {
+            "Product Dev": "6b5d7e73-4b38-402f-a383-e36efec71bd3",
+            "R&D": "2728daee-d30d-48eb-b85e-3ba93ed6eac1",
+            "Core Tech": "49abdc86-0e86-4336-87a0-69b3b520c49b",
+            "Innovation Lab": "6d3e6107-f290-410a-a58b-f9adc3087332",
+            "Engineering": "60c25b3f-fa3a-4ed3-8f19-ba473b84fc2f"
+        }
+    },
+    "Black-Nixon": {
+        "uuid": "ba4e9f9b-46b8-4137-91dc-79f73efa73c3",
+        "departments": {
+            "Robotics": "614e6eea-6d7e-48c0-a5a7-154e652bb558",
+            "Cybersecurity": "99039d4d-999e-49b5-8a8d-31af838ad267",
+            "Aerospace": "b223456f-e607-468e-a715-389f8b56b1d9",
+            "Civil Systems": "4242c0c4-a598-44a2-b8e4-4cc1c5ab529f",
+            "AI Solutions": "e4df6cdf-3f74-4a8a-af4c-b0fe3e025892",
+            "Biomedical": "915feabf-57f0-451a-b4bb-7a4fb96b3ea3"
+        },
+        "divisions": {
+            "Innovation Lab": "81f13ef7-1668-4078-adae-104d2abba3b7",
+            "Engineering": "a34cbbf0-3959-430d-865c-80785e805909",
+            "Product Dev": "16078d6a-e97d-43ee-aaa1-88a96c24b088",
+            "Core Tech": "98272546-125d-4453-8986-d3bd5bbbc088",
+            "R&D": "20254734-2aa7-4536-9c4f-01277f524680"
+        }
+    },
+    "Campbell-Graham": {
+        "uuid": "6dd06b26-afd3-444f-9326-15b50b6ddb7c",
+        "departments": {
+            "AI Solutions": "5be9b68c-0e96-4d02-83d4-3f25133a2cc3",
+            "Cybersecurity": "5b114eff-aab0-498b-b9be-4cb4c19c3168",
+            "Aerospace": "809c7c97-8b69-4038-a183-d6c4662665b5",
+            "Robotics": "2436b36f-1cf3-4507-8b04-75be6bd6407b",
+            "Biomedical": "51b483ff-de4c-4eaa-839f-298fa2d0b84e"
+        },
+        "divisions": {
+            "Product Dev": "39931183-91b8-447f-8098-f974bcc6063d",
+            "R&D": "bf83f5f7-b34c-40b6-bcda-e4b63fd42254",
+            "Innovation Lab": "b7011830-84f2-459b-bd2f-a20b09e4c3fc",
+            "Engineering": "14210237-5254-4df5-8b9f-4cbde1edeb6a",
+            "Core Tech": "003ae7c2-344d-499f-8f53-af1102edf548"
+        }
+    },
+    "Smith-Simmons": {
+        "uuid": "7b2de168-8dc2-4033-89c5-8d1363906388",
+        "departments": {
+            "Civil Systems": "a4495049-0f3a-43ce-9f05-938e2e3ffc46",
+            "Biomedical": "890babd8-7d25-4713-bdb2-8db610113694",
+            "Aerospace": "b87b42b9-5918-40e6-8c4d-61cdef76947f",
+            "Cybersecurity": "c2f408c8-cca0-41dc-9488-e5f8c897c9ee",
+            "AI Solutions": "c072c968-c2b5-4f01-9850-ccd6439393a0",
+            "Robotics": "cb97ee5e-8b2f-45f5-8fe9-bb36a9db864e"
+        },
+        "divisions": {
+            "Product Dev": "3e9b1b5b-48f2-4fba-9359-14a5a6cb1e93",
+            "Engineering": "ea331784-d672-4c3e-ab85-b3756db7cf22",
+            "Core Tech": "5be37d4a-3490-44f5-bb48-dabb718684c8",
+            "R&D": "759609c6-eb5c-491f-886f-e44df60a41a0",
+            "Innovation Lab": "c039912f-ee7e-4537-bad4-ab75bb7ba1a4"
+        }
+    },
+    "Wilson, Mcdonald and White": {
+        "uuid": "fe204f9b-52ce-490f-b478-849aab94ef5f",
+        "departments": {
+            "Cybersecurity": "b37e9059-29b2-454c-80fa-ea99eee0c5b1",
+            "AI Solutions": "c05cae96-4f6d-45ab-ac66-723a6bf1fe52",
+            "Robotics": "c4a5143f-6adf-4975-96bf-545aeffd7673",
+            "Biomedical": "25f40736-8036-489f-88d7-f4ad4da26cdb",
+            "Civil Systems": "ffd5981d-0f72-4533-a402-e695ba92d1c5",
+            "Aerospace": "c6211e08-da0d-4ee2-a287-7f65d77f4067"
+        },
+        "divisions": {
+            "Core Tech": "96440694-041e-42f1-b3a7-6ee58211f533",
+            "Innovation Lab": "a20f8b38-90ee-4bf9-8e18-72997f31dc34",
+            "Engineering": "10851fcc-0df4-4fe8-847a-3973a5d6d48c",
+            "R&D": "9f0a68a2-b22b-4a40-8d41-4dc1305eebc0",
+            "Product Dev": "c418f852-8370-48e5-be62-40b8343a6987"
+        }
+    },
+    "Wagner Ltd": {
+        "uuid": "8a4c2f8f-92ce-4724-b823-3a4991770274",
+        "departments": {
+            "Biomedical": "c48310dc-80d1-415f-a2d1-6c3e1677cedc",
+            "Civil Systems": "ea9398e1-3517-45a5-817e-cfc317f981e4",
+            "Robotics": "4764a821-ff73-4a65-9f7c-8ee9a2a1d66a",
+            "Cybersecurity": "961f1396-fd45-4a03-a90f-39641f551ccc",
+            "Aerospace": "c368a0d6-867a-479d-a74e-8bde0fc09c1a"
+        },
+        "divisions": {
+            "Engineering": "5dffda07-b507-45ea-a8bb-b028053c0cb5",
+            "Product Dev": "d7c50be7-4268-42e4-92f5-154251ae5ca1",
+            "Innovation Lab": "b7e08991-8aa0-4f5d-b6d4-1ba99aae80bd",
+            "Core Tech": "82484422-81c7-4e71-bad6-9c32c440f7f5",
+            "R&D": "ec028bc7-bda6-4ca3-876b-9d9bf7410229"
+        }
+    },
+    "Garcia PLC": {
+        "uuid": "38739443-7eeb-4034-9beb-40a536e07cba",
+        "departments": {
+            "Aerospace": "b9ab100e-9658-4e32-a4f6-7b0403e7dae8",
+            "Civil Systems": "ee44541e-067e-4eb9-b139-81483922c19b",
+            "Cybersecurity": "eee63a2b-75c8-42cc-8f97-ab3461baa013",
+            "Robotics": "be5dc68d-9359-4854-bdd6-24c5cb824873",
+            "AI Solutions": "b74d4ad5-8511-4028-900f-c0a038998b84",
+            "Biomedical": "26a571d9-fa9e-48cb-aa2c-57e2ac3d2cc4"
+        },
+        "divisions": {
+            "Innovation Lab": "f92b686b-aeab-45eb-aefe-7bd610fe6d94",
+            "R&D": "af2d0fa8-8d2e-43ff-a220-6273e7f5b770",
+            "Core Tech": "9a4ab6d2-92cd-4667-b3c1-4f5f50d3261b",
+            "Engineering": "57c92c0f-aac8-4fb3-9174-a4173091c1e1",
+            "Product Dev": "28544590-a5b2-4192-828d-37f80673bb2e"
+        }
+    },
+    "Olson, Jones and Horton": {
+        "uuid": "d33461c4-3f0e-40b5-9159-289adf33a92f",
+        "departments": {
+            "Robotics": "825c9d8a-a347-493b-99ec-de245be36797",
+            "Biomedical": "d63b5046-08ae-4d03-a884-43a79d50a591",
+            "AI Solutions": "34a1cef8-1560-4ab9-9b4a-741af9481663",
+            "Aerospace": "20a92799-a6d7-45be-b8d1-c6af80d29914",
+            "Civil Systems": "22dc19fc-624d-4f12-8138-a0395a53406d",
+            "Cybersecurity": "b8a841da-d210-4e31-b46e-a68a2448cabc"
+        },
+        "divisions": {
+            "Innovation Lab": "8cd627ac-6e49-448f-905b-26c3c1332fe7",
+            "Core Tech": "37127602-a834-4c25-8573-0ce788df54fb",
+            "Engineering": "31d8e1d7-73fd-449b-8c66-13110b9db137",
+            "R&D": "42a48e26-9098-427b-ae39-5177d65b03e1",
+            "Product Dev": "a2e8a44a-ce5e-41ae-bc8d-f0e95d0b00fa"
+        }
+    },
+    "Johnson, James and Mayo": {
+        "uuid": "12c8226d-2601-43a2-91e4-ccb7e259e646",
+        "departments": {
+            "Civil Systems": "2b6132e1-0302-47b8-a95e-56694932a8f1",
+            "Robotics": "c5fb7a3c-6fd4-47e9-8619-ebe748ba6c9c",
+            "AI Solutions": "4dcc5dfe-b4af-4d4b-bf08-94f69e2548b1",
+            "Biomedical": "b98bb518-20b7-47b5-b6a6-eefc07deaf3a",
+            "Cybersecurity": "aa581ba0-a406-45cf-a424-55e507a533f7",
+            "Aerospace": "56d2ee36-da61-44a5-aed0-390a80ebf7bc"
+        },
+        "divisions": {
+            "Product Dev": "c8e8cdf6-e0ab-4664-b4f3-be1c36fd9284",
+            "Innovation Lab": "c2785237-447f-43c2-816f-f8a26371c9cc",
+            "Engineering": "c58dfbb0-e601-455a-9955-1881168699a3",
+            "R&D": "5c2b1f95-4a04-44f3-b030-923774a7f9fd",
+            "Core Tech": "5dd3f4be-c317-4c9d-bc14-3cc63a3345a8"
+        }
+    },
+    "Jones-Griffin": {
+        "uuid": "43d9f276-b659-49d2-8358-7c25c572f2d0",
+        "departments": {
+            "Cybersecurity": "10429ebb-d9c7-4e49-a023-6e96b6d0cd22",
+            "AI Solutions": "5540068a-389a-4115-b9e9-22baebfd18d8",
+            "Robotics": "26324685-e5b2-4fb4-8df9-c7ed56396242",
+            "Civil Systems": "abe04ec8-5fbc-4ac4-a63e-ffde22e0be0c",
+            "Biomedical": "cb716576-e7ba-419b-b17f-39aaa11d2b69"
+        },
+        "divisions": {
+            "R&D": "a9a55afe-64e1-40ef-8423-0b692faab6b0",
+            "Innovation Lab": "68e0f528-c21c-49a0-a750-3785e41a6cd4",
+            "Engineering": "36ee916c-1133-4d31-9f34-d3a01c488d68",
+            "Core Tech": "ff4a7dba-3eae-4ee9-bf03-7cc7797a39f9",
+            "Product Dev": "c848cf09-ca70-48a9-9a63-94d7a8edc0ca"
+        }
+    },
+    "Dickson Inc": {
+        "uuid": "07194192-8eed-472d-bb66-feeb4f8dc38a",
+        "departments": {
+            "Biomedical": "9a68235b-a1a5-40b6-b85e-40399b76e241",
+            "Civil Systems": "aed167a4-9aa1-4299-b73e-97652ae973f0",
+            "Robotics": "35fe6b8e-c144-428f-a484-215bdca2a548",
+            "AI Solutions": "56a159b1-fe73-42fd-8a78-4acae76df40a",
+            "Aerospace": "2019ad9d-262a-4e77-b70a-039b9f92ce0e",
+            "Cybersecurity": "2371bd6c-ecab-4ca3-80f6-a9732a99973f"
+        },
+        "divisions": {
+            "Innovation Lab": "4f3cdf66-ba3f-4c60-b986-06435abfcc55",
+            "Product Dev": "f594479d-b646-4b77-a687-232779c62818",
+            "Core Tech": "45c17979-fc0d-4b65-8647-766a84659f33",
+            "Engineering": "e0318f66-7c51-4eee-ac03-bb15882bc6a3",
+            "R&D": "71e2ed3b-3b23-4277-ab15-733d84349dac"
+        }
+    },
+    "Alvarado-Mckay": {
+        "uuid": "9f4b58dd-ed9f-4858-b80f-b129cd26bfaf",
+        "departments": {
+            "Biomedical": "77a28674-750d-44df-ae4c-149407568ff2",
+            "Cybersecurity": "0cd6a18f-e9f9-4ea4-9610-195106abe647",
+            "AI Solutions": "e20c6a00-c974-4e33-98f2-42de3734b851",
+            "Robotics": "e8295f86-2fb3-4e3e-b85a-049778eae47a",
+            "Aerospace": "392690a0-fab1-486d-8cd2-06f61e6a6b1e",
+            "Civil Systems": "139778cf-d588-44b7-b1e2-b838ec0050c9"
+        },
+        "divisions": {
+            "Product Dev": "898a2ef3-b121-4557-8cbf-94921e7c8d5a",
+            "R&D": "8784a98f-f646-4acb-9208-e7cd78e51c1b",
+            "Core Tech": "cbb2cb0b-5c67-4094-9ff1-4c2b38088215",
+            "Engineering": "29f7d4bf-3b37-4bc0-b725-1a8d3880ada6",
+            "Innovation Lab": "41ea69be-f722-495d-af6b-a4ab155545e5"
+        }
+    },
+    "Murray, Washington and Bell": {
+        "uuid": "30daab18-b698-4282-862e-6a3f43592c3d",
+        "departments": {
+            "Cybersecurity": "8b467add-b836-4c85-9690-874afd250372",
+            "AI Solutions": "b9228e7a-aa83-4465-a050-985722db458b",
+            "Robotics": "801ab2cd-5d6c-41fb-9833-b48aa80f1194",
+            "Biomedical": "a21576b7-6d05-4296-830a-5c37dc1a34f5",
+            "Civil Systems": "35edfd77-53fd-4d28-85b2-bfd96ba0416f",
+            "Aerospace": "167f3505-23b6-4e79-b9f3-36aec5d573c3"
+        },
+        "divisions": {
+            "Product Dev": "b5129653-d8b3-4b8e-86e7-630d143f130b",
+            "R&D": "1f120e2c-8618-4deb-a831-a1a25cc2a045",
+            "Innovation Lab": "5529a9fb-3cfa-48db-b6e5-1870b430fc74",
+            "Engineering": "5b61d453-fd43-4377-941b-b5703b46dc63",
+            "Core Tech": "24d4470e-442a-4156-98b6-912e761c61f5"
+        }
+    },
+    "Roth-Reed": {
+        "uuid": "76938ba4-7a2c-4d5b-aa5b-ed4ac44b0b05",
+        "departments": {
+            "Robotics": "e808eadc-ecbc-4eef-aade-593f37775e29",
+            "Biomedical": "30a70694-384d-4406-87db-35efcf09fefa",
+            "Aerospace": "ed064c0b-7502-4dc2-aa13-22c63e29f791",
+            "Civil Systems": "d1d28c1a-aa89-4fef-bccf-af80624202b4",
+            "Cybersecurity": "b886d9f8-9603-4c15-a3e8-4a1a742a07e8",
+            "AI Solutions": "ba53dd32-8cf1-4bdd-ae50-96de9f78719d"
+        },
+        "divisions": {
+            "Engineering": "e89fd1f7-4401-46bd-b95b-de99dc3ea141",
+            "R&D": "796e1b1d-3139-42b7-ad54-603bb753e2b9",
+            "Product Dev": "bdc44bf6-2a65-46f2-b45a-fd025a7cbe70",
+            "Innovation Lab": "dce70d46-d8d8-4ec6-b5a6-428d30063a20",
+            "Core Tech": "a98f14aa-4c65-46aa-86f2-31f732714dba"
+        }
+    },
+    "Freeman-Cole": {
+        "uuid": "fe89ccb0-b58d-4db5-8cf4-d656dd401cbc",
+        "departments": {
+            "Civil Systems": "485afee8-74df-4f2f-a4bd-394cad36b640",
+            "AI Solutions": "b4ad4762-b595-47f3-8bb7-3f0bf3e3825b",
+            "Cybersecurity": "2efd2611-1138-4124-b730-e7116582700f",
+            "Aerospace": "7dfaacb9-99fc-4be3-90ce-7eae8949d979",
+            "Biomedical": "aa04ae16-ad51-4d46-9388-4fd067289cab",
+            "Robotics": "8b5e3a27-b0b5-4fb6-a126-d0592c50d1d3"
+        },
+        "divisions": {
+            "Innovation Lab": "86c8f167-f25d-4be2-a98d-11b100b6361f",
+            "Core Tech": "6bb1456c-79c4-4f67-a0a5-1ce758b45f7c",
+            "Product Dev": "04dc9d3a-b160-49f3-b360-a7cab3d6d09e",
+            "Engineering": "2c141cdc-1730-4e25-9e73-428979eee1a9",
+            "R&D": "40c23b23-45c0-4d9f-a1f1-973d37d2941b"
+        }
+    },
+    "Duncan-Robinson": {
+        "uuid": "c9aba0cc-4d89-4c11-80ab-1ed233263261",
+        "departments": {
+            "Civil Systems": "4a2b5e67-047f-408e-8c0e-8c5dbf6dec35",
+            "Cybersecurity": "83ace5ef-1cb2-4048-9422-bca7b14e3a93",
+            "Biomedical": "5480929f-692b-44bc-8366-5dda7c0b9052",
+            "AI Solutions": "438f0817-921e-481d-8ef9-4c7d30d83e08",
+            "Robotics": "3aa2d993-be86-4f35-8145-4e4ce0fc81ad",
+            "Aerospace": "2d0441f6-5d89-48ab-8a00-dbcd6b441d85"
+        },
+        "divisions": {
+            "Engineering": "7f511f3c-e7da-444a-ad28-3933b6956e61",
+            "Product Dev": "6f58743e-65f1-486e-b9e4-04525a73a5a8",
+            "Core Tech": "c51f0b85-bcaf-4de0-aff3-185cd59d4cf7",
+            "Innovation Lab": "0dbfcced-5469-4b63-b570-3d3e293c81d2",
+            "R&D": "448c3e1d-9112-43c0-a9d2-3a0efa64b444"
+        }
+    },
+    "Sherman and Sons": {
+        "uuid": "45e06931-5243-42da-af88-b10e8cbad7a1",
+        "departments": {
+            "Robotics": "4acc7953-3cb6-4164-b870-e750880a277a",
+            "Cybersecurity": "c10cd0bd-96bd-4591-a5c3-cb8119a4901d",
+            "Aerospace": "e75d9e94-ac8c-4404-bc87-c11538cbcd55",
+            "Biomedical": "37277629-4c59-4d50-9065-17772a84ac61",
+            "AI Solutions": "f09a93f5-e463-43c6-a169-4865a7637caa",
+            "Civil Systems": "e995d395-9a54-4f75-8d0b-a79f6e7b5ab3"
+        },
+        "divisions": {
+            "R&D": "abfe3290-aec1-4de9-aaf2-010ed5bde9d1",
+            "Core Tech": "735fac66-68e2-4bd7-9af9-0e42286641eb",
+            "Innovation Lab": "24b8f6d0-9f7e-41a3-99b6-ec0f5bc4801c",
+            "Engineering": "e5cfb25a-3d6a-45d8-b9ff-928731936bec",
+            "Product Dev": "22ea4eea-8189-41dd-aa45-3220c2577ed6"
+        }
+    },
+    "Smith-Hernandez": {
+        "uuid": "567a47a7-686c-484e-a6ad-15a66999a314",
+        "departments": {
+            "Robotics": "b518984e-f492-46ca-a58b-c4cc0020be95",
+            "Biomedical": "79e3d86c-8694-4955-b8cf-207cade41f2a",
+            "AI Solutions": "05632ab7-0329-422d-9c10-2936b0d791fe",
+            "Civil Systems": "2d617944-8a04-4a69-b2d5-e8bebe13daf9",
+            "Aerospace": "aedd22b0-d18d-4bfe-8336-d58e593a5faf",
+            "Cybersecurity": "f1a88239-8ccb-4f3f-90a6-59b0486bec01"
+        },
+        "divisions": {
+            "R&D": "777c0e52-bd46-468e-b98b-a934379cd551",
+            "Engineering": "fa936e99-3f40-43a2-a07e-bd130a6a623a",
+            "Innovation Lab": "51d01834-2beb-4fcc-aa85-007bbd87368c",
+            "Core Tech": "d49eb104-d414-4a0f-80a2-a817b2c8e844",
+            "Product Dev": "958ffaf4-9ed2-4e38-bfaf-3d91549a3b6b"
+        }
+    },
+    "Williams and Sons": {
+        "uuid": "74ce3826-8106-472a-99cf-eee1bfffec31",
+        "departments": {
+            "Cybersecurity": "4481609f-7606-40c3-9143-c5d4ced414a9",
+            "Civil Systems": "7790349d-1874-4503-9a4f-10f010640a95",
+            "AI Solutions": "8af99f3b-b051-45b2-ba86-7846b783f5d4",
+            "Robotics": "2faac37c-95a3-4879-a2cb-b6a688cf44c1",
+            "Aerospace": "bb3c794d-03e4-4982-a7c4-39351ab54795",
+            "Biomedical": "0639684d-51ce-4578-b380-5fde8eb63cb4"
+        },
+        "divisions": {
+            "Product Dev": "7e3c93f6-750f-4e2a-b045-251d61edb803",
+            "Innovation Lab": "e343517d-d783-45de-b093-d217271c97e8",
+            "Core Tech": "23ecaf96-0257-4fad-a78c-4b3fd3c84a45",
+            "R&D": "46787256-a47f-4a73-8242-5aa56e593148",
+            "Engineering": "ddfb5a58-7c51-4ee1-ad5f-7426c3b69c96"
+        }
+    },
+    "Bryant Group": {
+        "uuid": "69a2b5bb-ca8f-4fa9-aa43-795dec520971",
+        "departments": {
+            "Biomedical": "84ff9106-57e6-4477-aeef-de4593290b38",
+            "Civil Systems": "826636d6-6a42-46b5-a5f9-14ebea2d2294",
+            "AI Solutions": "8510e2f7-1dc3-4aec-a736-4f4461d8cd40",
+            "Aerospace": "3485feb3-1388-4859-b260-6179a8111525",
+            "Cybersecurity": "f6420d51-269e-4379-b21e-2a95732f66c9"
+        },
+        "divisions": {
+            "Engineering": "e3fb5c59-c25f-48d3-ac7b-d55ef8d33fcc",
+            "R&D": "b8be5c4f-1b6f-43f0-adb8-b20c121ad8ac",
+            "Innovation Lab": "bbd3de4d-5f39-45f1-aff2-19557312cc7f",
+            "Product Dev": "c0aec034-51dc-4a06-b521-8c5bdeae3001",
+            "Core Tech": "aa317300-4c3b-4140-b7e5-b7bd3ea67066"
+        }
+    },
+    "Wright Inc": {
+        "uuid": "6a032c42-3246-440a-8016-6e8e907c318a",
+        "departments": {
+            "Civil Systems": "e2bc8672-e3cf-4933-b358-706ca08cbfa1",
+            "Biomedical": "d20b3a54-ed2c-43ba-ab88-ef787eed6c57",
+            "AI Solutions": "ea2df38b-d8ef-44db-a702-a92c17917d54",
+            "Aerospace": "750fa8e2-f997-4154-af0d-c6d776e904cd",
+            "Robotics": "f3bc525b-860d-4a05-b362-672c319c62f9",
+            "Cybersecurity": "4b50b856-bb17-429f-9a3f-930f9aefaf47"
+        },
+        "divisions": {
+            "Core Tech": "b5d1b773-e379-45c3-a6ae-e17bb98876ce",
+            "Engineering": "4bfc1ce1-90e3-497a-b84c-238b66cb5f54",
+            "Innovation Lab": "a4c024a1-230f-4b1b-a0b5-207ba26c71a4",
+            "R&D": "c060a8d5-593a-46c4-94cd-1ea765f64273",
+            "Product Dev": "bc30f61f-c122-4575-8cdb-bb42e8fafa8a"
+        }
+    },
+    "Blackwell-Hobbs": {
+        "uuid": "b3d1c6ee-8f55-4fb1-9fd0-cc85693a1d4c",
+        "departments": {
+            "Robotics": "480d52dc-1f30-4d6c-8e08-7cf78eb8182f",
+            "Civil Systems": "8652b3d7-6854-48d2-8d6b-c8e5b39c2c8b",
+            "Aerospace": "234369d5-1aa5-4a01-ba40-046aac919f11",
+            "AI Solutions": "e454edcc-7a2a-47e1-b526-0aa9be9c4338",
+            "Cybersecurity": "d2bc1df7-17ae-4bc8-90e1-c719f97a4af5"
+        },
+        "divisions": {
+            "Engineering": "69685477-d5b6-4421-93c0-6eb34caa62c6",
+            "R&D": "75c70254-c935-488e-af0b-5997e5f27ca9",
+            "Core Tech": "7d906cb1-016d-474f-b111-ce94b74bd305",
+            "Innovation Lab": "a8fd9235-67d5-48ba-9ae0-5b5febe0b8ee",
+            "Product Dev": "4eb8446a-1867-40c7-88e5-2adae88a56d3"
+        }
+    },
+    "Miller, Thornton and Larson": {
+        "uuid": "ac0c81a1-997e-4bb5-b940-858d0fa6bd13",
+        "departments": {
+            "Biomedical": "f2dafe6d-95c3-4752-b3f8-d607cd5ec8c1",
+            "Aerospace": "79d37ed6-429f-45cd-9f4a-72073f3eda6d",
+            "Cybersecurity": "214e8e2b-a33b-47d4-beda-db2c86578db7",
+            "Civil Systems": "4474052b-60ee-43e3-b868-db123bf738ad",
+            "AI Solutions": "19c68fd8-7c41-467d-a836-e8e26e0bbd6d",
+            "Robotics": "8cc49ab6-5843-4d41-ad62-24304d3fb4d9"
+        },
+        "divisions": {
+            "Innovation Lab": "92dc3bb1-3b54-4ec5-8ce3-1a2ace075323",
+            "Engineering": "12832b99-20ca-4c50-ac55-af198a58338e",
+            "Core Tech": "cef27ad9-a909-4892-8e64-24fef99fbc82",
+            "Product Dev": "30b40286-5ad1-44be-a8fa-cb155a144012",
+            "R&D": "0b7fa3ed-e06a-4bb8-bb04-3920d3374ed2"
+        }
+    },
+    "Francis-Chavez": {
+        "uuid": "5e0d9fb7-b4fb-4dfe-b2c1-3d722d7e7ec0",
+        "departments": {
+            "Aerospace": "8c891388-68de-428f-8dc3-db972ca3f9d9",
+            "Cybersecurity": "45fad424-2000-442e-9c65-347e45302c26",
+            "Robotics": "65f6683a-25db-4fd5-a504-04ce25c8b6d1",
+            "Civil Systems": "835af3b9-de98-42a3-9ab1-b32b822e56ca",
+            "AI Solutions": "992782b4-2d8a-477a-96f1-f6405e6f11a2",
+            "Biomedical": "fc8e56fc-8926-415e-899a-6f0656f0e772"
+        },
+        "divisions": {
+            "Core Tech": "1851c377-1b9a-406b-9af8-e0ce52e90736",
+            "R&D": "a08190c2-72c3-4e97-a73c-5c08d93fc237",
+            "Engineering": "8e67af5e-ced6-4d56-acc2-f1db31f0031f",
+            "Innovation Lab": "b7213c83-b2b5-4c4b-9ee2-2ac6ba333be3",
+            "Product Dev": "fb40dbfc-6151-4a13-9054-1b332e6d3597"
+        }
+    },
+    "Anderson Inc": {
+        "uuid": "4004828f-f9e5-41d4-8596-4135d35146f1",
+        "departments": {
+            "AI Solutions": "be30d962-7895-4320-974b-51a07365b6da",
+            "Biomedical": "ba468670-0919-46a5-9e18-5fb44c1ea747",
+            "Robotics": "6fd3d124-6920-4a41-b4c6-b146d75f7f14",
+            "Civil Systems": "ebacad5f-7ec0-49b1-ab22-e85ac169ff43"
+        },
+        "divisions": {
+            "Innovation Lab": "91e5421a-2222-4878-b8c2-d99513ae8543",
+            "R&D": "b883468e-cdcd-4958-a8c3-e802de3b5869",
+            "Product Dev": "9420114a-f9ca-4a82-8d2e-bd3c60fbd176",
+            "Core Tech": "80079f11-68fa-4c49-bd81-c6eb45c8662c",
+            "Engineering": "049bb441-896d-40e0-abdc-6f8ebeb91367"
+        }
+    },
+    "Johnson and Sons": {
+        "uuid": "d1d1a443-0586-4890-8cb3-e5732e9521a4",
+        "departments": {
+            "Biomedical": "4d54b98d-7f28-43d2-ba0d-802129337d73",
+            "Robotics": "29b00340-d4c7-48a4-95cc-a5c531fe7885",
+            "Cybersecurity": "1391d482-10d1-46cc-9d76-e3b8667dec39",
+            "AI Solutions": "c16ca186-11fd-4fb2-bb95-691c1a718a03",
+            "Aerospace": "56c99a40-88b4-4868-8c55-8edea3e5fbe1",
+            "Civil Systems": "cd90b8b6-6276-4c76-a6d1-40269c508952"
+        },
+        "divisions": {
+            "Product Dev": "1c8693a2-0d73-4016-b176-e85f68750e44",
+            "Innovation Lab": "c01db938-6815-47a5-9555-a8938707f32b",
+            "R&D": "18b3abff-be5e-45f6-9f20-31e92075b736",
+            "Core Tech": "b7e6a93f-ef0c-41ef-8376-cffdbb690a23",
+            "Engineering": "9245f033-9402-41c6-9484-fa207361f125"
+        }
+    },
+    "Wade, Garcia and Martinez": {
+        "uuid": "6bc066c8-2971-48b5-b56f-18954a084901",
+        "departments": {
+            "Biomedical": "26709ec8-c6b1-45b3-af26-49eda2071e12",
+            "AI Solutions": "da426f8d-0011-4522-8c15-70badd45018b",
+            "Cybersecurity": "7a8eaff2-3863-4812-b6b6-c010ed19c732",
+            "Civil Systems": "47e10854-f2b5-4c75-85ae-bed0a1f9cfc6",
+            "Robotics": "d86ee894-4480-4a17-8b55-d0b584f84a03",
+            "Aerospace": "1ba28dcb-27b4-4fc7-b55c-d0a0d379179b"
+        },
+        "divisions": {
+            "Innovation Lab": "5a2d7b19-dd4d-4d05-b6e0-6218e149efd1",
+            "R&D": "99c1346c-bcf9-496e-9cfb-339f80aa61cf",
+            "Product Dev": "44d12869-9857-4c3e-ba64-c8e39625be06",
+            "Core Tech": "4cdbd490-bce6-4899-b02b-d714c299f00f",
+            "Engineering": "65358428-46b8-4a86-80ba-d13224a4fc64"
+        }
+    },
+    "Woodard-Lopez": {
+        "uuid": "ace746de-0400-4616-954c-1dae0d9788a7",
+        "departments": {
+            "Robotics": "e8c84d3e-ae23-43b0-a930-9abe76829df5",
+            "AI Solutions": "6f8afad2-e5b2-4139-8226-49ea2dee2f0b",
+            "Aerospace": "4a6f2eee-427f-4f68-8509-45402b0764a4",
+            "Biomedical": "2e823bd6-3241-453b-b640-552b71ea6005"
+        },
+        "divisions": {
+            "Engineering": "76ea60ef-7dff-4cbb-8dc9-2257f312d6a6",
+            "R&D": "e76ef2dd-4e31-4982-a318-ca4797992e64",
+            "Innovation Lab": "c5180a29-a0d6-47ac-aa5e-d62c9ca94e40",
+            "Product Dev": "daeec87f-6ea2-4458-934e-78e426adf872",
+            "Core Tech": "e24abee3-3935-4f26-a897-097ab07c9e03"
+        }
+    },
+    "Blair PLC": {
+        "uuid": "bf8178af-5bf5-45a0-89af-a5977f23d7f5",
+        "departments": {
+            "Aerospace": "800e9428-4ce7-44f0-b583-afa212f2c4f6",
+            "Civil Systems": "e01d88c3-a4d1-4a4e-999a-f9959e591345",
+            "Robotics": "7173a18d-f9ae-4c3d-9a59-e4e3e1ec490d",
+            "Biomedical": "3f29794b-2ef2-4bdf-9af5-0d6fda7d38e3",
+            "Cybersecurity": "0be1f09d-1a64-4ceb-8932-22bddf6e079b",
+            "AI Solutions": "34133684-624d-424f-8289-d10d687bebd2"
+        },
+        "divisions": {
+            "Engineering": "eec0d8b4-c179-459a-a061-690822398d99",
+            "Core Tech": "ad2aec1f-107c-4873-a1c7-d154627762d9",
+            "R&D": "a056a754-fda8-405e-b2f0-40565f892c57",
+            "Product Dev": "4540949e-dee1-4af4-8d05-d31b7be85aef",
+            "Innovation Lab": "68670dc9-ac6e-474a-8918-5533123904b8"
+        }
+    },
+    "Brown PLC": {
+        "uuid": "ddde2d8a-2d40-471e-8a70-9ba270159877",
+        "departments": {
+            "Biomedical": "3007837c-fbfd-4bf7-b2bd-692a0d613121",
+            "Aerospace": "224d2c1f-2f07-4980-b31b-a3b1ac288daa",
+            "Cybersecurity": "30e2431f-4eff-4ae0-830a-9c05af210ca0",
+            "Robotics": "1deebd8d-adef-40dd-92d0-88fa5fb5d94d",
+            "Civil Systems": "75b1abcd-3548-4ca6-b7e6-e33e06ae1524",
+            "AI Solutions": "62a4fa1e-7e2e-4cc8-8a13-6ec17086bc95"
+        },
+        "divisions": {
+            "Core Tech": "286514d1-5313-4e56-9a92-14bf4d247558",
+            "Engineering": "3ce9f51e-3d01-436e-aaee-248a04ea3882",
+            "Product Dev": "cbe6e6b4-e818-4eab-a787-12cc973cf233",
+            "R&D": "c74ed072-5a21-41bb-9661-0b31f9a00b27",
+            "Innovation Lab": "2b9e2c37-ec0c-4bff-97c5-4f8a997303cf"
+        }
+    },
+    "Robinson, Merritt and Robinson": {
+        "uuid": "f785ea39-7c01-494d-ba8b-91a524fec6c8",
+        "departments": {
+            "Aerospace": "4c0472ab-959a-45ce-b770-8d525a8a1e61",
+            "Biomedical": "c4bf5bb7-cc31-48ff-ad96-540d35a693ea",
+            "Cybersecurity": "d1af2dd2-6e53-4aac-a965-f6f144851e20",
+            "AI Solutions": "dc2b55ca-ccb3-4f20-b58c-1c7db609e8d5",
+            "Robotics": "44be980e-3a0f-4d77-be83-7b28a70eba27",
+            "Civil Systems": "9f974be7-057f-4379-81be-173c8ec5224e"
+        },
+        "divisions": {
+            "Engineering": "2ec29e6f-5c8b-4920-b7fe-7eaa26d24030",
+            "R&D": "f87c2f71-bf8d-4e95-864d-83dc64a6f22f",
+            "Product Dev": "a353d0c7-af8d-44bd-a39c-95b7447363b1",
+            "Core Tech": "a461a57e-dea0-4597-814b-04175613d7d1",
+            "Innovation Lab": "fe7cd82c-5606-46c8-a03e-01c2b1bf2b45"
+        }
+    },
+    "Williams, Welch and Bradley": {
+        "uuid": "85e9f4ba-8fd6-446f-8b9b-b564d89e3206",
+        "departments": {
+            "Cybersecurity": "9d7ec759-ff19-4a63-8fa1-7da2c8c5e4d4",
+            "Biomedical": "8d9f4f9d-3075-4448-9841-4e08da79bf5e",
+            "Civil Systems": "1ab7bb71-e5c1-4445-82c4-b6fb594b54c9",
+            "Robotics": "ebb6edf8-bd9c-452d-a1e0-346b10efe338",
+            "Aerospace": "b473209b-cec9-4a40-a40a-c6547eb99120"
+        },
+        "divisions": {
+            "Core Tech": "174a12ee-0a84-4e1c-83c1-196a764b8894",
+            "Engineering": "97fe0d80-dfe5-4ce8-b7b6-c4e30c9ec7d3",
+            "Product Dev": "4972275d-d78d-4446-811d-f883774cac79",
+            "R&D": "ce42117e-e359-4eeb-9d5c-e05e9e01e111",
+            "Innovation Lab": "98303a73-a704-4fa0-852d-d9f0c5317053"
+        }
+    },
+    "Chapman Group": {
+        "uuid": "265bda7c-d74d-4546-ba8f-7e589bd9fa6e",
+        "departments": {
+            "Robotics": "175eb896-3fe8-454a-8f31-2a62a5c12858",
+            "AI Solutions": "ab95cb6c-582d-4cc7-bdc8-a2a1040835bd",
+            "Biomedical": "c5f6e5ab-d39f-4e16-9650-c7565457a47b",
+            "Aerospace": "aff9397b-18a5-40c7-b847-05a473d78085",
+            "Civil Systems": "de569999-4a7d-4caa-91fb-43b4068ae1f4",
+            "Cybersecurity": "aad0abb3-c3b4-4f55-bb3a-166196d9498b"
+        },
+        "divisions": {
+            "Product Dev": "1956560e-962e-4c53-a71a-b6962d4ae3ed",
+            "Innovation Lab": "a5d7dd0d-7716-42cc-974f-c3c030338afc",
+            "Core Tech": "de544f82-7cbf-41b7-b46b-bedb4bc595b1",
+            "Engineering": "657484a4-a86c-46f6-bbbe-f2465fd1fa76",
+            "R&D": "52f3f5ce-0cfb-4310-a88e-462f30ab5d17"
+        }
+    },
+    "Mann, Lopez and Brown": {
+        "uuid": "a7136372-0018-49c7-9c8f-cfb85a8fde0c",
+        "departments": {
+            "Cybersecurity": "944403a1-8654-484d-9ad0-6ebd43b61bd3",
+            "Robotics": "3fca2f6f-13aa-4a6e-8252-ed1d0633b814",
+            "Civil Systems": "85da1cb9-19e8-4a2e-88f9-5f323d4704f7",
+            "AI Solutions": "eb2d5619-3ed9-4261-991e-ddeae0abfab7",
+            "Biomedical": "ff8f1d07-c6cc-4769-a339-9a74ffad9211",
+            "Aerospace": "3f3f885e-d251-4c9f-a210-df0b303e0fa5"
+        },
+        "divisions": {
+            "R&D": "1badb86f-1d0c-4461-9a7a-5dc1ce5765db",
+            "Engineering": "6a12c5f0-2653-42af-b579-6f0396b3e7f3",
+            "Core Tech": "c79d34a4-4bdf-48cf-9ac5-680821101be3",
+            "Innovation Lab": "69ee9577-ba57-4f3a-b674-851bdcbe44aa",
+            "Product Dev": "9193179c-a22c-42cb-a8a9-640d603475e5"
+        }
+    },
+    "Lambert, Powell and Mcclure": {
+        "uuid": "9e819e5e-1010-4ba3-a868-417ac6b337b0",
+        "departments": {
+            "Robotics": "bf5e3468-341a-4ca1-ad40-602be950403e",
+            "AI Solutions": "07a73375-5980-467d-be08-32bf0dfac483",
+            "Biomedical": "5aa81bc9-70d3-4d4c-989c-7941712cacdc",
+            "Civil Systems": "0b490704-a1ba-4c75-9f4b-556fd1c2dddc",
+            "Cybersecurity": "aef34570-9f17-49ec-91f8-e517d8057430",
+            "Aerospace": "8a80690d-9f18-434b-ada2-1ddb9488b57e"
+        },
+        "divisions": {
+            "R&D": "9288661e-efbd-442d-bea6-6d62964d1bb2",
+            "Product Dev": "32364fcd-0580-4288-b16c-9b2db3bce7a1",
+            "Engineering": "2a832f02-c070-46f3-b57b-e73b28117254",
+            "Core Tech": "b4bf4af4-6928-4b9e-b85a-359715755309",
+            "Innovation Lab": "bb85e977-bbb6-4584-8172-94db9481eb52"
+        }
+    },
+    "Murphy Inc": {
+        "uuid": "fc8bedbb-e574-4c68-92b9-ad657ee3aa53",
+        "departments": {
+            "AI Solutions": "5dfe0dd8-3989-4316-a3ae-14d278476126",
+            "Biomedical": "6a8fe4d6-9b2d-4110-86ac-6e04d2ad9c9d",
+            "Robotics": "1c2c25f2-8e69-4483-8d0c-f8cbecfd8096",
+            "Civil Systems": "179d404e-507b-48d2-9f14-163b932ec6aa",
+            "Cybersecurity": "fbe67bbc-7822-4622-ab17-331f8ad0f04d",
+            "Aerospace": "27a0be24-3d4b-4a90-b868-eea139042a9a"
+        },
+        "divisions": {
+            "Product Dev": "d98dafe0-00e8-4004-b9af-9f9d603d3fde",
+            "Core Tech": "029ff70b-22e5-46a9-a451-c6a24dff3d4e",
+            "Innovation Lab": "3c1b7aae-0d49-4a40-a53c-4785396477c7",
+            "Engineering": "6b375bfb-6f07-4ea0-afe9-620de7230595",
+            "R&D": "db1f46b6-0275-419a-8be4-cded43d098b0"
+        }
+    },
+    "Ramirez and Sons": {
+        "uuid": "73aaf20e-bac3-4749-9921-d9f3b82e171a",
+        "departments": {
+            "Robotics": "99cf020f-503f-4b52-a4e6-5b17d8019760",
+            "Aerospace": "bd3a30a1-5dac-4d6c-a7cc-fd08a338deaa",
+            "Cybersecurity": "29acc5bd-8e50-4f3f-b33f-04be62bf4d1f",
+            "Biomedical": "7d31adfe-9db3-46ad-9025-ed1de9c2ecfc",
+            "AI Solutions": "a73319cd-7851-42ef-ae7e-ecb08262d5ed",
+            "Civil Systems": "9b387a14-acba-4cd6-9e9a-cf5ef58302d7"
+        },
+        "divisions": {
+            "Innovation Lab": "adeac9b9-ae6c-49bb-aed1-f195a29fd34e",
+            "Core Tech": "dbf8806c-aa29-4820-8a14-b4d77e8ad3ad",
+            "R&D": "cdad4fd0-7286-40d5-86b5-401176f6829c",
+            "Product Dev": "1ebc4289-136e-4047-9171-a73615714c2b",
+            "Engineering": "fc85f477-30b4-45b6-a3f0-5abb80ea5b3f"
+        }
+    },
+    "White, Moore and Anderson": {
+        "uuid": "92126352-3c42-49e1-9e50-d62392a7e945",
+        "departments": {
+            "Civil Systems": "dd3cca78-1607-4133-b8df-a126b4f2f94f",
+            "Robotics": "8d590bc8-7ac6-4c4d-8d2d-4076f9839f1d",
+            "Cybersecurity": "fbbf89d8-c19b-476d-900b-8d0a40428c21",
+            "AI Solutions": "c177117a-172f-4b76-bf28-e58592441568",
+            "Aerospace": "3c3c317f-9407-425c-9bfe-0aac308c155d",
+            "Biomedical": "5ee7efeb-7bc4-4d29-93fa-d248d09dcc20"
+        },
+        "divisions": {
+            "Core Tech": "7c2b5d1c-74bd-45a7-a01c-d180a2d21e8f",
+            "Innovation Lab": "9249bca7-9535-4fa8-a251-5361874a03ba",
+            "R&D": "2a0a1e4e-0a4c-41d0-b2f7-9479c7d0a7b5",
+            "Engineering": "4b704987-ecea-406f-a4e4-9d0f13786711",
+            "Product Dev": "050d2216-9eb0-413d-add5-ac15c0d744d4"
+        }
+    },
+    "Patterson-Strickland": {
+        "uuid": "45fdad51-e6ac-4466-a416-669a68b6b0d7",
+        "departments": {
+            "Robotics": "fb98c6b1-c8bf-4c21-b27d-2793f61a93f9",
+            "Aerospace": "0254d732-b0c3-4470-9143-c7a209957448",
+            "AI Solutions": "7976c680-f3b4-4d60-8548-9e4f95396d64",
+            "Biomedical": "6d763953-f4d9-420f-880c-6e6c4d1ca3b7",
+            "Civil Systems": "d7da6c27-5830-49a2-9bf0-6556adffe317",
+            "Cybersecurity": "4e70b814-bd5d-406f-bbcd-167088e28a60"
+        },
+        "divisions": {
+            "Engineering": "f7109e86-f16d-4eac-8f72-dc253374afd2",
+            "Product Dev": "92b9d9dc-c23d-4bdf-aa7e-b0a9ee56e06b",
+            "R&D": "37d68118-8e20-42c8-af8d-ed2a5a72657a",
+            "Innovation Lab": "3bdfa52f-1372-45b5-aa18-2ae58ce68a10",
+            "Core Tech": "7356c57c-7b85-4718-a7b5-c5995e27aabe"
+        }
+    },
+    "Bonilla, Jones and Russell": {
+        "uuid": "5b5275c5-6e05-4227-8537-98c12f6f8c22",
+        "departments": {
+            "Robotics": "fe30ec4f-01b7-4e3b-b5bc-14eee20ba2c5",
+            "AI Solutions": "d1c2d7a7-ee39-4db7-8963-873980570130",
+            "Cybersecurity": "7aacbffa-07ce-40d1-a245-c8244ad3d48b",
+            "Biomedical": "8ade9133-13d0-4b04-8f14-f1bba4101a7c",
+            "Civil Systems": "9166e6d4-dd05-491f-a9b7-f707e63842af",
+            "Aerospace": "580948f2-5d17-446e-a83d-3f4dd73ba9c7"
+        },
+        "divisions": {
+            "Engineering": "60dacf13-3d9e-4489-b7ea-a88ad400c890",
+            "Innovation Lab": "fd997447-ba3a-41d9-9e0d-8e6224a8cb22",
+            "Product Dev": "cd0ca405-2d45-44d4-8aa5-b302ff59e445",
+            "R&D": "30cd3bac-766b-4c00-ba3f-bbd41033072c",
+            "Core Tech": "375041f2-7f86-4373-97b6-5393a1fc5429"
+        }
+    },
+    "Rodriguez, Barnes and Booth": {
+        "uuid": "6fd1ddbe-f3a8-41b5-950c-ff47b395b8ef",
+        "departments": {
+            "Aerospace": "5a3fbb44-27cb-4529-87d0-fa7878c16e60",
+            "Robotics": "4f701c78-28f1-4a67-921e-6776d5de003b",
+            "AI Solutions": "94829e23-4e1b-4bd5-89a5-0e4a9fb89573",
+            "Cybersecurity": "a9d39138-3535-4286-b95d-6fff5c48d2b8",
+            "Biomedical": "d6ce840b-ece1-4776-bb53-a84bae892a51",
+            "Civil Systems": "43959205-5f38-4df9-8118-ac2e958dc276"
+        },
+        "divisions": {
+            "R&D": "e5d20b74-1171-4f15-b07b-b77b0d7c188f",
+            "Core Tech": "f4ac4c37-1a94-4626-a4d1-d68c28b73f59",
+            "Innovation Lab": "cecbf937-c65d-46fb-81ca-29825c0f4196",
+            "Product Dev": "6428c328-1c00-4f2a-b580-f31490340028",
+            "Engineering": "c3ddc578-6826-45f2-a110-2c4c09c434ba"
+        }
+    },
+    "Boyd and Sons": {
+        "uuid": "ec578be9-f11f-42fb-a52a-99c9ec5a4aa9",
+        "departments": {
+            "Biomedical": "d6fba394-f27b-46b5-9550-6efd7660db5c",
+            "Civil Systems": "45c5167d-6d72-49ec-9d7e-7facf47c6615",
+            "Aerospace": "781392cd-d32a-4869-bffe-193bb9e175f4",
+            "Cybersecurity": "342009ce-1bcb-46e3-8a85-682505852214",
+            "AI Solutions": "d38e250c-fea2-4f03-b0ef-2c7afaaa32ca"
+        },
+        "divisions": {
+            "Product Dev": "906ab1dd-bb3c-4a4a-b86e-9f8bd89a88b6",
+            "Innovation Lab": "851ff30b-75bd-48e9-ba93-adc49b86cbe0",
+            "Core Tech": "d96a9f8f-777e-4e3d-ab70-b2fb789c9b7e",
+            "R&D": "b59730ec-25fe-4aba-8fcb-c4f2b433480e",
+            "Engineering": "8cfb9365-9cb5-4471-89a7-7edfcc9a3330"
+        }
+    },
+    "Johnson, Sanchez and Meyer": {
+        "uuid": "00fb897f-1a2e-4aef-abb3-29cf51cb112f",
+        "departments": {
+            "AI Solutions": "01bd626e-7b67-46f0-98e8-056c109e0918",
+            "Biomedical": "db912c29-1af5-4afe-81a0-8020daaa69a8",
+            "Civil Systems": "6a76c508-05c2-4d27-8619-fbcae42b9a23",
+            "Robotics": "3d5dc402-108f-4131-bdf3-811287f39d51",
+            "Cybersecurity": "3df14314-357b-4c9c-b400-636d9e687849",
+            "Aerospace": "0b5913ad-bfaa-468f-b724-c72298a10c01"
+        },
+        "divisions": {
+            "Core Tech": "be6cd8fc-3f4a-4391-88ff-fa7ccdac1444",
+            "Engineering": "40730051-8ea3-46d3-b86b-9871ffb745aa",
+            "Product Dev": "98a6f16c-ce33-4c69-8d0b-c318586c7e41",
+            "R&D": "53795db7-4cba-44fb-9410-4491e629b6e1",
+            "Innovation Lab": "68df9c09-0524-457a-83b1-d0ea0646594d"
+        }
+    },
+    "Carroll Group": {
+        "uuid": "3589f9a5-ded8-489f-b1d5-7aec4305aa0b",
+        "departments": {
+            "Robotics": "175f5351-ba37-4bf7-9aee-68b687e1e49d",
+            "Civil Systems": "1618cfce-fb8d-4c8f-8fea-19b79aff998e",
+            "Cybersecurity": "e38e269f-be36-4b1a-a831-0aa89559ea1d",
+            "AI Solutions": "140d785b-482e-4405-ac62-60415f432639",
+            "Aerospace": "869bcf71-d25a-4ed3-988c-106b5f7e2ca9",
+            "Biomedical": "105f5f7b-8c07-442b-8168-bfda075907fd"
+        },
+        "divisions": {
+            "Engineering": "512fa6db-0c4b-4ab6-838a-451da5115ad4",
+            "R&D": "6b8ddb32-533f-4f96-8a1e-e66dc6cde118",
+            "Product Dev": "93f21e7b-1688-48f0-b4cf-9cd579ca0b1c",
+            "Innovation Lab": "b7da5866-8e23-4279-ad2d-088204a985a9",
+            "Core Tech": "8f5ef558-f250-4db0-a8c8-7dec9e2a3a27"
+        }
+    },
+    "Young-Atkins": {
+        "uuid": "e462ed1f-9dd9-48ee-bd18-6c0e37994ea4",
+        "departments": {
+            "Robotics": "a242e3aa-b5b5-46ee-a629-4d4b609b5a43",
+            "AI Solutions": "66d33a63-ef34-4f9b-a0a3-9be6376e8368",
+            "Aerospace": "88038d44-3394-47a1-9a77-e12fe752e5cc",
+            "Civil Systems": "77850bc0-c0a1-49fa-bc47-eff1f5f5f674"
+        },
+        "divisions": {
+            "Engineering": "6627494f-bdf1-4b34-bbff-b2192955c94d",
+            "Product Dev": "a83441cb-2010-4231-b8ef-4e09eb1b36e6",
+            "Innovation Lab": "5f88f46a-41a3-4cb6-817b-a1a2b1e629de",
+            "Core Tech": "6284017d-f337-480b-bff8-292dd07ebf34",
+            "R&D": "4749b205-29a1-4c01-b894-9bf1ea53828c"
+        }
+    },
+    "Graves, Crawford and Williams": {
+        "uuid": "05c5cc1b-fca5-4034-a55b-375756a5d611",
+        "departments": {
+            "Cybersecurity": "a3e4274c-46d5-40ff-8e66-a32cc11d63b6",
+            "Robotics": "ee4b1fe0-734f-4d67-839b-834538c32503",
+            "Biomedical": "30c2125d-c8bb-423a-9891-28228b34f522",
+            "Aerospace": "5e61690c-9816-4bbc-965d-b018c8024b64",
+            "Civil Systems": "c80e99fd-0ef9-4668-87d7-43d956191fb1",
+            "AI Solutions": "1624e08c-c119-413e-80e7-076f77b524e7"
+        },
+        "divisions": {
+            "Engineering": "468bef14-38a3-4842-a2f2-8ac41d642ca5",
+            "R&D": "d96a5485-e5a8-4fe0-a01f-dbcf6dbec20f",
+            "Core Tech": "a507f496-0c72-4aab-81c6-8fced1bc2b09",
+            "Product Dev": "60f23b5e-3347-49f6-bb3a-f5a7731b2dca",
+            "Innovation Lab": "419d04ed-81a7-4a41-a11c-672590155da3"
+        }
+    },
+    "Castillo-Johnson": {
+        "uuid": "b2bb8844-4b52-46a8-a818-b0da93c9737a",
+        "departments": {
+            "Robotics": "6f21e754-4ce1-4539-a975-4f2da9e6fc38",
+            "AI Solutions": "18a9c1c0-3136-488c-85d4-0e1f8ffe4bb0",
+            "Biomedical": "230cbc83-9652-45b2-b1f9-abd7da1ce0d4",
+            "Civil Systems": "9ce51908-dca7-4905-b7e3-07d94ab608f9",
+            "Cybersecurity": "812867e0-35bb-4428-a0d6-a73f42b56ada",
+            "Aerospace": "2333f445-d203-46e0-88e3-5237901b6590"
+        },
+        "divisions": {
+            "Engineering": "a4117710-7b49-424f-8e05-6d6ffe2ca29d",
+            "Innovation Lab": "c67acd3e-e87e-42ba-8b4e-f6b55bd0b97a",
+            "Core Tech": "d3819eab-0338-44b0-b9bf-b8a202e93360",
+            "Product Dev": "e4a5ba92-e478-4ef7-b27d-835faf61565e",
+            "R&D": "e24350f9-763b-4941-afef-a07b63d0e81d"
+        }
+    },
+    "Green PLC": {
+        "uuid": "00f76964-4a1a-48ad-92c9-b0d5045c42e4",
+        "departments": {
+            "Civil Systems": "77e00d21-d658-4e71-8860-e1705aa77df3",
+            "AI Solutions": "4faae21e-53d7-4393-9cc0-d6ea164dc988",
+            "Biomedical": "254f9c59-92af-487d-9808-0e2219119e8f",
+            "Robotics": "a976a06b-027f-4993-9eb8-56f6c047f837",
+            "Cybersecurity": "ec585b17-5805-4487-8c80-a1721f1692f5"
+        },
+        "divisions": {
+            "Product Dev": "2511e6a3-3418-4554-bfce-c94a0b46b2a6",
+            "R&D": "4f71dd00-256a-4c12-8b13-2096c6ad5611",
+            "Innovation Lab": "835ec7bf-af8d-48e5-9dd6-f4dfc46f66ba",
+            "Engineering": "6a0040f8-3201-4984-b075-30cbb6063d34",
+            "Core Tech": "7961f198-c61b-4cf1-9716-2446ae3a37ea"
+        }
+    },
+    "Gutierrez LLC": {
+        "uuid": "6ad8784b-6a13-4fb4-96fa-ca4b127d0c15",
+        "departments": {
+            "Aerospace": "070c8a81-89ef-4b79-9e6c-5ee1f0c8a511",
+            "Civil Systems": "cbc45661-7350-4f28-9e9f-b0e9e977318b",
+            "Biomedical": "84af2a80-8114-4dd5-94ba-ed21d02642d7",
+            "Cybersecurity": "b49f0853-9a2c-41d5-9f9c-bb672eb0d5e7",
+            "AI Solutions": "87f3217b-787d-4ca9-b78d-271d296dce7a",
+            "Robotics": "6bff1cbb-3355-4991-a6ac-56fb4528de55"
+        },
+        "divisions": {
+            "R&D": "884035e3-8a66-4414-9df4-ea4800558c76",
+            "Engineering": "70cf6380-3341-4755-99ef-ae20236e227e",
+            "Product Dev": "3864c848-3400-4a6d-8ae6-1f1799dbec64",
+            "Core Tech": "0aab7705-0711-4eb9-aa2b-80b426de77c8",
+            "Innovation Lab": "180840da-bad1-46ba-b808-3b8d97929f12"
+        }
+    },
+    "Johnson Inc": {
+        "uuid": "ac3d768b-6153-4cd0-a775-af89f122ea04",
+        "departments": {
+            "AI Solutions": "a27f2ac2-7760-4ffa-baa2-8016345d317b",
+            "Cybersecurity": "403d7944-a168-4614-8746-f093e4511c5d",
+            "Biomedical": "e631df2d-f4d5-4aa4-83e0-56c41fac2d01",
+            "Aerospace": "ed7e70d7-5304-4dfb-a580-4aeeb7787655",
+            "Robotics": "acceda55-b5e5-4446-a9e4-e9e148ab4a9a",
+            "Civil Systems": "b51e1122-f189-45c7-ac74-75c89d7ae693"
+        },
+        "divisions": {
+            "R&D": "558d9300-271c-4e7c-b999-0d28a2cf9ded",
+            "Engineering": "e501927f-c392-4fdb-b103-3a114b836574",
+            "Core Tech": "79de5d67-1357-4991-8c20-7265cad7aca0",
+            "Innovation Lab": "62acec05-7531-480c-b355-fb4854521bc3",
+            "Product Dev": "5281b608-c1c3-482a-9e72-b92bae1b6640"
+        }
+    },
+    "Black PLC": {
+        "uuid": "61d9d199-c2c6-4335-8022-47b6164df529",
+        "departments": {
+            "Cybersecurity": "50e6dec2-8639-4ad3-964a-df9718dc55f6",
+            "Aerospace": "04b2e371-48b4-4e74-8641-d6986d27932f",
+            "AI Solutions": "4645190f-5d35-4450-91a5-afbe82e7c51e",
+            "Biomedical": "7b72bc8c-8018-454f-b3d4-d0e644fa7364",
+            "Robotics": "5f3c97d3-721e-4254-ae85-9681ccecfe74",
+            "Civil Systems": "051f2fd2-00aa-42b2-9b1c-349d61d4bfa9"
+        },
+        "divisions": {
+            "Innovation Lab": "1a6a8bbc-c7ec-4b5f-a3ea-bbab27daa7fa",
+            "Product Dev": "cbacbab6-72c7-4841-9b14-d3e74032dc3a",
+            "R&D": "7cf74fc7-242f-4eeb-90d8-86829a5546b4",
+            "Core Tech": "e34ab401-2916-443a-93a1-4d897895224c",
+            "Engineering": "c8b5a0c6-b2b6-43c0-b5e4-af8ca8c09c91"
+        }
+    },
+    "Washington-Davis": {
+        "uuid": "250d39c0-39a6-4d77-b99f-cc0b5ce0e1df",
+        "departments": {
+            "Robotics": "305f9cd3-919c-41c0-b06d-e67737eb7920",
+            "AI Solutions": "09310ca1-961d-42ad-9681-98175af0195a",
+            "Biomedical": "3626e2bb-4904-4d18-8ad5-9f238488bac8",
+            "Aerospace": "26774245-760b-429d-87ca-3f1da92a065a",
+            "Cybersecurity": "3f31ec8b-5a39-4ce2-8bfa-bccd5f58e18f",
+            "Civil Systems": "d98dc135-717b-46c5-84c1-ce011541c91b"
+        },
+        "divisions": {
+            "R&D": "1a51d03c-94cc-4c25-9a04-03bcd2fa0e25",
+            "Core Tech": "7c3d1d21-5b6f-4ba2-8136-eda425ab4afa",
+            "Product Dev": "0d3d3252-f03e-4083-85bd-effcaae44c29",
+            "Innovation Lab": "45b88dde-6b9b-4e56-b666-2874c5b24acf",
+            "Engineering": "a035a193-544a-41f2-8463-42a9523a61f7"
+        }
+    },
+    "Aguirre Ltd": {
+        "uuid": "bf13b380-56b0-4c6d-bd84-566b3e9f6c2a",
+        "departments": {
+            "Biomedical": "2f3d4d0b-9262-4f57-9e41-101651b329fa",
+            "AI Solutions": "aa552c27-38a9-46ba-ba0d-cacdcb4c2425",
+            "Cybersecurity": "f1e796d7-b1df-420d-96bf-718da9fb69da",
+            "Robotics": "9da2cc2c-de5c-4342-b2a5-b5cf4eb400e6",
+            "Aerospace": "646b3116-efe1-4bf1-8030-5475f5bf4f80"
+        },
+        "divisions": {
+            "Core Tech": "89079ebb-6bfa-4b1a-97bd-a4dd2d10ffec",
+            "Engineering": "559a99a2-4284-412c-bc30-112dbf12e8d4",
+            "Product Dev": "977fbea9-2d4f-47d0-857c-1e887c346762",
+            "Innovation Lab": "afdea529-8f88-4502-af12-f45af07cca93",
+            "R&D": "c9275440-5f5c-4cda-823f-c365e8ec15e6"
+        }
+    },
+    "Shaw Ltd": {
+        "uuid": "5dea57be-514d-4b1f-8abc-adff5b4cbbee",
+        "departments": {
+            "Biomedical": "6b387f69-7900-4409-a938-a1d03c18e430",
+            "Civil Systems": "9801eea7-6363-40a5-b734-e1896da23cdf",
+            "Aerospace": "20235ca3-30d2-4d91-91a9-7443e8a434eb",
+            "AI Solutions": "e57a10bb-aa2f-4ece-8ba3-0c67856a75b0",
+            "Cybersecurity": "531770f1-4af3-4d39-8943-d9f47fde8157",
+            "Robotics": "066fa72a-98b7-4859-b8ce-ce75021a24e3"
+        },
+        "divisions": {
+            "Product Dev": "a5d626d2-d9f4-4d7f-baf0-4697658b2661",
+            "Engineering": "65d90dd8-9a0b-4233-8463-e138a05e056f",
+            "Core Tech": "d937f96d-73aa-4614-89c7-3de2aeeda955",
+            "R&D": "e90bc92a-856e-4222-9f19-0b72aeb0d586",
+            "Innovation Lab": "7c326e56-20b6-4995-86b5-bf78c4f084ff"
+        }
+    },
+    "Campbell, Smith and Williams": {
+        "uuid": "6f247299-e2cf-4f08-9c5e-f6adfd8a794f",
+        "departments": {
+            "Civil Systems": "55771188-8ead-461f-8c3f-a8a1cd87179f",
+            "Biomedical": "8610891d-fd85-4cb0-9c4c-d9963cbffe14",
+            "Robotics": "1f275e92-1c2e-4780-8f57-794f1fcd47e7",
+            "AI Solutions": "5d10bf1e-f442-4fb8-a093-a6f6d3de0141",
+            "Cybersecurity": "5f12c533-9929-4bf8-9e8c-3921f9dcf32e"
+        },
+        "divisions": {
+            "R&D": "9589f42f-8287-4c0c-93e3-d0f1a858dba0",
+            "Core Tech": "7727bdac-0748-4055-bf44-b51a4c149b30",
+            "Engineering": "589c2007-de3d-4521-a3dd-f92e9d1b6963",
+            "Innovation Lab": "f7ee30b2-7a07-476e-adaa-eb2db4db1249",
+            "Product Dev": "0d430bb9-75f7-4e3e-9b7a-3aef5b18b15e"
+        }
+    },
+    "Lambert, Adams and Wright": {
+        "uuid": "68e0bb6b-b6b3-4605-b68c-5b17524fc7bc",
+        "departments": {
+            "Civil Systems": "98394760-1252-4a97-8aaf-c8b656437e23",
+            "AI Solutions": "cc5039a9-9ebd-4028-ba99-c0ef6177dc07",
+            "Aerospace": "e701d8f1-ee44-46e8-b32a-7ddd6f1c5c69",
+            "Robotics": "19c9a1e6-36b0-4bfc-ad9b-e0d7cab163b2",
+            "Cybersecurity": "a2365ad9-a317-4d7c-8326-589fc5bc77bc",
+            "Biomedical": "f0aefb07-0052-4387-80b7-f1faf3a4f698"
+        },
+        "divisions": {
+            "Engineering": "400f98da-d42c-4485-8e74-5ae1e363b1b5",
+            "Core Tech": "761f371e-1195-4f90-a517-16c47219a7ce",
+            "R&D": "4b8bcffc-e525-4636-865c-0231e45db504",
+            "Product Dev": "572e6764-1ce2-4447-8d6a-b4f33d02cfae",
+            "Innovation Lab": "83487009-3513-4904-b5fe-ba8294478d26"
+        }
+    },
+    "Cline-Ford": {
+        "uuid": "b9b6ddf5-bbdb-4372-971d-d0d60dae4358",
+        "departments": {
+            "Civil Systems": "6283fba4-d62c-4dab-8d2f-a5023459b1d6",
+            "Aerospace": "d0ba1d7d-8599-415a-a48f-af77cd7d12af",
+            "Robotics": "fcffa7ea-8779-4c22-8388-49bcb3ca2b8c",
+            "Cybersecurity": "bdd3b291-f539-491e-a23e-27752df0d47b",
+            "Biomedical": "fee6427f-2b36-4f00-9586-0441043c79dd",
+            "AI Solutions": "09072c47-d2b7-4f1a-ba87-2814ac669eef"
+        },
+        "divisions": {
+            "R&D": "c418ede5-6a8b-4299-9280-4808e4029fca",
+            "Innovation Lab": "9083440c-7004-4f1a-b21f-3d5a8862b1cb",
+            "Product Dev": "e5212a0b-a020-46d5-a905-0ccb61ff51e4",
+            "Core Tech": "61a3634e-1e21-4a43-be51-44d8cd13dc9b",
+            "Engineering": "96546dd2-64ba-45f8-bcf4-fabc017885d9"
+        }
+    },
+    "Taylor LLC": {
+        "uuid": "d404bc3b-d41e-4eb2-bec2-db7cc9a4f33d",
+        "departments": {
+            "Cybersecurity": "6389a292-1507-4623-a18a-143556deac6f",
+            "Aerospace": "645ae6c2-9b6b-4268-a155-401fe4af616b",
+            "Robotics": "7e19af1b-88c1-4c86-8846-fc09d76bae7b",
+            "Biomedical": "d4a5ba25-acfe-476d-85f9-daa12bf10d00",
+            "Civil Systems": "69f094bc-fc4c-4dc7-aef5-f6922b4ce5fa"
+        },
+        "divisions": {
+            "Core Tech": "a6d8d56b-8628-4335-aeb3-27314435160d",
+            "R&D": "499e334c-994a-4354-aee1-eab2eb21ac08",
+            "Product Dev": "40c91269-9833-47af-8568-9912eb18cb5b",
+            "Innovation Lab": "3b2b80a7-de55-45da-91c5-b6c207d35598",
+            "Engineering": "660b7327-a25e-42d2-bd1c-e0652ed1ba25"
+        }
+    },
+    "Fisher-Grimes": {
+        "uuid": "5079ed54-7d03-4363-a5be-75c3ffebb260",
+        "departments": {
+            "Robotics": "ca35a5bd-273a-4adc-99a0-604d3dc6ad67",
+            "Biomedical": "7c28f21d-1955-453b-89d5-9964a9352808",
+            "Civil Systems": "a9600d82-0eb7-4a6e-a1b3-2acec2e55b19",
+            "AI Solutions": "1421afdc-4490-4c66-ad9f-f7634177edbc",
+            "Cybersecurity": "f1efb282-3fd2-4ff9-b15e-dfa5043f0c6d",
+            "Aerospace": "8ad258ee-6a21-4d7c-b80a-0b35347c8995"
+        },
+        "divisions": {
+            "Core Tech": "957e360f-5f3a-43a9-b95a-1b909cb82c44",
+            "R&D": "7bf65e06-79d4-4e63-9042-aa34bc8f8780",
+            "Product Dev": "2a096165-1443-4f48-a5b0-03fb507b223c",
+            "Engineering": "43655c5b-feec-4752-bb3a-6d7b5aeb0268",
+            "Innovation Lab": "2d5727ae-851a-48bb-8188-d00385c479b1"
+        }
+    },
+    "Dean-Perkins": {
+        "uuid": "fe0a094a-e580-4713-a3a2-7efe01de9246",
+        "departments": {
+            "Biomedical": "85c0bae7-44b5-4521-958a-91b77d029cfa",
+            "Civil Systems": "99aa3e96-b7fa-484e-b0b8-e68c80ffd753",
+            "Aerospace": "a796c2a3-37c6-4991-9148-4688606328cb",
+            "AI Solutions": "f39a9cf3-e1e3-4615-bfda-ba5101d6ed4d"
+        },
+        "divisions": {
+            "Engineering": "092b758a-be09-497a-8f0b-4f70890d76d1",
+            "Core Tech": "b80bcbc2-e9c1-4cad-a1b3-2a1232203f20",
+            "R&D": "97477857-8b7e-4ad3-9a33-86d7b89e9c55",
+            "Product Dev": "1bbd7748-12f2-49a6-acb6-9fcacafcb4c1"
+        }
+    },
+    "Mueller-Miller": {
+        "uuid": "060ef347-d658-4971-ad0c-ed920cd08425",
+        "departments": {
+            "Robotics": "c39cda66-bfb9-474b-a29f-75eaa17c639f",
+            "Cybersecurity": "1c9b56f3-190c-468a-a729-86bbee66886e",
+            "Biomedical": "e36e5ea2-7f1e-484e-809b-0096ce32c200",
+            "Aerospace": "458abe15-1bf1-4395-81ad-713284878f68",
+            "AI Solutions": "d207c93b-bb1b-411b-8cae-d2223797283f",
+            "Civil Systems": "dbc7a510-4bb7-4f88-85a3-21ba2f3d7832"
+        },
+        "divisions": {
+            "Core Tech": "a1d036d5-9aa1-4fa3-9c00-4fe3bf6f48b6",
+            "Product Dev": "ac52cb56-ecf1-4b59-b582-964f61d552de",
+            "R&D": "bee496e9-835d-490a-992e-0b2044d591b1",
+            "Engineering": "0d0639e9-4c5e-46d7-9f88-bee8ce7290fb",
+            "Innovation Lab": "3629fe68-640c-4c8c-8bdc-4dba420eaa64"
+        }
+    },
+    "Smith-Gilbert": {
+        "uuid": "8ad1b17a-dee4-404f-acfd-20d1f353fb50",
+        "departments": {
+            "AI Solutions": "bdcdf0b3-aa7a-408e-a5c3-a5d891093437",
+            "Civil Systems": "6c24a28f-dc2a-4f0d-8618-86ea60d50e96",
+            "Aerospace": "c10a0882-a848-49e0-b207-1412a62e4439",
+            "Biomedical": "987c481b-5373-4ba9-9c89-73bcd94ce26c",
+            "Cybersecurity": "becd78bc-9d84-459f-a497-da6ba96a6ee2",
+            "Robotics": "2f2d625d-2264-4748-aeec-78b0f712ea29"
+        },
+        "divisions": {
+            "Product Dev": "ebcb69bf-0d71-48a3-99f4-affc1b2cba11",
+            "R&D": "62d2144f-eafa-40f1-a06a-13da97fb5d81",
+            "Innovation Lab": "6c87c857-66c8-4ad8-9ac0-e37e5f5f0a19",
+            "Engineering": "f81974a3-85d1-42ea-a19e-fa03ca23a6c9",
+            "Core Tech": "ec0c047d-023a-432d-bd66-01de7d00ae6c"
+        }
+    },
+    "Ryan, Sanford and Johnson": {
+        "uuid": "6f6bf2bd-daff-4e37-807c-0afc50593ec5",
+        "departments": {
+            "Civil Systems": "292eef27-144d-4105-9b05-6e0bf5889cad",
+            "Aerospace": "e033e66c-1990-4dd0-a926-e0f40f3012b0",
+            "AI Solutions": "3ac340b3-b9c8-4bdc-8637-d9fc4e0961f1",
+            "Robotics": "5f6c540d-21fd-4777-bcc2-ed908a3379f9",
+            "Cybersecurity": "bbaac5d8-4153-41fd-ac9d-2b7edaa58780",
+            "Biomedical": "03fcb2e5-9e21-49d0-8839-ad381378fe65"
+        },
+        "divisions": {
+            "R&D": "ff8f7133-26ce-42f9-9093-c78c70a1b583",
+            "Core Tech": "ff49d3af-bf72-4811-b3f1-bb1de66f2a97",
+            "Engineering": "b3412673-681b-4bb4-b153-faaf0021a9a5",
+            "Product Dev": "52e31fe8-ea79-449e-98c0-90c5fd971025",
+            "Innovation Lab": "40291ac1-e08d-4a55-b7e9-4c82df7ea6d5"
+        }
+    },
+    "Terry, Murphy and Torres": {
+        "uuid": "6a8f7ede-db57-4291-82ce-86117c9b7fa7",
+        "departments": {
+            "Aerospace": "65136779-10f1-4b97-8950-918ff3466f8c",
+            "AI Solutions": "9ef690c1-8a2b-4af8-a697-ab19d90cf579",
+            "Biomedical": "4abedeca-8280-43ae-86c7-4d6503fd2cfe",
+            "Civil Systems": "5afff891-9efd-404e-a9bd-937514f3071c",
+            "Cybersecurity": "2599bbc2-b3fc-4506-89a7-f80d25527318",
+            "Robotics": "f71399f4-4259-46d3-90c6-3ec9b2071e76"
+        },
+        "divisions": {
+            "R&D": "39b24122-e9de-4cc4-8909-f2a0bd3dd5ff",
+            "Core Tech": "05ee8646-0018-4ba8-8aeb-50a4cc187f1f",
+            "Engineering": "362892b3-cc74-4b0b-a5ee-7abdd79aa8f8",
+            "Innovation Lab": "910ccb4b-839c-48ec-8ae4-ec737ea7f648",
+            "Product Dev": "4a504d60-6688-4b0d-af7d-bc3d1eb0e453"
+        }
+    },
+    "Lawson Inc": {
+        "uuid": "a9a00564-bf5e-4291-96f0-8bb604fc5683",
+        "departments": {
+            "Aerospace": "f075b53f-1bc2-48f0-9c27-6b1c76956b03",
+            "Biomedical": "4417398f-ac44-464d-9bed-05ffa0bae732",
+            "Robotics": "bfa791fd-237e-4115-8f04-bbaca16e0db9",
+            "AI Solutions": "68ac0ebc-bbcd-4e53-89a8-ac7abda45cc2",
+            "Civil Systems": "bcbd36ad-c941-458d-8eec-1a7f9664f71a",
+            "Cybersecurity": "713026d3-3458-4aba-aa48-bd95f5c4cd09"
+        },
+        "divisions": {
+            "Engineering": "5f5593d7-2df3-4488-96eb-621cea47fc86",
+            "R&D": "d69372ea-34e2-406c-8ae8-105e6367a861",
+            "Core Tech": "a8b7b149-c076-4a76-93d4-bbe6b3e08566",
+            "Innovation Lab": "a4f35543-adf2-4229-b2e6-6795159af58f",
+            "Product Dev": "6d6f77b7-39ed-4e7c-a086-3eb21c39ea60"
+        }
+    },
+    "Hill, Michael and Deleon": {
+        "uuid": "9e7df226-5b26-44ec-9c98-7dd23cb456b5",
+        "departments": {
+            "Cybersecurity": "f13379a7-668d-4741-91b6-f74ae9d1f986",
+            "AI Solutions": "21250867-2dfb-4ce9-8402-949bb644540c",
+            "Robotics": "89dab6cd-93d7-4159-9241-5e9698699bca",
+            "Biomedical": "ea3e5e6f-13d3-4f12-8a67-1b3312194878",
+            "Aerospace": "ea0cb05d-db91-41c5-bb45-68acdf6f48fc"
+        },
+        "divisions": {
+            "Core Tech": "a48a1f1f-2854-48e7-83ec-23773ab723d1",
+            "Product Dev": "76811b98-d357-4849-90cf-5cbef2229bd0",
+            "R&D": "b32eb73e-df5b-466e-bc49-750ce348e4a2",
+            "Innovation Lab": "197d501b-7b87-478b-95fd-6e3b44a3ada6",
+            "Engineering": "5ea2ba8a-6e8c-45c5-95fd-ce96c7c051fe"
+        }
+    },
+    "Peters-Cohen": {
+        "uuid": "52f2c78d-c880-4491-8302-a60aad52af9c",
+        "departments": {
+            "AI Solutions": "e13fa84b-2e2d-4396-931a-845a512b5972",
+            "Aerospace": "72257cc5-e36f-4742-a568-0b3e525b091f",
+            "Civil Systems": "62fa8fc4-7f55-487c-9946-d58c1646103d",
+            "Robotics": "1315ac76-9d0e-4b7a-919c-be853b2e7b44",
+            "Cybersecurity": "0f525caf-e10a-47fa-96ca-1ac1f4a14d2b",
+            "Biomedical": "18763624-b373-4e80-b85a-930acc7e9386"
+        },
+        "divisions": {
+            "Engineering": "d1a386d5-9f66-429b-92d8-97f625de66e6",
+            "Innovation Lab": "92b7c977-3ed9-447d-a660-fb096ec36bd4",
+            "R&D": "7460d30c-f7fe-4647-9c7d-84ad02020fda",
+            "Core Tech": "a2280018-a57b-4ca1-a2ef-7324b6f29e80",
+            "Product Dev": "a0953902-3170-4f22-8352-5aa5704993c7"
+        }
+    },
+    "Ellis, Hodge and Terry": {
+        "uuid": "48796ba3-691a-4753-89e1-f19054711a41",
+        "departments": {
+            "Aerospace": "4c65ff3b-2b29-422a-9793-8a9c114808b2",
+            "Civil Systems": "7e241d5b-34cc-4bd7-9e4d-52c30ecddf38",
+            "Cybersecurity": "454b848b-0fd2-4511-96f0-705accb95647",
+            "Biomedical": "fa5af1a3-d427-440f-98c8-f99204d5b6a3",
+            "AI Solutions": "1327e7a6-cd60-42fd-9b42-cffbe4f41149",
+            "Robotics": "1d622e7d-483a-44fa-ad27-4850a79a8a6a"
+        },
+        "divisions": {
+            "R&D": "19154c02-7117-472a-bae5-3ef27c7909eb",
+            "Product Dev": "f6044dca-a91a-4a48-be81-c05a926b2d7e",
+            "Core Tech": "ee31bb24-6d3a-4225-a515-f2ee2ed8bbf8",
+            "Innovation Lab": "46eef845-81c0-499c-b52c-0f606fbdbd34",
+            "Engineering": "be89fb53-c9ba-49d3-9e64-23d681c5a4e3"
+        }
+    },
+    "Brown, Rasmussen and Santiago": {
+        "uuid": "be2b902b-680e-48e4-ac4b-b83a4294d3e8",
+        "departments": {
+            "Robotics": "6f1511b3-4f49-47d1-a812-d5cf805dfa40",
+            "Civil Systems": "c09bf9ef-a7e1-4afe-93a2-d60acfb94cef",
+            "Biomedical": "5ee7b69b-cd30-4141-948e-5088ad3529d9",
+            "Aerospace": "a3317ce5-3490-4fe2-bfbf-8ab494e72d5e",
+            "AI Solutions": "c9945ad7-a231-47c7-bccd-a87b7bff79f4",
+            "Cybersecurity": "058c1c53-8a23-4db5-a2ec-45ac61c32846"
+        },
+        "divisions": {
+            "Engineering": "fd9da5f5-5bb1-45db-a9e3-fdb41bee9c57",
+            "R&D": "92419a12-1683-4bd6-82a2-4223a8bd218a",
+            "Product Dev": "e4660f80-368c-48a8-baf0-ec8f507d52b5",
+            "Core Tech": "dec4bb66-fa1f-4761-aa9d-14dcbc184d4e",
+            "Innovation Lab": "4b41da47-d86b-444f-aed1-072a7718ccca"
+        }
+    },
+    "Tucker, Pollard and Sweeney": {
+        "uuid": "1120b2c1-e269-4750-bdd2-ab2512ccc166",
+        "departments": {
+            "Civil Systems": "ced780d8-9c3c-487f-aedd-3ac527b1b848",
+            "AI Solutions": "009e246b-915a-40c8-ac9d-126e3e2f898f",
+            "Cybersecurity": "934cc102-5dc6-47e0-ab04-cafef3a42129",
+            "Robotics": "fb84e946-f130-4353-b5c9-a19a2dca37cc",
+            "Biomedical": "dab61483-a70b-49ce-90d1-0ff63fcca024"
+        },
+        "divisions": {
+            "Engineering": "f0a8af20-fe00-4866-ba04-2ca3dcdea386",
+            "Core Tech": "05d787f2-99e3-49ef-833e-dd71509751e9",
+            "R&D": "22878a86-ff0b-4d68-be84-f1e0c8c11e93",
+            "Innovation Lab": "96f44930-fd1d-4ae7-a1f9-382cf5f53d32",
+            "Product Dev": "ed880546-3823-4c87-8477-f27f30ccf6c2"
+        }
+    },
+    "Patel-Hopkins": {
+        "uuid": "e651ac0c-424a-48d2-9e5d-e568b9a4b725",
+        "departments": {
+            "AI Solutions": "f41f5164-e826-44de-9ba7-21c489e59ca8",
+            "Biomedical": "ab984a29-6492-4ff2-aab6-c62ead924137",
+            "Civil Systems": "a51cd198-d4e4-4242-a6ef-4c2c493ea970",
+            "Cybersecurity": "26ca677d-a039-4ccf-b71c-da2918d71d93",
+            "Robotics": "81bab811-e471-49e6-8f79-14f8bfcf8f7b",
+            "Aerospace": "b036984b-75b3-4e65-a4fd-14bc91e1d91e"
+        },
+        "divisions": {
+            "Product Dev": "69191d03-ad3a-4243-ba00-a43a227152c1",
+            "Innovation Lab": "ea05dfe2-48bb-4142-9542-c4a185037156",
+            "R&D": "6515979b-6e2a-49c4-9b0b-7c6896810498",
+            "Engineering": "7e2213ac-1050-42cf-96b9-e18c0ea98104",
+            "Core Tech": "9392c280-03e8-402b-9de5-355faf06b5d0"
+        }
+    },
+    "Perez-White": {
+        "uuid": "1a3a7c3d-d047-4f9e-a1f7-6a7b01e127ca",
+        "departments": {
+            "Robotics": "0db5d14c-bdae-4fff-93cb-37e982183deb",
+            "AI Solutions": "78a1f723-226f-43d0-ad9b-d569e1cc5906",
+            "Biomedical": "77b96be8-1335-4f20-940a-f7bdb1a5e10c",
+            "Cybersecurity": "39df7ecf-511a-43c4-9ae2-f23b33a14fa9",
+            "Civil Systems": "c0723773-e04d-41b8-aa10-83b0b8422763",
+            "Aerospace": "688ad841-5296-432d-912c-dc231bac1d10"
+        },
+        "divisions": {
+            "Innovation Lab": "f3cb5220-a9f0-4fad-b6bd-a0f6614b1e9b",
+            "Core Tech": "601e266e-67ed-4bc5-baea-bc673e489c38",
+            "R&D": "7f45c249-d7ee-450e-9266-a0cc237ed3d4",
+            "Product Dev": "7c4503c2-be3d-4a17-9bb2-61ed12d1a683",
+            "Engineering": "4f8e2198-33c7-470a-a4fc-410557dfd379"
+        }
+    },
+    "Coleman-Hernandez": {
+        "uuid": "cb614877-d9d1-4a88-8f39-c232644e1143",
+        "departments": {
+            "Robotics": "e9f81d26-f892-4257-a1cc-8631daf32705",
+            "AI Solutions": "3cf820ba-3340-4700-86f5-d9a10e79d84f",
+            "Aerospace": "0877463d-38c4-43cd-a4e7-cf92d6e2f8f6",
+            "Biomedical": "d5214047-495a-44de-adff-be2bd9c9b943",
+            "Cybersecurity": "1b5850d6-a857-46f6-8524-67d07a04bd14",
+            "Civil Systems": "99d610a9-ea43-49cb-af24-cc66024d344e"
+        },
+        "divisions": {
+            "Engineering": "29f041ee-d9d3-4977-ab3f-183843375184",
+            "Product Dev": "e31a588c-5e6e-467f-9adb-e6f31a90bcc2",
+            "R&D": "5bba86e1-3218-4d32-ac42-fee4bd9da94d",
+            "Core Tech": "4a199846-3116-49e3-80ae-1f84a52e2a17",
+            "Innovation Lab": "d55b882d-308e-4917-a2a2-6829c5cb22c9"
+        }
+    },
+    "Stuart Group": {
+        "uuid": "689b9eac-94b9-4ca6-a2f0-a03fb05cbebd",
+        "departments": {
+            "Cybersecurity": "398572a6-6a9d-4e33-99f3-8490c73b3c29",
+            "AI Solutions": "86fe9e1e-7583-4f15-9235-463dfb6515ac",
+            "Civil Systems": "0a096ce1-c54d-41b6-bc4e-fe085604ce88",
+            "Biomedical": "5b70c15d-82ef-41e1-97c1-fddb956644c2",
+            "Aerospace": "d6f2551b-d4a0-41f7-8be0-86def1bc65a8",
+            "Robotics": "2d1fccbb-adaa-443f-9153-89b503757fed"
+        },
+        "divisions": {
+            "R&D": "c105db57-c944-46e1-8b87-6859e7909e79",
+            "Core Tech": "0e1580c3-7b5d-472d-84b8-5f926d6e8a7a",
+            "Innovation Lab": "1d9d0c1a-99b7-43b5-a7cf-83ba527885dc",
+            "Engineering": "4d8cab32-414d-4ff3-b1b4-928d6c6d9b78",
+            "Product Dev": "acb89c43-3cb9-4b8d-9cf1-1d981cbc9517"
+        }
+    },
+    "Cooper-Howard": {
+        "uuid": "56c137d7-6106-448c-a3ad-1f6aa64592a3",
+        "departments": {
+            "Civil Systems": "b804eaa1-aea7-4ea7-878b-cbc4391034bf",
+            "Robotics": "5948007a-382d-4926-8586-b11a20afe6b8",
+            "Cybersecurity": "478d7878-00af-41ce-b629-574fc75ef885",
+            "AI Solutions": "581e5ed9-f360-4c8f-86ee-7e1c60a5987e",
+            "Aerospace": "ae53294a-d736-4f6a-baac-601e383c009f",
+            "Biomedical": "87d1afa0-57f5-4424-b04b-05a64b1c7e92"
+        },
+        "divisions": {
+            "Innovation Lab": "35cf991b-d268-40cf-83c5-cff8ade88b78",
+            "Core Tech": "df5631bf-7e4b-4246-884a-40dd21e562bd",
+            "Product Dev": "14a0b883-6782-419a-a6c0-bc765745b566",
+            "Engineering": "7b9419fb-9be0-4472-80da-62f740d7f2b0",
+            "R&D": "687f61d5-acbb-4b4f-8f10-a5b4533e9818"
+        }
+    },
+    "Hutchinson, Estrada and Shah": {
+        "uuid": "bcea5504-1b55-4458-9341-23d152bd2912",
+        "departments": {
+            "Robotics": "cf2cd5fe-b4db-451a-a03f-dd8a3f8f9c16",
+            "Cybersecurity": "c7d8e079-52a0-4331-a51f-f77ef90ac876",
+            "Biomedical": "c6f5d748-6a66-4baf-a07d-a51489046c7a",
+            "Civil Systems": "8a98a6c0-dd13-427b-944e-697cfd79e5cd",
+            "AI Solutions": "0b5b1cba-4302-430f-a495-d8821fbac022",
+            "Aerospace": "31360f97-d2ff-4242-9952-d3d8e1458800"
+        },
+        "divisions": {
+            "Innovation Lab": "42d651bc-16d7-4bae-94b2-d9e0663fea2e",
+            "Core Tech": "14f8e086-de12-406c-b7b9-e0ca2f977a3d",
+            "R&D": "ed28dc73-e891-4ab5-84b6-d34547d082b3",
+            "Engineering": "2a65d553-a29f-4a41-8826-7943e24be6bb",
+            "Product Dev": "3810c97d-1a0b-4971-9c97-5c05981b28b4"
+        }
+    },
+    "Shelton-West": {
+        "uuid": "dc826a62-babe-4a04-bb74-e61084dba3ab",
+        "departments": {
+            "Biomedical": "3037e2a5-6712-4809-8ce8-d3384877710c",
+            "Robotics": "6db02e04-80b6-4fb7-acb3-134d8583ae6c",
+            "Cybersecurity": "1b1f000f-f98a-48d5-a67c-8f18d64abfd5",
+            "AI Solutions": "b0038a62-a661-4466-8fb7-78f9276dad25",
+            "Civil Systems": "7637c03e-0546-48b0-a9d7-765c5a1add66"
+        },
+        "divisions": {
+            "Engineering": "f57eaa71-f489-44d0-b674-afb72586d6a3",
+            "Core Tech": "fc565f7e-0b33-43cb-8cee-7859a84ef206",
+            "Product Dev": "4bc123a4-7dab-4b05-9f62-ed2a0210437f",
+            "R&D": "18dddbe0-acb1-475d-a6c1-d2dfaad32115",
+            "Innovation Lab": "0b5f7389-8d53-4af0-b3ad-03d6fb6bebbf"
+        }
+    },
+    "Smith LLC": {
+        "uuid": "77362ed5-89aa-4e44-b3db-5cb2ae11b97f",
+        "departments": {
+            "AI Solutions": "9cf54c9b-f843-4fcf-afb9-b86056560b1c",
+            "Robotics": "547c0932-7684-43ef-b2aa-0c62aa580f05",
+            "Biomedical": "1f4586ef-eb96-40a6-b8fe-aa46dc86ea70",
+            "Aerospace": "3d7753cb-6b22-436c-9c0a-dd6819544384",
+            "Cybersecurity": "80c1065d-cf36-42ff-8738-35e68fbd12b5",
+            "Civil Systems": "d824432c-3c6a-4c19-8204-478aa562ada6"
+        },
+        "divisions": {
+            "Innovation Lab": "c9b46ce3-e9f9-4369-b5a4-fb92e4007f96",
+            "Product Dev": "76afdb4d-8157-44da-b480-54c2dab3b47a",
+            "Core Tech": "a8169c3d-04de-472b-ab80-c9825df1b0ff",
+            "Engineering": "0ace1eec-aee8-438c-b091-c1b228a12e17",
+            "R&D": "158abc0d-5466-4d68-b881-143b16511fe3"
+        }
+    },
+    "Andrews Inc": {
+        "uuid": "253fbd80-e805-4f96-a397-0a41761ece84",
+        "departments": {
+            "AI Solutions": "cf70e924-f033-4519-a7b5-2152ad9cd8ac",
+            "Biomedical": "7969634f-4e39-4a5c-ac02-c8f8151246cb",
+            "Civil Systems": "e63075da-69fd-40b1-b8ba-0d7ba43f15bc",
+            "Cybersecurity": "ec2bc59e-7891-4dcf-989b-c0f92b237092",
+            "Robotics": "558d6e22-99c5-41f3-813e-b0ea7594df88",
+            "Aerospace": "e728bb40-7d67-40c7-8524-0750562f7fdb"
+        },
+        "divisions": {
+            "R&D": "3a61f60d-af7d-4fe3-9755-8a8c3b7f9837",
+            "Engineering": "2f93f379-ef9d-4837-9c02-c2c13cae81f3",
+            "Core Tech": "387e01a4-31f4-42be-9304-7df1fb799220",
+            "Product Dev": "6696f8e5-16ca-4c36-9357-d8c47ad5e7e1",
+            "Innovation Lab": "b577b708-6bff-4722-9dc3-1b2800da01e6"
+        }
+    },
+    "White-Decker": {
+        "uuid": "cf8293e2-d729-4279-84c3-d2713d5b735d",
+        "departments": {
+            "Robotics": "a3693992-8cad-4527-8685-cbcaf2bf4445",
+            "Cybersecurity": "1748f1f1-d64b-4ff9-a69e-48a2734be52c",
+            "Biomedical": "eed6219b-98ae-4016-af67-efe54e89a9e9",
+            "Aerospace": "2e872088-2c53-43cd-b29b-21402e749899",
+            "Civil Systems": "c4a8e49b-752d-4633-a509-060316f2baf5",
+            "AI Solutions": "356b315a-b75c-466b-b8e8-eebf8f1504c8"
+        },
+        "divisions": {
+            "Core Tech": "0e9d971e-b4bc-4d80-9b76-fee5036a7eaa",
+            "Product Dev": "32238c22-9f04-4655-a1e3-6f5e65b79e46",
+            "R&D": "9204614c-cbee-461f-a867-d9b0168135c3",
+            "Innovation Lab": "385bd8ce-68df-4305-954b-f596df0f07de",
+            "Engineering": "f3b330c0-25ed-40a8-a82b-a7424f29033f"
+        }
+    },
+    "Roberson PLC": {
+        "uuid": "8af25a3b-b4c3-4449-a900-fa7004eade36",
+        "departments": {
+            "Cybersecurity": "037d3efa-7b49-4e30-9dcb-f0c60b96c457",
+            "Biomedical": "aa7f2890-67c3-4270-ac17-e60dfa48f976",
+            "Aerospace": "3dad6f29-6e8e-4ea0-889c-61c3dd215fcb",
+            "Civil Systems": "aba47529-3cf5-4db8-8478-2c6dc9d5f7b7",
+            "Robotics": "f58b80bb-b209-4fc2-af63-95f835d658f9",
+            "AI Solutions": "2f76ad70-8896-4b8e-8d75-edea4f1d2407"
+        },
+        "divisions": {
+            "Innovation Lab": "24f78cec-b4e5-4d4a-adc7-4b56e0d47c99",
+            "Core Tech": "228771a9-826b-4b34-8936-12330b4b817a",
+            "R&D": "aa1c0ca1-a5c7-43a1-b125-913296b8e3c1",
+            "Engineering": "f8707093-5312-4d52-8414-9980dd7dc5cf",
+            "Product Dev": "30a354e5-5d6f-4f2b-8029-dcc5be6a483e"
+        }
+    },
+    "Walker Group": {
+        "uuid": "e2ab5276-d8e2-4c5e-b662-de1f5cbf04ee",
+        "departments": {
+            "AI Solutions": "29832882-2809-438c-82fa-7a1fe81bcd19",
+            "Cybersecurity": "e61dbd70-4fe7-4ff3-9784-0573c35033a3",
+            "Robotics": "3c2a4d72-7ca6-4747-9e2b-c028170721c1",
+            "Aerospace": "725eeb91-e7fe-48e4-a2b9-6e2a01d6b22e",
+            "Civil Systems": "90da7cbe-cd46-4a09-b290-9cf75fae2fe7",
+            "Biomedical": "7b67d6f7-e1fd-45f7-a1d1-3ddbabbdeddb"
+        },
+        "divisions": {
+            "Engineering": "258a6a9e-5b40-4fc1-a267-ace0fced7c3b",
+            "Core Tech": "9b54eb05-5a69-4ee2-b463-a3d9dd63ed69",
+            "Innovation Lab": "3b132d8d-7a58-4d58-9954-036a0d878bb1",
+            "R&D": "4cb5585b-73e3-4341-a108-c30377a3d1dd",
+            "Product Dev": "2881730b-0dcd-4815-a44a-f2c6a8773b72"
+        }
+    },
+    "Schmitt LLC": {
+        "uuid": "19aae58e-2dfd-4656-9aa4-82bdabf5d15b",
+        "departments": {
+            "Robotics": "2e622faa-9168-40cf-9038-45e00d67ca90",
+            "AI Solutions": "95579cf1-b8b4-4931-b057-68f5d3c7aeb4",
+            "Cybersecurity": "04e40793-7dbb-47c0-b732-9628db73d5b1",
+            "Biomedical": "8783422d-1884-4fc0-b252-4dc9350eaeb6",
+            "Aerospace": "43ec70a7-af29-4654-9e5c-145df4bcbf64",
+            "Civil Systems": "743938a0-7d88-42d9-af36-bafe064bf97a"
+        },
+        "divisions": {
+            "Innovation Lab": "f5596b9c-f33c-4c17-9ed1-5dc3c536900a",
+            "R&D": "00ff1662-43b6-48f3-9b2f-fbff2753b292",
+            "Product Dev": "0ede043b-7bce-4eb1-8694-eb677dca6756",
+            "Core Tech": "928ecc12-01dd-49bc-a67e-26b1c2925918",
+            "Engineering": "a4a78fa3-0168-4eea-afca-b050e0e6587d"
+        }
+    },
+    "Woods-Miller": {
+        "uuid": "e4a6fcf2-8274-454e-b912-8a254fb33a25",
+        "departments": {
+            "Biomedical": "4cee8f61-2ca3-4813-b33d-1b48c130882c",
+            "Aerospace": "86a16a58-5aad-4c7e-a3df-2287c90f0fe7",
+            "AI Solutions": "395e2af0-4ca3-4bf2-b974-9d7ede3fa9e8",
+            "Robotics": "a8129b45-3bdb-403b-b7ea-bad44b17ea36",
+            "Cybersecurity": "bdc92e50-59ac-4d4c-bcc2-342c860cc6ec",
+            "Civil Systems": "410ab64b-09d5-4d59-addb-d5bb135e9b96"
+        },
+        "divisions": {
+            "Engineering": "11da7ff7-4c0c-46b4-8ed1-5e7e5f1ccea5",
+            "Core Tech": "32c1f1fc-9337-4b05-a47e-e516439a5a55",
+            "Product Dev": "7056e9c1-789f-44e0-9179-403df8906a48",
+            "R&D": "0c53366e-ebaa-4573-8d0d-10babfb462d7",
+            "Innovation Lab": "9784700a-b6b3-4611-996f-cc5fc30985df"
+        }
+    },
+    "Robles, Thomas and Rodriguez": {
+        "uuid": "d027dac8-5e8c-44c0-8ec4-10971fbe6907",
+        "departments": {
+            "Civil Systems": "db5d69d2-4070-4940-ae3f-a9eace7db57a",
+            "Biomedical": "f6bd488d-7851-4591-9833-b4b74b7f6efc",
+            "Robotics": "eaaa0f87-80fc-4b4f-98d5-896a0305d59c",
+            "AI Solutions": "3653fdb1-3c29-4034-9f55-1d7ac85c4e47",
+            "Cybersecurity": "4e17cae2-d5c0-41e9-9954-b5e627bffcfa",
+            "Aerospace": "8900c86e-1d35-4d79-b378-e253787e5819"
+        },
+        "divisions": {
+            "Product Dev": "3ea25e8d-a822-4494-9aa7-69a3b6fbc571",
+            "R&D": "4649cba6-707f-4729-84e4-0ed5bc3b35e5",
+            "Core Tech": "dd5219b4-bae5-4a68-96fe-0e4a62989bda",
+            "Innovation Lab": "83eab926-6570-43a0-a3e2-e139329583d3",
+            "Engineering": "7afd2215-bd83-43b1-abcb-69d4546401bd"
+        }
+    },
+    "Thomas LLC": {
+        "uuid": "20ffc3ad-b613-4816-81b3-e44f926b7bb9",
+        "departments": {
+            "Aerospace": "712cb896-1771-4772-8de7-5ec245234f60",
+            "Biomedical": "cf333195-4890-4c4b-829b-c8a83c860a4a",
+            "Robotics": "03fbe872-21d0-40e4-80cf-95e29afd62ef",
+            "Cybersecurity": "dc38df0f-35d0-4878-936c-cd9621d44848",
+            "AI Solutions": "1a477957-e800-49a5-aa3e-8954950e04ef",
+            "Civil Systems": "9a51b5a1-a294-4950-8003-00fa7944dcd3"
+        },
+        "divisions": {
+            "Core Tech": "369dfda3-3ff5-4f50-a69e-f41374c13daf",
+            "Product Dev": "61278c46-87d2-4e95-a1d8-dcc83c09ba75",
+            "Engineering": "53a1b655-5a5b-469a-aedd-d5324a0e7d1f",
+            "R&D": "eb7fe9db-5d5c-461f-8837-58f5598578ae",
+            "Innovation Lab": "52e60420-88da-4525-b128-56f5f801ca1f"
+        }
+    },
+    "Brown-Coleman": {
+        "uuid": "4624e131-b1c1-4083-92ab-3e5e130ed2f3",
+        "departments": {
+            "Cybersecurity": "8f82d440-a2ba-41b2-95bb-f7bdf7886c3c",
+            "Biomedical": "c6a260b7-ea7e-45b4-8136-e05bc4e7ab21",
+            "AI Solutions": "e7275493-69d1-4ad6-abb2-cdfd15a9c4db",
+            "Civil Systems": "6e5c1727-720a-4e08-97a8-84452b421f96",
+            "Aerospace": "3268e7ea-1356-41c2-8169-84c484d7814b",
+            "Robotics": "62c8cca7-8cd0-4c23-b592-22e0076fc3b8"
+        },
+        "divisions": {
+            "Core Tech": "13b0e951-58aa-4300-8b35-7dddeb839646",
+            "Innovation Lab": "b6439d28-0782-4d73-ba54-bd94c07913db",
+            "Product Dev": "77a82f69-e4ff-41d4-b932-e9bbfef99ede",
+            "R&D": "88e036e3-e8e1-4ecd-8e0a-2ac078caa454",
+            "Engineering": "326c083a-29e6-47df-9f0d-a3b1299c04e0"
+        }
+    },
+    "Lynn-Mejia": {
+        "uuid": "9f8c7cbf-db19-4c0d-b04d-c8cbc6e3d821",
+        "departments": {
+            "Robotics": "8002460f-0998-49da-a46a-242cabfd9093",
+            "AI Solutions": "223eaecd-3e46-47ab-b929-f5146199db56",
+            "Aerospace": "46a545f5-4ee1-4e1d-ab88-f5a85f0d4059",
+            "Civil Systems": "ea1c563b-314d-40a0-8846-9fe1f61c41d7",
+            "Cybersecurity": "95924d7c-d68a-4475-bfa7-21fcda43051a",
+            "Biomedical": "a85e02a0-a695-490a-8c24-d2890a7b6962"
+        },
+        "divisions": {
+            "R&D": "952ff14a-032a-4611-be54-c68281357c80",
+            "Innovation Lab": "c4eae14e-9a67-4d54-bf0c-e80a04e84e7b",
+            "Engineering": "9458a4f2-2339-4e8f-9159-41bb24074bb1",
+            "Core Tech": "917f44d6-f8bd-4013-9168-5c531fff0aee",
+            "Product Dev": "62de8a8d-97eb-4c75-876a-9fc2353a7740"
+        }
+    },
+    "Young-Rodriguez": {
+        "uuid": "45b84b60-a871-4c71-92a9-9e8a47622140",
+        "departments": {
+            "AI Solutions": "3f49a83b-8978-4c26-905f-0ad48b434e56",
+            "Robotics": "77c692b3-bc28-4716-bd27-5d450cdeb78a",
+            "Civil Systems": "b2d2aaf1-7507-4d57-b129-73537f283ced",
+            "Biomedical": "b294e0da-9171-406f-9a3a-dade75d930de",
+            "Aerospace": "8dbd6bf8-31ed-4cd1-b566-1cd9b0ad841c",
+            "Cybersecurity": "76a7e469-c478-4a9b-a975-4d122f9e759e"
+        },
+        "divisions": {
+            "Innovation Lab": "a4b1304c-0a1f-4a6a-8c25-7de363e15308",
+            "Engineering": "705ca00f-0c50-4de0-bff4-f1be5ea024cf",
+            "R&D": "d375bfe0-c7e1-4691-96be-9fed9b51a17a",
+            "Product Dev": "e71fef77-9541-4f72-88f6-856e292cb70c",
+            "Core Tech": "99e3ac82-2cb4-4f9c-90a8-44ed3eb11b57"
+        }
+    },
+    "Lee, Jackson and Walker": {
+        "uuid": "c0fa91d7-54b6-490b-a354-e4e1504b6876",
+        "departments": {
+            "Robotics": "69b0dd6b-d38d-4d08-9ffb-64cdabe8a944",
+            "AI Solutions": "bf35e863-c063-4730-97c2-3fbb1e65fccf",
+            "Civil Systems": "b7067e1d-c87e-4a76-818d-16f43a908e8e",
+            "Aerospace": "f45c509e-26dc-448c-b10f-6f4b6904bb22"
+        },
+        "divisions": {
+            "Product Dev": "b8cbfe34-3775-4479-a7ba-b5fc9b5c40d3",
+            "R&D": "3c060f0d-51d7-4f60-abf2-dd58ef88ff0b",
+            "Innovation Lab": "7627e9af-ebad-4046-b445-a4b15ba4aa36",
+            "Core Tech": "263c11c5-adc0-4657-8711-e2397ad1d162",
+            "Engineering": "78a3119b-6fb9-4774-8e91-972221c83e1e"
+        }
+    },
+    "Davis and Sons": {
+        "uuid": "bad8b86e-95fd-4b17-99b5-fc08002b9d3c",
+        "departments": {
+            "Biomedical": "67408670-8387-4bd1-89f2-811d466305f5",
+            "AI Solutions": "bcad04a7-fc29-4ef0-a87e-35a99843f69b",
+            "Aerospace": "210ec232-25e2-4fc2-8040-9a6da740dd07",
+            "Robotics": "eae25f68-e874-4487-8a60-24337d32e683",
+            "Cybersecurity": "c427d2a6-35fb-4054-a6ea-b147e4a98e56",
+            "Civil Systems": "0d634477-84a3-4654-8409-161498552b7c"
+        },
+        "divisions": {
+            "Engineering": "d1bcd86a-ac9f-4309-a7c7-57d7693834d8",
+            "Product Dev": "c861d307-9f45-42f7-ab3b-0c19c82a6cac",
+            "Core Tech": "2c957a0a-3222-4b13-9ff7-a8f4716f1228",
+            "R&D": "ce799b36-4a6e-4703-90b9-4ff08ed6637f",
+            "Innovation Lab": "8b29e330-b040-4c1f-bfe8-7d7a411134be"
+        }
+    },
+    "Diaz-Boyd": {
+        "uuid": "9a109214-4473-4436-a669-bee6d01b411f",
+        "departments": {
+            "Aerospace": "7601dd5a-5456-42bd-8988-3e0027b62a9a",
+            "AI Solutions": "a82714cf-d70f-4c27-9aa4-c66f1e03c085",
+            "Robotics": "e8e86249-5192-49bd-be68-5f4f03db0603",
+            "Biomedical": "a50df1b6-f1d1-4b40-8f91-1625df8100cf",
+            "Civil Systems": "1069637c-6489-4850-950c-8477b335e01b",
+            "Cybersecurity": "bcf6a7df-6528-49a5-9624-585ca31112d6"
+        },
+        "divisions": {
+            "Engineering": "70f3cd30-8424-4945-b048-a4748edd0288",
+            "Product Dev": "212c39a0-4227-4d69-bb21-846d9180b478",
+            "Innovation Lab": "e8a7e3c5-e58c-4e7d-b10f-c04f57a76309",
+            "R&D": "529f6e55-b78b-49e2-804e-ecc2e4c4e323",
+            "Core Tech": "ee9e7070-a1ce-4704-9607-2631eaf12e2b"
+        }
+    },
+    "Herrera Ltd": {
+        "uuid": "a408c9dc-3b6d-4bbd-9ef9-8f0d98e698a6",
+        "departments": {
+            "Cybersecurity": "69169fa2-99a1-465c-9ee0-32711f155ede",
+            "Robotics": "fe03764e-87e6-4060-acbb-083fb75169d1",
+            "Biomedical": "21a6783d-e4bc-47b3-8b5c-c81be02b8232",
+            "Aerospace": "961d63e1-de36-4de3-8109-2be958a449cd",
+            "Civil Systems": "6377d1f4-dec3-45b2-9de9-1ab382825d4b"
+        },
+        "divisions": {
+            "Innovation Lab": "1bc86f22-2ea9-4d44-9a56-51d473693a9b",
+            "R&D": "c20dde2a-8341-4eab-a94f-ed25b1e74b18",
+            "Engineering": "69dc0161-59cd-44fa-9c98-00148a0e4605",
+            "Product Dev": "8e831ca3-d5ce-4237-85d9-a09e2bb8268c",
+            "Core Tech": "b3765ca4-2206-46fa-b1a7-4fa46263bce3"
+        }
+    },
+    "Andrews-Osborne": {
+        "uuid": "470bf509-9865-4a3f-89d5-76c4d990448a",
+        "departments": {
+            "Biomedical": "88390bee-1bc4-45fc-9d20-052319f1aa39",
+            "Civil Systems": "6e45a6e6-29f8-4b62-b90e-e19b66cd1b9a",
+            "Aerospace": "ca8ca237-6c17-4787-9fad-0bd579d19c7f",
+            "Robotics": "a18bfc83-0418-448d-85b5-94155d05fc11",
+            "AI Solutions": "aed8aede-6cab-4413-8237-19ae8343e69f",
+            "Cybersecurity": "93fc89ee-b178-4bcb-aeca-bd0339b345f5"
+        },
+        "divisions": {
+            "Innovation Lab": "b51047d3-2a97-42af-bbc5-4de5fc668098",
+            "Product Dev": "fc169253-5827-48a4-abce-052529f04973",
+            "Engineering": "76f201dd-6ac6-42b4-b1a9-354822685d8d",
+            "Core Tech": "4f5ca497-55ad-4860-8e48-7ff2d7274612",
+            "R&D": "aebe0746-f516-4ebd-aa53-9c7e7b457165"
+        }
+    },
+    "Walker, Burton and Knight": {
+        "uuid": "ddd2154f-d379-43a0-b5c8-56758e991747",
+        "departments": {
+            "Robotics": "9a58918a-7f58-473f-849b-f843cd70df00",
+            "Cybersecurity": "be7c2eec-d091-4165-b4d2-dc961e79586c",
+            "Aerospace": "a480919e-22aa-4e8a-b57c-d7d56013d931",
+            "Civil Systems": "f90f1fcb-c765-4a02-8f2a-ab51df0a36a9",
+            "AI Solutions": "14bba242-cfc1-46bd-b58d-19efd140d1a9",
+            "Biomedical": "3011e322-5e0c-4b6d-8cfa-5ca4589ba3e6"
+        },
+        "divisions": {
+            "Product Dev": "aaba9d36-7456-45d0-89dd-1b07b7c1fb8f",
+            "Core Tech": "8a505694-4e6f-428d-bf7e-7e49b06b7a07",
+            "Innovation Lab": "0471bdfe-9939-475f-96ed-56c11af24429",
+            "R&D": "1e231440-66ba-4b9e-bb4e-a70411e7a991",
+            "Engineering": "0bc15118-1f6a-424f-8d4c-79d40e019f4e"
+        }
+    },
+    "Marshall, Clayton and Green": {
+        "uuid": "4bdd7f76-310c-43d9-8045-f1e0f9680126",
+        "departments": {
+            "Aerospace": "61055459-fb5f-42a2-aca7-93223870ce76",
+            "Robotics": "e653a070-d79a-4cb6-ae35-49cacaa07b8e",
+            "AI Solutions": "55d9c2f8-f142-49fc-a388-56cee46bbbd1",
+            "Civil Systems": "d727bf70-49f9-4708-952d-282386866657",
+            "Cybersecurity": "4d0ed3bc-dc49-4ca1-97df-92e7d75b21b8",
+            "Biomedical": "3f03b303-e0cd-4345-b9e5-3db29ab11fa1"
+        },
+        "divisions": {
+            "Product Dev": "7b2d1343-79c1-4630-967d-3c3ad43e41e4",
+            "Engineering": "e5f803af-11d9-4927-80d8-a4386d27b0d6",
+            "Innovation Lab": "366ec533-d4d6-49eb-b50f-0413294ff2d8",
+            "R&D": "fd30c513-9925-4473-a95e-e0bbe6cc8687",
+            "Core Tech": "40d78b86-33b2-4c63-890e-32ba1c52dae3"
+        }
+    },
+    "Fletcher-Banks": {
+        "uuid": "5fac2378-350a-4468-bb41-623452f1ed2b",
+        "departments": {
+            "AI Solutions": "7b26c74b-7a14-4b51-924b-282511fab73f",
+            "Civil Systems": "8c4c4429-27d5-4412-b1c0-c7f2ea5ac365",
+            "Robotics": "4dfcbe73-489a-4b2d-8dc9-cf4541747c1f",
+            "Biomedical": "c0795af4-16c8-4cc2-add7-6d938c2c71d1",
+            "Aerospace": "e7011dec-5128-4fac-9b7a-0d8da0a6654a",
+            "Cybersecurity": "ba35616f-08db-4a7a-9556-e0c5ec163881"
+        },
+        "divisions": {
+            "Engineering": "438fc55c-2cf1-4fd7-a980-095a98446d60",
+            "R&D": "79d4afc9-d846-402b-afd3-9505c893eb6b",
+            "Innovation Lab": "043c2b32-1b03-451e-ae4c-3a8eb8e4ff6c",
+            "Core Tech": "5331105c-2aa6-44b3-af40-b9274f088c3f",
+            "Product Dev": "c1581af6-399d-4a34-8c4d-ef69a2323da6"
+        }
+    },
+    "Daniels-Anderson": {
+        "uuid": "055f435e-aa91-4ca9-9ee4-2dc731f969eb",
+        "departments": {
+            "Civil Systems": "8a49d347-0cd1-437f-852c-2cc55b9e302d",
+            "Robotics": "6d3b1d87-4bbf-4186-b095-4f7e93ecbefd",
+            "Aerospace": "ad66831a-fe37-4ab7-af21-58e872190072",
+            "Biomedical": "2ce23d56-9e2e-465d-b432-c0b55944aa07",
+            "AI Solutions": "38212ece-b936-48ec-8eb0-2cbcfc162a99",
+            "Cybersecurity": "987d9ad9-00e2-4d5a-bfec-309df7426297"
+        },
+        "divisions": {
+            "Engineering": "10722e1d-cb74-40a9-8caa-f794120770a3",
+            "Innovation Lab": "50634b67-db13-4499-8b72-ef110b1c509e",
+            "Product Dev": "4c6a7fa2-565a-4e11-b4e6-7c634d276f9e",
+            "R&D": "e153088b-2a83-4e57-a247-153accc19ace",
+            "Core Tech": "1b4447a9-dc93-4d32-ad5b-2702bdab3d63"
+        }
+    },
+    "Burton-Lopez": {
+        "uuid": "0f4e56d2-26c7-4e8a-a792-7f2a2fce5f4e",
+        "departments": {
+            "Civil Systems": "a219012b-6cca-43ff-a362-ab8d19df82bd",
+            "AI Solutions": "54a74d14-8986-40a6-a2bf-ceb8e31f60bd",
+            "Cybersecurity": "8ac072e2-3607-4e92-8657-afb6916e7c22",
+            "Robotics": "00cc0c1b-1f77-4fc2-ad3b-f4c04e5792ec",
+            "Aerospace": "af6e2a3c-0981-4047-a16d-3904093d9b2f"
+        },
+        "divisions": {
+            "Innovation Lab": "01e28ee9-cba2-4219-ae6e-568b1d3165ba",
+            "Engineering": "f56af3b5-4a65-4abf-aa26-197e13164f7d",
+            "R&D": "f110559c-2541-4410-949b-ff3b82bc8839",
+            "Core Tech": "4e89c022-06ab-4b9a-b912-718d0499cc24",
+            "Product Dev": "6f9109ad-f105-4842-b45a-44d70850e948"
+        }
+    },
+    "Ritter and Sons": {
+        "uuid": "8ee40ccf-6400-43e1-a00e-ee0e47a7bb7b",
+        "departments": {
+            "AI Solutions": "6bc1c7d9-c880-43fb-b16f-741f81bd73ec",
+            "Biomedical": "b9b355d1-6125-4e98-a4cb-7c1595e0ed5c",
+            "Cybersecurity": "d078b743-075c-412a-b7e1-ad41be7af16a",
+            "Civil Systems": "86c97551-c697-4b6b-84c0-65766009f91b",
+            "Robotics": "000de4c7-7e33-4515-8755-216772e67ed2",
+            "Aerospace": "aff324ce-055a-45ec-85b4-7d0cc780db24"
+        },
+        "divisions": {
+            "Core Tech": "e62b0d48-2a99-4a5d-9582-ecc68149d0d4",
+            "Product Dev": "b76c1d47-a4df-4ee1-8ffe-59a304be9788",
+            "R&D": "53c63fbb-e5a1-4c6e-819d-cfd5564c15be",
+            "Innovation Lab": "990adfcf-5d1c-4023-b067-5c58699d3742",
+            "Engineering": "17ea3669-6c59-4e50-ac11-6ba56fc9d0fe"
+        }
+    },
+    "Young Inc": {
+        "uuid": "505718a6-a784-45f2-a274-a4bfa387c100",
+        "departments": {
+            "Civil Systems": "3fb1806d-d49e-485a-8f8d-ee00b5fd5fa5",
+            "AI Solutions": "26eb5a61-8a30-4ad8-8b2c-35cf877113fb",
+            "Aerospace": "437c2aa0-618b-402c-9df2-9a70b80ec645",
+            "Robotics": "0b0b1f50-3da4-4a1b-bcae-f349a681c111",
+            "Biomedical": "54224a0c-9fab-4c95-8dae-02c2fd6d28c4",
+            "Cybersecurity": "e9214aaf-9fd5-4153-901f-4e777a3a2e9f"
+        },
+        "divisions": {
+            "R&D": "09bfc0cb-0cf0-4641-993c-2fd89a5d2295",
+            "Innovation Lab": "08676401-1f59-4994-8e6f-06fdbdc24489",
+            "Product Dev": "a6463a0b-95f5-401b-be74-638ddc638953",
+            "Core Tech": "f1042ece-be33-4e2a-92b4-0c429208bb7f",
+            "Engineering": "da00e043-c9d8-4275-b733-d7a5f054be02"
+        }
+    },
+    "Perez and Sons": {
+        "uuid": "972a33b8-7a58-414e-b9f3-dfffe25afb09",
+        "departments": {
+            "Cybersecurity": "ba5cce81-3b84-4795-a9fc-bf1b584c9403",
+            "Aerospace": "4ac6be6d-fe9d-40b7-b85e-158c63dc2bfc",
+            "Robotics": "4fcd1f43-2254-420c-9c6a-e27273f96b94",
+            "Civil Systems": "f1067d92-18ae-4534-953c-f2b93ef662a7",
+            "Biomedical": "3a9606e3-bb49-44db-a576-26a3026ef5fe",
+            "AI Solutions": "c2c092af-16d7-436b-9ce4-c48dce390f0c"
+        },
+        "divisions": {
+            "Product Dev": "91eba93f-85d1-4e0d-a7ca-b7f070ada64d",
+            "Innovation Lab": "4a988064-6425-4db9-8c54-06f344e3eeec",
+            "Core Tech": "42b8df99-66a6-4021-987b-ae561d28ee99",
+            "Engineering": "49647508-df77-456f-91af-46656084b2d4",
+            "R&D": "c8b89791-525e-4207-a903-29fabd136b5d"
+        }
+    },
+    "Thompson PLC": {
+        "uuid": "3a149f46-bf61-45d5-960a-67fcf9f37368",
+        "departments": {
+            "Robotics": "332628f2-542e-4baf-a6de-2b740142fa6a",
+            "Civil Systems": "7364a1ec-e6a6-4150-8b56-3c25786631d2",
+            "Cybersecurity": "4d849813-b8cc-4606-8ab9-09b9ef86d07c",
+            "AI Solutions": "b26ee3c1-8599-49b2-902a-1ac7c390ef56",
+            "Biomedical": "9e4515ec-15fc-4fa5-90d4-7b8824c7b8ae"
+        },
+        "divisions": {
+            "Innovation Lab": "fe8fc3ed-48b6-41ea-b8a6-500046b585d5",
+            "Product Dev": "97cd713c-ba89-4535-916d-496212e6815d",
+            "Core Tech": "17b35c03-a679-4e81-afe3-53a7e4e98211",
+            "R&D": "78ee5d25-9d25-4cfc-ba24-b4a515b78cc6"
+        }
+    },
+    "Williams PLC": {
+        "uuid": "5d370bf6-54be-4302-80a4-2c8d9cf1bc7a",
+        "departments": {
+            "Cybersecurity": "814ac0b6-b72e-4109-9d34-a7400759f6e9",
+            "Biomedical": "795a8321-ee26-4788-965a-8c75abf5a4a9",
+            "Robotics": "10288606-9689-4bb6-930c-06d5ded50e49",
+            "Aerospace": "346393a9-1205-484d-ba50-ca0dcdbc63bc",
+            "Civil Systems": "33471942-9fb7-4f56-86ae-b00f96a0d3f0"
+        },
+        "divisions": {
+            "Product Dev": "e451cfb8-4c41-4540-86c5-8a02a0ac87b5",
+            "Engineering": "b948586e-90d9-480f-930f-9bbc37ff18f5",
+            "R&D": "625f8a99-78a8-4c54-b233-eeb370e0f88e",
+            "Innovation Lab": "6a0a23e5-094b-45a7-a31d-664798d250dd",
+            "Core Tech": "13d30cca-cb59-43ee-ae69-2068cd4431bf"
+        }
+    },
+    "Potter-Mcgrath": {
+        "uuid": "927886b3-befb-4721-b39f-958eccc0818a",
+        "departments": {
+            "Aerospace": "764659b5-19ab-4904-bd6b-b9a65a3fbcef",
+            "Civil Systems": "86939736-5fa9-4c18-b686-22b8aab40100",
+            "AI Solutions": "839d47f1-e446-481e-9503-70028e14af27",
+            "Biomedical": "dc8e2af7-f243-4cb3-a79b-ba8ec4b0a9db",
+            "Robotics": "a9e213a0-b442-43c4-9cd6-d5e0cf2b769e",
+            "Cybersecurity": "48282674-7c35-47d3-9f4d-f3b0f218efb5"
+        },
+        "divisions": {
+            "R&D": "9eccbab4-66bf-4a62-bde3-f2a196604a59",
+            "Innovation Lab": "1ab09873-bc03-4978-9d44-9cf74813f51c",
+            "Product Dev": "f0dc2bb2-2164-40f3-86f0-9e53fcf19c18",
+            "Core Tech": "be0de3f1-dcf3-466a-875e-19551ac5e06b",
+            "Engineering": "ec5afd2e-6b9e-4279-9241-5363a5f2ea7b"
+        }
+    },
+    "Kim, Ferrell and Clark": {
+        "uuid": "855f2fb3-85d9-4959-80ef-be10734ec5ca",
+        "departments": {
+            "Civil Systems": "c20f5d6a-f819-46dc-a216-161ea1fb59fe",
+            "AI Solutions": "f4c08cbe-ff2f-41f0-9854-3708d813d98c",
+            "Robotics": "dbccf3a6-4e9c-485a-84e8-6653b191e1e5",
+            "Aerospace": "446c2cd5-5eef-4a87-8100-18a1786e87c3",
+            "Cybersecurity": "ba5b6cdd-7ff4-4736-bcb8-3b99c59d97ba",
+            "Biomedical": "236d21fb-fb99-4884-95ab-e95997a2a24e"
+        },
+        "divisions": {
+            "Core Tech": "ad7ab0d7-fb73-4315-9911-24f27f568cdf",
+            "Product Dev": "8397a0e6-526a-4eb1-a7df-089df51c2ef8",
+            "R&D": "d37d9067-9bc9-412e-9838-2f32acb996c0",
+            "Engineering": "aa05fdb8-d2b8-4abf-9e41-d830341b6816",
+            "Innovation Lab": "65dad9cd-2d99-4e4a-a5f0-ebf7af3634ac"
+        }
+    },
+    "Willis, Thompson and Smith": {
+        "uuid": "a5eed4a9-5f8a-4961-8d1a-94859761b9e1",
+        "departments": {
+            "Biomedical": "19896cf8-da36-438f-93bb-0659fdaaeb8e",
+            "Robotics": "3054eca0-b4c3-4ed1-bb21-3c9b1c82a887",
+            "Civil Systems": "7968f1e5-8b94-49f4-a556-35a7eb29f954",
+            "Aerospace": "3f7eaef3-9a2c-4ac4-b6b2-a3b84c0fbc12",
+            "AI Solutions": "d252e925-0645-41eb-9eb0-45bf5a53cd2b"
+        },
+        "divisions": {
+            "Core Tech": "bbb56226-d023-4eaf-bb50-f06b7078d0ef",
+            "Product Dev": "2daf77d8-617f-4156-9fcb-30670f6741f6",
+            "Engineering": "f308b08f-a45b-46af-89c9-002f45136d8e",
+            "R&D": "1a5c171e-2b50-44c5-a70b-30dc66d69d7f",
+            "Innovation Lab": "dda7b698-0962-4d76-83c1-848299491d38"
+        }
+    },
+    "Golden-Mcconnell": {
+        "uuid": "94ff3ac9-861b-4c7c-944c-5102ef849e0f",
+        "departments": {
+            "Biomedical": "3186b771-9652-42a3-a7e2-21289389faed",
+            "AI Solutions": "9eb6dd17-9737-4a04-a7ac-8501b6b7d6e8",
+            "Cybersecurity": "84de66be-7809-4ea9-bb0d-7ff96aa6ed0e",
+            "Civil Systems": "36d1d079-898f-4301-80ca-98e11ab5cc89",
+            "Robotics": "49a2e809-19de-4385-912d-e1f308b7d9f3",
+            "Aerospace": "d1093b10-23cf-45a3-afb7-4dbd1f2396e7"
+        },
+        "divisions": {
+            "Engineering": "7a10c0de-59a8-4951-af42-fe61816bd8ff",
+            "Product Dev": "5f20bffe-b5f1-4ca6-af6a-004f3738ea94",
+            "Core Tech": "1d88cdfe-d6ff-4502-9b3b-e5040edce487",
+            "R&D": "80188cb0-8962-456d-b20a-15e092910c21",
+            "Innovation Lab": "3671bf5f-fb9a-4cba-beb0-9bf88dc5f4a6"
+        }
+    },
+    "Warren-Hernandez": {
+        "uuid": "bf3ecd72-5bef-4a62-9e81-c1a078d8026e",
+        "departments": {
+            "AI Solutions": "036726dd-c38f-4a10-b92d-12c0aaa28eb0",
+            "Civil Systems": "ce8b3fdc-e663-49a9-b2d7-e9d642b0a7a0",
+            "Aerospace": "63c6b752-f73f-43e9-b30d-ee9b832db1f4",
+            "Robotics": "936163a8-9f22-4862-ad10-011156c35c3d",
+            "Biomedical": "a4202471-18ce-4408-a95a-392035c34921",
+            "Cybersecurity": "090b1cda-2223-44a3-ad96-8c4468a7dcc7"
+        },
+        "divisions": {
+            "Engineering": "d03ab1a3-8932-4aa9-9f7d-c55e5a4a38fc",
+            "Core Tech": "3dd213fd-f27c-4310-80b5-3a14a4b77c65",
+            "Innovation Lab": "eb4eee59-1495-4ae0-be41-3ff12df6d4fa",
+            "R&D": "f2396fdb-0ec9-4845-b558-0b8669fe1b4f",
+            "Product Dev": "93ac7926-d90d-4b5f-af6f-cd3921aa5d2c"
+        }
+    },
+    "Murray, Copeland and Edwards": {
+        "uuid": "842d206e-0d37-4558-8702-b1954c11c568",
+        "departments": {
+            "Biomedical": "af5e2f99-9345-4025-b03c-252b123134c1",
+            "Aerospace": "81d916e1-3749-43d0-b806-df86bb82b321",
+            "Civil Systems": "df4c505c-df95-4427-8f5b-21bb298bec95",
+            "Cybersecurity": "1712ad2b-9fbe-4f03-9838-08d725920c78",
+            "Robotics": "b3a9865b-126c-47b4-9fcb-48000a0cec97",
+            "AI Solutions": "1ce18e25-52f1-4ce6-b193-1ecebba8e9a8"
+        },
+        "divisions": {
+            "Core Tech": "1f7c37f1-b5b0-4ca7-8c94-bbde53dcb274",
+            "Product Dev": "1c5558ae-2270-4ea2-a9d8-6cd5552a09dd",
+            "Innovation Lab": "926609f9-c7d2-4f2a-be4f-d6dcbe81c690",
+            "R&D": "1b83b8df-da60-470d-8a88-c916799ca741",
+            "Engineering": "2d20bebc-5a4b-411b-b646-b42949374696"
+        }
+    },
+    "Potts, Wilson and Rogers": {
+        "uuid": "eea67ddf-0f06-4a70-992a-fa49a78bb515",
+        "departments": {
+            "Biomedical": "12c9347c-cc05-40b3-beeb-d2e977d9f30c",
+            "Aerospace": "e41cb857-9af4-4df7-b591-a8ba155f2bdd",
+            "Robotics": "2e207e25-879c-46ec-8220-04fbd83bd078",
+            "AI Solutions": "04e4d575-1bef-43c7-a6a9-29c83fefefb6",
+            "Civil Systems": "70a764d3-159c-4c68-8fb7-73ca183914e0"
+        },
+        "divisions": {
+            "Product Dev": "8c3e3bb3-d914-4f59-8489-9e22b04a0ebe",
+            "Engineering": "dd9cf48b-a5e6-4308-a4d5-42416efcafc0",
+            "Core Tech": "27dc2e40-1271-4353-af62-9af7c45ec1b3",
+            "R&D": "e4c2c3cc-e276-4b59-b9a7-e0ef2c71ed4d"
+        }
+    },
+    "Allen LLC": {
+        "uuid": "8d07a319-ca58-4e45-91f9-d1333bc94502",
+        "departments": {
+            "Aerospace": "68b5ac72-1485-49ac-84b5-3d922f385cc9",
+            "Biomedical": "5b091539-641b-4fa8-8a11-c943e97e8a98",
+            "AI Solutions": "94a88421-4418-4abf-8f04-164b9292c9f6",
+            "Cybersecurity": "e721d499-6497-4121-93b4-26aeb3db5512",
+            "Civil Systems": "ae1a0e3b-bfbe-4a4b-b96f-dcfb498d2dbe"
+        },
+        "divisions": {
+            "R&D": "f50d3781-2873-46c3-8309-939a8b6c999e",
+            "Innovation Lab": "8ec6dedf-b17e-4e97-a2fc-c1ca0ef16fa5",
+            "Product Dev": "5fd52980-7f4f-4b79-a530-c9c4a300ee20",
+            "Engineering": "aef0c08a-b181-4064-beb6-031893d988fe",
+            "Core Tech": "8b0416ab-aa74-49ff-8c7e-29de20f499f4"
+        }
+    },
+    "Salazar-Simpson": {
+        "uuid": "765c088a-3002-4ba9-ae6a-9d152f05a9bb",
+        "departments": {
+            "Aerospace": "04193e2e-2c90-4f2a-841d-e969185b01af",
+            "Cybersecurity": "21a66ffa-44f2-46ac-80fc-b7fb5f8bc3a3",
+            "Biomedical": "c9cc385a-40d3-40d5-9e3f-47c7607bfce1",
+            "Robotics": "ba243620-bd46-4c18-a8b0-c14de3dc6bf4",
+            "AI Solutions": "7449087a-8018-414b-afd5-c88bf62a7002"
+        },
+        "divisions": {
+            "R&D": "ac986bf3-dd1d-4e30-882d-0ee87a646924",
+            "Innovation Lab": "c6282a7e-2d81-41f8-afb3-75cd93775474",
+            "Product Dev": "5f5ac943-b8ad-4caa-8538-9ad0dd8bc2a2",
+            "Core Tech": "5a8c0ad2-ba97-4cf9-a35d-f41825dca56b",
+            "Engineering": "deaeeb7d-e29a-4708-8cf0-3e07dbc34a85"
+        }
+    },
+    "Berry Group": {
+        "uuid": "fe2d2a0a-9ea1-4c7d-99df-3cdad06758ae",
+        "departments": {
+            "Biomedical": "12df2995-2321-4fa1-bf18-2af919168175",
+            "Cybersecurity": "49935bcc-76b1-497f-b6b3-28d3561c5a31",
+            "Civil Systems": "6132fec5-7345-4d21-a111-6e9cbc5d2ae7",
+            "Robotics": "31da76c4-28fa-47ea-8a24-5e7d3085a171",
+            "Aerospace": "b944ce8d-0936-42b0-b109-538e291008f6",
+            "AI Solutions": "cccf5aa2-3776-4da8-aa31-01a81b49c44a"
+        },
+        "divisions": {
+            "R&D": "88255d73-60b8-4f9e-a9c5-a997487d3ed0",
+            "Core Tech": "032d0542-2833-411d-9c4d-92acc92e244a",
+            "Product Dev": "9cec5783-0c97-4c41-8880-03b0222067aa",
+            "Innovation Lab": "c4bc1f0c-b97c-45eb-bcd8-fd2eceb17e09",
+            "Engineering": "7e1cb6ae-84e8-4fa8-9e9e-f2afbdf7e105"
+        }
+    },
+    "Shields Ltd": {
+        "uuid": "4461f6d2-2406-437a-b975-7e6f33d01853",
+        "departments": {
+            "AI Solutions": "66f4259b-842c-4bb3-a256-17890b656750",
+            "Civil Systems": "cdf39a1e-9c22-4b29-8b1d-78b18c1c2111",
+            "Biomedical": "20e1e7b5-7ec0-4ac6-ae79-0de9b5d98b02",
+            "Robotics": "d2aff809-9f62-408f-893f-89a50ae022f4",
+            "Cybersecurity": "32a0b83e-30ab-423e-b097-0264f96d4a08",
+            "Aerospace": "41d8a17e-5a65-418e-ba7c-a76b7ca74e5c"
+        },
+        "divisions": {
+            "R&D": "bb7237a1-0e5f-4e48-9d8b-3df3a79de23f",
+            "Product Dev": "62966f7e-26bc-4045-9c3b-265ce24632b9",
+            "Engineering": "334e7805-d1ac-4652-9ef6-4394156b3fa8",
+            "Innovation Lab": "a4d30ba0-ead1-4ce0-a142-72a718fa52f9",
+            "Core Tech": "eadd82cb-cebc-47a4-a6c0-39936161fdcd"
+        }
+    },
+    "Ramsey Ltd": {
+        "uuid": "d6b65c6c-2d1e-4b96-afae-21ed3b335e66",
+        "departments": {
+            "Robotics": "363904d3-48a5-4385-bc85-4ddf70eb7474",
+            "Biomedical": "1386bdc0-ce31-448f-8cd8-8b9c203142e1",
+            "AI Solutions": "889a9e5c-49ee-4bab-bbdd-7e27681605ee",
+            "Civil Systems": "9db5c133-5a44-444e-bafe-e757f25a21d7",
+            "Cybersecurity": "7ca250a4-13b8-4c9e-9ec9-de945f494a02"
+        },
+        "divisions": {
+            "Core Tech": "8f51bb94-585a-422c-bcc5-750eb440632e",
+            "Engineering": "6a04f934-f723-499e-b0dc-f5d203d8e056",
+            "Innovation Lab": "e8c8889f-9c49-42e9-a7d7-9ac274b3756b",
+            "Product Dev": "fbe832a0-4b7f-4066-a648-c391c6fcecbc",
+            "R&D": "8644a821-d1ac-49c8-bf7a-06eb8bba0953"
+        }
+    },
+    "Le LLC": {
+        "uuid": "b227221b-f163-4d09-95a8-8564a000a2f5",
+        "departments": {
+            "Civil Systems": "95087354-10b6-49ab-a644-8af1777dc6c6",
+            "Robotics": "01240829-3265-4819-acb1-85c27c02e8fe",
+            "AI Solutions": "9c25cb6b-7867-4055-9b64-f6ec86cb8fe2",
+            "Biomedical": "f593a252-c9e4-43e6-a9d6-b79f6b53b2c4",
+            "Cybersecurity": "1860f2ac-5358-4c7b-9f05-c2b5d8c4fde7",
+            "Aerospace": "1c60929f-0d4f-413d-a544-b701f7770acf"
+        },
+        "divisions": {
+            "Engineering": "6aee0252-7dae-403c-a76c-cb714e3f2a09",
+            "Core Tech": "b954c517-825e-4868-8346-1558dae86f22",
+            "Product Dev": "cadfb6b2-0574-4973-8240-4e864d85bb51",
+            "Innovation Lab": "29c86368-a287-416c-8555-9f158ab321c2",
+            "R&D": "64b3bfde-78ee-4c11-a7a2-3190d4194ae1"
+        }
+    },
+    "Lynn-Morales": {
+        "uuid": "b5e7798b-5a47-4f61-a0cd-b3aab82d1b2c",
+        "departments": {
+            "Aerospace": "2acab43d-c913-4cf4-8da0-655839253a64",
+            "Biomedical": "4b690320-edf7-41a9-944a-59c8eac718f5",
+            "Civil Systems": "38a85c51-7676-4852-9698-84e25c8fbdea",
+            "Robotics": "7dd065b8-9ae0-448a-a39c-d87310551eef",
+            "AI Solutions": "3bbd89ab-8258-4d20-a49e-34a183b7edaf"
+        },
+        "divisions": {
+            "Product Dev": "2c4effd9-364d-4570-83b3-511f6a9c4ee6",
+            "Innovation Lab": "96ced0b5-aba6-4ee3-adc5-fdfeba36c397",
+            "Core Tech": "e70e0c2b-7d41-472e-b963-bb6a92f6f327",
+            "R&D": "dda78b45-3431-4d3f-95ef-5d59f7680a42",
+            "Engineering": "9f25aeb6-2414-44bd-9c78-0ed1398d8ea8"
+        }
+    },
+    "Woods Ltd": {
+        "uuid": "5cf80520-74ec-4a42-b197-3bb38483aae4",
+        "departments": {
+            "Civil Systems": "ae4d3994-a472-46c5-b938-5c26255a89de",
+            "Aerospace": "61883387-22f0-4dd1-900a-895889aa12e1",
+            "AI Solutions": "8e2e2492-2fa9-4bd1-b11c-9b86a7f478ec",
+            "Cybersecurity": "e86f03d5-887b-46da-9d53-14eec925905e",
+            "Biomedical": "a2c7bb73-3a8a-4cd7-b12b-49ac2b4956ab",
+            "Robotics": "cc7980a6-b723-402c-a9dc-6d5bbcb58dc7"
+        },
+        "divisions": {
+            "Product Dev": "d26eba2d-73ba-408a-80f7-c6c4d9d8d66b",
+            "R&D": "d046c141-aa30-4c12-922d-c6e3aa66e009",
+            "Engineering": "bfa26ad4-2997-4e03-a2ab-38b8e373fb50",
+            "Core Tech": "850c3939-2b6d-40b3-a93e-48638b7bd32e",
+            "Innovation Lab": "174b15df-df55-40c3-a17c-52a4e1e9750e"
+        }
+    },
+    "Hawkins Ltd": {
+        "uuid": "1bf1ed61-b1ba-41d8-9b8c-bb85cfdfbf15",
+        "departments": {
+            "Cybersecurity": "2147bacc-ed52-48ba-a41f-d777a5fc9e8b",
+            "Aerospace": "dc095502-488f-4e1c-8a41-06263de1f441",
+            "Biomedical": "61816952-90f7-4779-a626-0bc28ed86157",
+            "Civil Systems": "66b17a6c-5067-4ea8-aa14-92b4b410b6a0",
+            "Robotics": "34cbe894-d12f-46a8-958a-ddfe8aff2025",
+            "AI Solutions": "f220183d-a12b-4c5c-9b9c-067a6c3ed6a5"
+        },
+        "divisions": {
+            "Innovation Lab": "8f9672cf-bf37-4199-8e56-d6189f42b35b",
+            "Core Tech": "37846d35-83b6-4ae6-a410-c3a16079878b",
+            "Product Dev": "c6ed9d84-89e3-4c8f-ab7f-f7f1a1a88e4f",
+            "Engineering": "817a98cf-7260-4cb3-8810-c3449f75ae24",
+            "R&D": "523925c5-f284-4570-a01d-1400303c7fa8"
+        }
+    },
+    "Mitchell, Taylor and Price": {
+        "uuid": "50d2968f-2814-401f-b150-61f2a092ac26",
+        "departments": {
+            "Civil Systems": "d168ab8e-4ca2-4b60-ba56-89c9a66b2780",
+            "AI Solutions": "9f58a0f8-e7a9-419f-8525-b460e3dffa6d",
+            "Cybersecurity": "0940b575-b3b9-4179-8807-edc16dc44def",
+            "Biomedical": "92bd00af-314f-4ebe-85df-087917967032",
+            "Robotics": "9536e851-9c04-4934-8216-866ffe1cdba0",
+            "Aerospace": "9de5e6df-a6a9-4efd-817f-7e03324980ed"
+        },
+        "divisions": {
+            "Product Dev": "9e3c4769-b889-4306-980f-7e009d239b3f",
+            "Engineering": "a6910c47-dcf4-4873-90b0-2aa2e38b1775",
+            "Innovation Lab": "716a8b59-863f-4c2b-82f3-22f1571d174b",
+            "R&D": "da813cb8-bfab-4459-b328-2949c8cdf43b",
+            "Core Tech": "d3ef7d2e-c891-4231-8a22-407a892c887c"
+        }
+    },
+    "Wilson-Williams": {
+        "uuid": "28d588bf-376b-4a49-b8ee-ebc1aaef024d",
+        "departments": {
+            "Civil Systems": "e3f388a7-62de-4e1e-ba04-59f4c6ffb22f",
+            "AI Solutions": "94855910-c8d0-46e9-bdad-241d48648a99",
+            "Biomedical": "5af16d3d-0dfb-4581-acdd-8b8fb5eb38df",
+            "Cybersecurity": "3de0b43b-77a5-4253-ac90-ef5e06e82fbe",
+            "Aerospace": "b2caa474-21e8-44a0-941b-d4c5e76ba27a"
+        },
+        "divisions": {
+            "Core Tech": "758cf672-6b09-4d76-9bb6-f156d7c5e0ce",
+            "Product Dev": "6858ee1f-5d34-44fa-b3ab-535a67077139",
+            "Engineering": "9b8440aa-ce9b-4c47-aca5-6565104872c8",
+            "R&D": "7e606e23-a9b2-42de-ab46-1bd5dec55976",
+            "Innovation Lab": "280df6e3-9fe5-421a-93db-f3bdaeb7d731"
+        }
+    },
+    "Thornton Inc": {
+        "uuid": "adbcefd7-95d4-417f-8584-f993f8e3f09a",
+        "departments": {
+            "Aerospace": "5cc3c6c5-3ede-4340-a679-b6b75fc7bb69",
+            "Civil Systems": "969783fd-081b-4571-887f-3fb7fd01b810",
+            "Robotics": "8fbe8012-f06f-4b76-a62b-2af40f62fe40",
+            "Biomedical": "6c75644b-9e2a-45f2-9ba8-eaa4900a8a0a",
+            "Cybersecurity": "fd9ef572-cdde-4336-b5d6-3211c419d7d0"
+        },
+        "divisions": {
+            "Innovation Lab": "22d6571f-86b9-4af9-81fa-4073988ca554",
+            "Product Dev": "f0ba0792-12e3-42a2-9e65-baba9de6779a",
+            "Core Tech": "7b8af2f5-990f-4ea6-8de0-e409a9ad0abd",
+            "Engineering": "1f1f6b39-5484-4038-b9a8-fdb6f001b3b9",
+            "R&D": "91a16d5d-0e94-4e39-b840-3fe7b56baf9a"
+        }
+    },
+    "Ingram-Lane": {
+        "uuid": "a26d6275-308c-43c2-b6a0-456ab1674534",
+        "departments": {
+            "Civil Systems": "3fa67648-2cd4-4c34-80bb-eb91e7096ce1",
+            "Cybersecurity": "8c9eb349-a34a-4074-90b2-358b298e32fd",
+            "AI Solutions": "7072ebda-6445-4b0f-97a5-6ae7277c5c20",
+            "Robotics": "89e72678-d67f-4ec5-a7b6-de49d414968b",
+            "Biomedical": "eb59c0a0-9d37-49ee-b39b-4a41b11106c7",
+            "Aerospace": "cc487109-f66c-460d-ab95-3e9c37f2d1e4"
+        },
+        "divisions": {
+            "R&D": "a810a6d7-77cb-412d-8b2a-5ee5aa3d43ee",
+            "Engineering": "6366b71c-0d7f-4156-bad2-3a3af90f3d78",
+            "Product Dev": "bebeffd6-29d8-4152-8ed6-6e57d98808a0",
+            "Innovation Lab": "a6ff277c-a33c-4126-bc7a-ab90b8bc18c5",
+            "Core Tech": "153452bc-3c9a-43c1-8b79-9cbc9571efda"
+        }
+    },
+    "Kelly, Torres and Ward": {
+        "uuid": "4980683e-7140-4cfc-98e0-d8703497cf0a",
+        "departments": {
+            "Biomedical": "a2a945ba-cf13-4cf0-ab07-81d3a4a29627",
+            "Aerospace": "03cdf138-4b6d-44c6-84f8-93f514c0fa6d",
+            "Robotics": "dfe31dd0-1772-40a1-b449-d752ae03b99e",
+            "Civil Systems": "deb2c706-4a2e-4c64-979f-d36f6dd6d9c5",
+            "AI Solutions": "3585791d-a4db-457f-b855-5996d056d0f1",
+            "Cybersecurity": "67468b10-7fa6-4323-b24b-fedfe82a3189"
+        },
+        "divisions": {
+            "Engineering": "3bec4683-b94e-4942-b9c7-671bb0d82d54",
+            "Innovation Lab": "3dda0724-e194-464b-aea4-84e7cd46f571",
+            "Core Tech": "cbe0d185-f405-4812-8c8a-fd117892cc4d",
+            "Product Dev": "f741b842-61e8-42b9-840b-f7d0ec27d474",
+            "R&D": "8f91c37f-17c3-461d-8b9f-9c682a47b612"
+        }
+    },
+    "Hebert-Schwartz": {
+        "uuid": "57182cbd-e320-4a44-813f-b077ac013b02",
+        "departments": {
+            "AI Solutions": "a1d7609a-3cb4-4c63-a473-f8351113ea11",
+            "Biomedical": "0ec532f1-d2fe-46a3-8bf7-8d6d2916f92a",
+            "Civil Systems": "fdd64607-98eb-4c36-a770-9d2b7642a715",
+            "Robotics": "d526d2cc-71ad-41af-a15a-e5751b4c5409",
+            "Cybersecurity": "4ac3cad7-5fb7-4722-aea3-b29123554ecd",
+            "Aerospace": "00f1f244-8c12-4f9d-a0e9-6e5467cc93b8"
+        },
+        "divisions": {
+            "Innovation Lab": "4392227b-e694-4ce1-af77-d2ec9362839d",
+            "Core Tech": "2540c204-c7a2-4257-9e84-9c83e3c849b1",
+            "Product Dev": "b1ee0669-e706-4fb7-b540-bf068aea67f1",
+            "R&D": "217e3cc3-067f-48ab-9c2b-4377bcc95c0a",
+            "Engineering": "64ef4e47-64ee-4bb0-ace4-e7137a26685c"
+        }
+    },
+    "Williams Inc": {
+        "uuid": "707bb525-4861-4688-b1ef-e08dcb42dfbb",
+        "departments": {
+            "Aerospace": "834d593b-1472-4496-8ae6-e52232888a97",
+            "Robotics": "1938eca8-a5a7-4574-a846-f93fcaa92fa5",
+            "Civil Systems": "3701ed70-d34d-4b1a-b532-a7d9789a2b22",
+            "Biomedical": "9f0b527a-613a-410c-852e-0844e4b24bc7",
+            "Cybersecurity": "13ecf590-eb3c-4050-b22e-7ba17a7f64de"
+        },
+        "divisions": {
+            "Innovation Lab": "64af7b77-d78c-4f3f-9f2c-7ed5c9c432f5",
+            "R&D": "4e1cb4da-ba24-49e9-8d0f-1e369de928ca",
+            "Core Tech": "f12541ed-b7cd-4d66-8cf9-b36ba03451d6",
+            "Engineering": "7a05c92d-f201-427b-a0ce-f165ce30102e",
+            "Product Dev": "8391fd79-725f-4249-8bd2-ea308b4b9fc0"
+        }
+    },
+    "Peck-Phelps": {
+        "uuid": "6801850f-dcae-4918-9db6-3372eeb8f0cf",
+        "departments": {
+            "Biomedical": "06862178-0705-4a19-a687-d931149ed83e",
+            "Civil Systems": "7e51019e-6416-4d6c-bab2-5f38ab2de542",
+            "Robotics": "834af5ff-bfca-4439-ad5a-855ede7a3f44",
+            "AI Solutions": "48badccc-7a0c-46aa-b38b-d58b03587889"
+        },
+        "divisions": {
+            "R&D": "2e1a3c72-9761-4f26-80d6-074f1fe3f59d",
+            "Innovation Lab": "7b659b9c-6fc7-4c3c-a335-03a962153dd6",
+            "Core Tech": "c93891e6-c13b-4d15-92ee-1f4d3bb9a683",
+            "Engineering": "f96b6afa-2d7a-457f-96ed-071efbb50caf",
+            "Product Dev": "4d77f055-fe6e-437c-af5a-e5ecd49161f7"
+        }
+    },
+    "Gutierrez, Griffin and Gardner": {
+        "uuid": "d8076338-9615-4d6b-84cd-55cc11eab3cf",
+        "departments": {
+            "Aerospace": "4be098b8-d877-49e9-a326-ad22648fd073",
+            "Biomedical": "474b0e5a-9d7c-4a8d-9a0a-0f9af46ed669",
+            "Cybersecurity": "8e970e0c-347f-44f5-b81f-87c5ab3ded0d",
+            "AI Solutions": "7e19bf9e-4e9d-4b68-9519-c3d9d764fd5b",
+            "Civil Systems": "d68465e5-f454-469f-b3f9-d102353784d4",
+            "Robotics": "7a21a649-069d-450c-95bf-18bce33df02a"
+        },
+        "divisions": {
+            "Innovation Lab": "43994cd7-7c85-469e-bb96-c220aea06ab5",
+            "R&D": "ca2979d8-f2b8-4375-9256-a490353204c2",
+            "Engineering": "65cb24e7-e223-42db-adc5-b31951295f6e",
+            "Core Tech": "54228ca5-11de-401b-94f0-106ca70b957f",
+            "Product Dev": "eb97c57b-853f-45bf-8cff-801175a63223"
+        }
+    },
+    "Garcia Group": {
+        "uuid": "93299427-9bba-4f05-836d-85231defac35",
+        "departments": {
+            "Aerospace": "5e0f73d5-40f7-41d1-96b7-e70117ddb093",
+            "Civil Systems": "350e36ce-7530-4673-8bc4-a4e5738e1b5d",
+            "AI Solutions": "577d2bc5-7d7f-4e6d-b2d7-f644d999dd8b",
+            "Robotics": "c8bcdab8-6167-4689-80cd-e1b13c9b3197",
+            "Biomedical": "8b0d20cc-09d4-4ba1-a701-664f85b6b566",
+            "Cybersecurity": "cf69f2af-7dd1-4936-9dc6-5923ebd36497"
+        },
+        "divisions": {
+            "Innovation Lab": "5807ce25-4409-4c68-9ff0-cb10f18a0652",
+            "Core Tech": "fe50f007-84cf-4c9d-9124-8a57dd277073",
+            "R&D": "d6cbe2ed-67bd-43c8-9ad9-4ef0ea391a1d",
+            "Engineering": "1519e1b1-c5b0-4aef-b3e2-07d9aa54d17c",
+            "Product Dev": "a893152f-f422-454c-853a-1f6792b3ed5c"
+        }
+    },
+    "Houston PLC": {
+        "uuid": "fd55321b-5355-4659-85f5-f12037f48d02",
+        "departments": {
+            "Cybersecurity": "f04ac486-c150-4e30-8872-e2cf22d0b6d2",
+            "Robotics": "1b48779b-0f9f-4f23-977e-95e5b1c23616",
+            "Biomedical": "7bea481d-52cb-45b6-9c86-75ac4944e66a",
+            "AI Solutions": "9756561d-c503-469f-86c7-fec948c121f9",
+            "Aerospace": "2903cb57-69a9-4b42-a0d1-13dec057e40f",
+            "Civil Systems": "ce90254e-cd95-4ed1-b643-b303a48f7ac2"
+        },
+        "divisions": {
+            "Core Tech": "fd7f1c71-f6c4-4486-b76d-88a584028a4e",
+            "Product Dev": "829acdb1-abf9-4870-81f0-2507ebb22361",
+            "Innovation Lab": "10f44d48-3612-4681-a3da-eda2a577c9d4",
+            "Engineering": "09561137-4e50-4716-a057-51f500bb890d",
+            "R&D": "52401204-4198-4083-84a1-f5515f9e295c"
+        }
+    },
+    "Roberts, Bernard and Williamson": {
+        "uuid": "285aaa2e-5063-4767-b84a-82e69374599e",
+        "departments": {
+            "Biomedical": "32e7c7f3-0148-4dea-bec9-851b4c74183e",
+            "Civil Systems": "e4975b15-59f3-4a6f-8a81-c5390ef8dfac",
+            "Aerospace": "0a148340-3349-406f-aab3-80ab23cb238e",
+            "Cybersecurity": "62a221ae-9cfc-4825-9469-e18dfb1a62d1"
+        },
+        "divisions": {
+            "R&D": "4fd2ead9-1efb-48f6-a0ce-5a728c139b62",
+            "Engineering": "3d4c4b3f-5a7d-42fe-b708-92cae1961f49",
+            "Core Tech": "06b9f42a-8823-4767-9ed5-9fd1d06e274c",
+            "Product Dev": "8acbc68f-230c-4a6d-880e-c60fad1eb9a2",
+            "Innovation Lab": "66273687-2c3f-43d3-b9ac-28ff66be18e0"
+        }
+    },
+    "Osborne-Golden": {
+        "uuid": "d50b1ac6-3b54-44e7-b0fb-b17a652bf5fa",
+        "departments": {
+            "Civil Systems": "7306e32c-05fa-4613-9b59-d7b9bf854ebc",
+            "Robotics": "7791f782-3d0a-4da1-985d-f38f74ea8fe8",
+            "AI Solutions": "75be0124-1562-48c7-943e-37c222d55412",
+            "Cybersecurity": "bb3cc951-f8d3-469a-aebb-b7a21a8cfce2",
+            "Aerospace": "30e2b347-1e55-41a6-a467-acc09c271a73",
+            "Biomedical": "f6ad3b0f-7bcb-4936-83c0-797f568254d2"
+        },
+        "divisions": {
+            "Core Tech": "09ab571f-27b7-4931-b7e5-8d700ad8f1bb",
+            "Innovation Lab": "245de1da-c939-4220-ba9c-718666b66b9f",
+            "Product Dev": "8296e7f2-c8ca-4ab0-b0c4-2f3726711fb3",
+            "R&D": "a6e35737-16b1-44fa-9ea9-53e7def78c36",
+            "Engineering": "62bd486b-d9b6-4609-9fcb-a9bfea40cb4d"
+        }
+    },
+    "Robertson-Miller": {
+        "uuid": "b1dfcb8d-e219-47dc-86ac-8969065b4c1c",
+        "departments": {
+            "Biomedical": "f5fa7b54-bcef-4ae5-8ffd-a1a97abd3739",
+            "AI Solutions": "76372756-f21d-4ca9-a878-c606ecd3fa77",
+            "Cybersecurity": "d56bcdfd-6b19-4a88-a10f-fdb3bbef7f39",
+            "Robotics": "3c824540-da3e-4d9f-aa0e-62a67974097a",
+            "Civil Systems": "00f9f46b-4ff0-46bb-be9b-0a908ec9fab5"
+        },
+        "divisions": {
+            "Product Dev": "cb068991-48ea-410d-828a-82536ab65b2d",
+            "R&D": "821a0077-e852-4dbb-8d6f-53433eb041d9",
+            "Innovation Lab": "c9cffef0-6193-47c1-96c2-66a3a11fdccc",
+            "Engineering": "10d89c91-9755-44eb-9514-eb2e07c78711",
+            "Core Tech": "6bafeeca-d009-4ed8-a9d5-45935bcaee62"
+        }
+    },
+    "Robinson LLC": {
+        "uuid": "4592bd36-4227-4f90-bb90-d375ccebd9cb",
+        "departments": {
+            "Robotics": "7a1354f8-4181-49a4-9d48-6cb107763163",
+            "Cybersecurity": "07c5e2fe-92f0-43b7-a437-904c0d042ea0",
+            "Civil Systems": "536b84c3-f4a0-4001-b7f0-ab6f41cff8bb",
+            "Biomedical": "fa6a7f82-06e1-4296-96e0-c30fdb0b4e19",
+            "Aerospace": "ac15b48e-74de-4bd6-a80f-82b370283e95",
+            "AI Solutions": "0d21b9e4-18ee-4a0e-996d-5e0c6cd12241"
+        },
+        "divisions": {
+            "Product Dev": "ade73ced-89d6-4ac8-b52f-548fc3eab1cd",
+            "R&D": "914a9fee-289d-4959-a3cf-8453f70d5791",
+            "Engineering": "74dbbc80-09f5-4e13-992e-77bfeb7b09a7",
+            "Core Tech": "5c787b72-d350-4230-9156-fbbcab8db257",
+            "Innovation Lab": "3aec74e2-3f76-4171-a30c-bf7837ad97f6"
+        }
+    },
+    "Rogers, Waters and Cantrell": {
+        "uuid": "8dac0aa7-7b4f-430d-aa14-f79b3f11aa47",
+        "departments": {
+            "AI Solutions": "842a07f6-1bb8-4e66-8f1e-4c1a063cbc48",
+            "Biomedical": "a728b9b4-85e8-4fa7-bfac-33f482d5c34d",
+            "Civil Systems": "d65c50b4-3c74-45db-83c3-ff8d8e6aec1c",
+            "Robotics": "a8576229-3c9d-47fd-a116-1e645e44f0c7",
+            "Aerospace": "a7dd3dc8-f0db-4f8f-b0c8-6f771e084639",
+            "Cybersecurity": "7f5b52ca-ead9-4157-a302-3a76366fb4da"
+        },
+        "divisions": {
+            "Core Tech": "590c0f97-0215-40bd-bb01-17ce138533f4",
+            "Product Dev": "1a1e55cb-dd53-4229-a705-e434d8c013de",
+            "Innovation Lab": "78efd3da-6a6e-436e-a92f-6961c384e12d",
+            "R&D": "55259b31-3659-473f-bf1f-11e2eefc7453",
+            "Engineering": "ece5cada-167f-4909-978b-197863366438"
+        }
+    },
+    "Mccoy, Brooks and Brown": {
+        "uuid": "3b392430-c99d-4589-b786-23f5368701f4",
+        "departments": {
+            "Aerospace": "1303e5fa-dc7b-4b02-af36-2ef922440cc3",
+            "Cybersecurity": "3de35278-580a-4767-99ab-8b0fe28db8b3",
+            "AI Solutions": "d0a5f2d5-cb24-4f7e-8411-47c40d83436e",
+            "Robotics": "ac913e8d-73d9-407e-9342-ca601ae26521",
+            "Biomedical": "9c8ad426-1d98-4e4a-8cbd-a2918760f5cc",
+            "Civil Systems": "6198ba02-8613-4a4f-8a70-555e83ad1369"
+        },
+        "divisions": {
+            "Innovation Lab": "d44714eb-a1b8-4e0d-8731-b6bb9a424cec",
+            "Core Tech": "ad163487-10ce-4181-b29a-07f3a8046dc8",
+            "Engineering": "9c9da0af-9a14-4c70-add3-64dd24f429ca",
+            "R&D": "1a8db756-5739-4300-b128-27f07631310a",
+            "Product Dev": "ff0c605e-2739-45f1-9eb8-d329e8daafe1"
+        }
+    },
+    "Kerr-Ortiz": {
+        "uuid": "49182c46-c0c4-429c-921e-9441327eb103",
+        "departments": {
+            "Robotics": "659134dd-309d-4729-9c3e-114f91a937e0",
+            "Aerospace": "2c084f3f-57d1-4f08-8ed9-daf06dca5d81",
+            "AI Solutions": "5318bf19-88f9-460f-9014-6618c3854aaf",
+            "Biomedical": "2b697ad2-52fb-4e9e-89e7-71aeddca6c7b",
+            "Cybersecurity": "810083c6-dd4e-4e4e-b6af-210524a4e63e",
+            "Civil Systems": "3a3f104a-2517-4751-a85b-1489e876d447"
+        },
+        "divisions": {
+            "R&D": "ecc8f29a-9b89-43e3-9987-9750f03cf17c",
+            "Product Dev": "e72a5315-cb1d-48cd-a774-1d4917c60b70",
+            "Core Tech": "6ed6cf0e-fbc8-4577-8c98-d0372e147540",
+            "Innovation Lab": "c9ce8c84-0960-46fa-b3ea-f13c60b7fe88",
+            "Engineering": "e27a05fc-3dc7-4cba-943f-60503636eb46"
+        }
+    }
+}

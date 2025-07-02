@@ -40,6 +40,7 @@ class DraftingService:
 
             # ---------------------- Create New Docket ---------------------- #
             docket = Docket(
+                id=dto.id,
                 uuid=dto.uuid,
                 docket_number=dto.system_generated_docket_number,
                 manual_docket_number=dto.manual_docket_number,
@@ -60,6 +61,11 @@ class DraftingService:
                 country_of_filing_id=dto.first_filing_country_id,
                 foreign_license_required=dto.foreign_license_required,
                 current_status=dto.status_id,
+                deleted=False,
+                first_filing_type_id=dto.filing_type_id,
+                filing_maintenance_cost=dto.filing_maintenance_cost_estimate,
+                temp_number=dto.temp_number,
+
             )
             session.add(docket)
 

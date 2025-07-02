@@ -4,7 +4,7 @@ from typing import Dict, List
 # ----------------- Centralized Logger ----------------- #
 from services.logger import (
     logger,
-)  # Reuses logger that logs to console + logs/import.log
+)  
 
 # ----------------- Internal Imports ----------------- #
 from services.utils.lookup_cache import (
