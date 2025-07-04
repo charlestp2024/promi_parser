@@ -12,3 +12,4 @@ from models.pmv_csd_models.countries import Countries
 from models.pmv_csd_models.department import Department
 from models.pmv_csd_models.status import Status
 from models.pmv_csd_models.user import User
+from models.pmv_csd_models.subdocket_user_role_mapping import SubdocketUserRolesMapping

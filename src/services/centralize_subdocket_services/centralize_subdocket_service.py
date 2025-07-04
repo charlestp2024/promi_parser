@@ -18,7 +18,7 @@ from services.utils.lookup_cache import (
 )
 
 from excel.ExcelData import ExcelColumns
-from logger import logger
+from services.logger import logger
 
 
 def handle_assignees(
