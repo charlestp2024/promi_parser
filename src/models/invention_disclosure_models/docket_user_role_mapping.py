@@ -25,7 +25,7 @@ class DocketUserRoleMapping(BaseInvd):
     role_id = Column(ForeignKey("role.id"), nullable=False)
 
     # ---------- Timestamps ----------
-    created_on = Column(  # Java: added_date
+    created_on = Column(  # Java: created_on
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False,

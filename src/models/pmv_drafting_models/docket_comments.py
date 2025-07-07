@@ -9,7 +9,7 @@ class DocketComments(BaseDrafting):
 
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
-    added_date = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     comment = Column(String)
     deleted = Column(Boolean)
     tenant_id = Column(CHAR(36))  # UUID stored as string

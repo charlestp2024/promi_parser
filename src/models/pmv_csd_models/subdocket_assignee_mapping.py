@@ -17,5 +17,5 @@ class SubdocketAssigneeMapping(BaseCsd):
 
     added_by = Column(CHAR(36), ForeignKey("user.uuid"))
 
-    added_date = Column(TIMESTAMP, server_default=func.now())
+    created_on = Column(TIMESTAMP, server_default=func.now())
     modified_on = Column(TIMESTAMP, onupdate=func.now())

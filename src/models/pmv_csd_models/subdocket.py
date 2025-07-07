@@ -37,7 +37,7 @@ class Subdocket(BaseCsd):
     recent_action_recieved_date = Column(TIMESTAMP)
     term_extention = Column(TIMESTAMP)
 
-    added_date = Column(TIMESTAMP, server_default=func.now())
+    created_on = Column(TIMESTAMP, server_default=func.now())
     modified_on = Column(TIMESTAMP, onupdate=func.now())
 
     appid = Column(CHAR(36), nullable=True)

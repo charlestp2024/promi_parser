@@ -42,7 +42,7 @@ class PartialSubdocket(BaseCsd):
     filing_date = Column(TIMESTAMP)
     recent_action_recieved_date = Column(TIMESTAMP)
     term_extention = Column(TIMESTAMP)
-    added_date = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     modified_date = Column(TIMESTAMP)
 
     publication_date = Column(TIMESTAMP)

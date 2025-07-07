@@ -8,7 +8,7 @@ class SubdocketForeignFilingCountryMapping(BaseDrafting):
 
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
-    added_date = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     modified_date = Column(TIMESTAMP)
 
     # ---------------------- Relationships ----------------------

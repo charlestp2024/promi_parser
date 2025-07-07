@@ -1937,7 +1937,7 @@ CREATE TABLE `docket_logs` (
   `logs` varchar(500) NOT NULL,
   `docket_id` int NOT NULL,
   `added_by` char(36) NOT NULL,
-  `added_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `created_on` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   `tenant_id` char(36) NOT NULL,
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

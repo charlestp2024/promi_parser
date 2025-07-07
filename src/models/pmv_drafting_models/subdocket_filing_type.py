@@ -10,7 +10,7 @@ class SubdocketFilingType(BaseDrafting):
     id = Column(Integer, primary_key=True, autoincrement=True)
     filing_type = Column(String)
     filing_type_code = Column(String)
-    added_date = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     modified_date = Column(TIMESTAMP)
 
     # ---------------------- Relationships ----------------------

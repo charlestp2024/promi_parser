@@ -11,7 +11,7 @@ class Client(BaseCsd):
     uuid = Column(CHAR(36), primary_key=True)
     client_name = Column(String)
     client_code = Column(Integer)
-    active = Column(Boolean)
+    is_active = Column(Boolean)
 
     tenant_id = Column(CHAR(36))
 

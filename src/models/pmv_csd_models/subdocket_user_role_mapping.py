@@ -11,8 +11,10 @@ class SubdocketUserRolesMapping(BaseCsd):
     id = Column(Integer, primary_key=True, autoincrement=True)
 
     subdocket_id = Column(Integer, ForeignKey("subdocket.id"))
+    user_id = Column(CHAR(36), ForeignKey("user.uuid"))
+    role_id = Column(Integer, ForeignKey("role.id"))
 
-    added_date = Column(TIMESTAMP, server_default=func.now())
+    created_on = Column(TIMESTAMP, server_default=func.now())
     modified_on = Column(TIMESTAMP, onupdate=func.now())
 
     deleted = Column(Boolean, default=False)
