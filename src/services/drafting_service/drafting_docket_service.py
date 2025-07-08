@@ -13,7 +13,7 @@ from services.utils.docket_dto import DocketDTO
 from services.utils.role_constants import RoleEnum
 
 # ----------------- Central Logger ----------------- #
-from services.logger import logger  # Reuses centralized logger from start_parse.py
+from services.logger import logger
 
 
 class DraftingService:
@@ -65,7 +65,6 @@ class DraftingService:
                 first_filing_type_id=dto.filing_type_id,
                 filing_maintenance_cost=dto.filing_maintenance_cost_estimate,
                 temp_number=dto.temp_number,
-
             )
             session.add(docket)
 

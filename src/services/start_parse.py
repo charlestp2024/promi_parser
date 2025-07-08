@@ -16,6 +16,9 @@ from services.docket_review_service.pmv_dr_docket_review_service import (
     ReviewSaveError,
 )
 from services.drafting_service.drafting_docket_service import DraftingService
+from services.drafting_service.drafting_subdocket_service import (
+    DraftingSubdocketService,
+)
 from services.utils.subdocket_static_cache import preload_all_subdocket_cache
 from services.centralize_subdocket_services.centralize_subdocket_service import (
     save_subdocket,
@@ -24,8 +27,10 @@ from services.centralize_subdocket_services.centralize_subdocket_service import 
 # ----------------- Logging Configuration ----------------- #
 from services.logger import logger
 
+
 # ----------------- Excel Column Definitions ----------------- #
 COLS = ExcelColumns()
+
 
 def import_excel(
     excel_file: str, *, tenant_id: str, import_user: str, header_row: int = 0
@@ -45,7 +50,9 @@ def import_excel(
     try:
         df = pd.read_excel(excel_file, header=0, dtype=str).fillna("")
     except Exception as e:
-        logger.error(" Failed to read Excel file '%s': %s", excel_file, e, exc_info=True)
+        logger.error(
+            " Failed to read Excel file '%s': %s", excel_file, e, exc_info=True
+        )
         raise RuntimeError(f"Unable to read Excel file: {e}") from e
 
     normalise_columns(df, COLUMN_ALIASES)
@@ -84,7 +91,11 @@ def import_excel(
                 #         continue
 
                 #     rows_processed += 1
-                #     logger.debug("[DTO DEBUG] Parsed DocketDTO for row %s: %s", idx, ic_docket_dto)
+                #     logger.debug(
+                #         "[DTO DEBUG] Parsed DocketDTO for row %s: %s",
+                #         idx,
+                #         ic_docket_dto,
+                #     )
 
                 #     if ic_docket_dto.send_for_review:
                 #         try:
@@ -105,9 +116,17 @@ def import_excel(
                 #                 session=drafting_session,
                 #                 dto=ic_docket_dto,
                 #             )
-                #             logger.info("✓ Drafting saved for docket '%s'", ic_docket_dto.manual_docket_number)
+                #             logger.info(
+                #                 "✓ Drafting saved for docket '%s'",
+                #                 ic_docket_dto.manual_docket_number,
+                #             )
                 #         except Exception as e:
-                #             logger.error(" Drafting save failed row %s: %s", idx, e, exc_info=True)
+                #             logger.error(
+                #                 " Drafting save failed row %s: %s",
+                #                 idx,
+                #                 e,
+                #                 exc_info=True,
+                #             )
                 #             raise RuntimeError(
                 #                 f"Drafting save failed for docket '{ic_docket_dto.manual_docket_number}' – {e}"
                 #             ) from e
@@ -115,10 +134,19 @@ def import_excel(
                 #     ic_session.commit()
                 #     dr_session.commit()
                 #     drafting_session.commit()
-                #     logger.info("✓ Row %s committed for docket '%s'", idx, docket_number)
-              
+                #     logger.info(
+                #         "✓ Row %s committed for docket '%s'", idx, docket_number
+                #     )
+
+                logger.info(
+                    "Row %s: importing subdocket for docket '%s'",
+                    idx,
+                    row.get(COLS.DOCKET_NUMBER),
+                )
                 if level == "subdocket level":
-                    save_subdocket(
+                    # --- Step 1: Save to the primary (CSD) database ---
+                    # This now returns a DTO or None
+                    subdocket_dto = save_subdocket(
                         session=csd_session,
                         ict_session=ic_session,
                         row=row,
@@ -126,12 +154,36 @@ def import_excel(
                         tenant_id=tenant_id,
                         import_user_id=import_user,
                     )
-                    csd_session.commit()
-                    logger.info("✓ Subdocket saved for row %s", idx)
 
-                # else:
-                #     rows_skipped += 1
-                #     logger.debug("Row %s skipped (no matching level)", idx)
+                    # If the DTO is None, it means the subdocket was skipped (e.g., already exists)
+                    if subdocket_dto is None:
+                        rows_skipped += 1
+                        logger.warning("Row %s: Subdocket skipped (DTO is None)", idx)
+                        # No need to commit or rollback anything, as nothing was added to the session
+                        continue
+
+                    # --- Step 2: Save to downstream (Drafting) database using the DTO ---
+                    logger.info(
+                        "Row %s: Saving corresponding entry to drafting database...",
+                        idx,
+                    )
+                    DraftingSubdocketService.save_from_dto(
+                        session=drafting_session, dto=subdocket_dto, row=row
+                    )
+
+                    # --- Step 3: Commit transactions for both databases together ---
+                    csd_session.commit()
+                    drafting_session.commit()
+                    rows_processed += 1
+                    logger.info(
+                        "✓ Row %s committed for subdocket of '%s'",
+                        idx,
+                        row.get(COLS.DOCKET_NUMBER),
+                    )
+
+                    # else:
+                    #     rows_skipped += 1
+                    #     logger.debug("Row %s skipped (no matching level)", idx)
 
             except Exception as exc:
                 ic_session.rollback()

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass(frozen=True)
 class ExcelColumns:
     DOCKET_LEVEL: str = "Docket Level/Subdocket Level"
@@ -30,10 +31,13 @@ class ExcelColumns:
     TYPE_OF_FILING: str = "Type Of Filing"
     COUNTRY_OF_FILING: str = "Country Of Filing"
     PATENT_OFFICE_COUNTRY: str = "Patent Office(Country)"
+    SUBDOCKET_FOREIGN_FILING_COUNTRIES: str = "Subdocket Foreign Filing Countries"
     STATUS: str = "Status"
     TYPE_OF_FILING_ENTITY: str = "Type of Filing Entity"
     APPLICATION_NUMBER: str = "Application Number"
-    FILING_MAINTENANCE_COST_ESTIMATE_SUB: str = "Filing & Maintenance Cost Estimate"  # Keep if this is a distinct column name in Excel
+    SUBDOCKET_FILING_MAINTENANCE_COST_ESTIMATE: str = (
+        "Subdocket Filing & Maintenance Cost Estimate"
+    )
     PUBLICATION_NUMBER: str = "Publication Number"
     ASSIGNEE_NAME: str = "Assignee Name"
     TENTATIVE_FILING_DATE: str = "Tentative Filing Date"

@@ -18,3 +18,4 @@ class SubdocketUserRolesMapping(BaseCsd):
     modified_on = Column(TIMESTAMP, onupdate=func.now())
 
     deleted = Column(Boolean, default=False)
+    subdocket = relationship("Subdocket", back_populates="subdocket_user_role_mappings")

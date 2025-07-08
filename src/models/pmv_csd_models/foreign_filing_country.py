@@ -17,3 +17,6 @@ class ForeignFilingCountry(BaseCsd):
     country_id = Column(Integer, ForeignKey("countries.id"))
 
     added_by = Column(Integer, ForeignKey("user.uuid"))
+    subdocket = relationship(
+        "Subdocket", back_populates="subdocket_foreign_filing_country_mappings"
+    )

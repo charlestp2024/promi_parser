@@ -133,6 +133,7 @@ def country_by_name(name: str) -> Countries:
     # 3) still not found
     raise ValueError(f"Country '{name}' not found in static cache (name or code)")
 
+
 def country_code_by_name(name: str) -> str:
     """
     Return country code (like 'IN' or 'US') for a given country name or code.
@@ -150,3 +151,12 @@ def preload_roles(session: Session):
 
 def role_by_name(name: str) -> Role | None:
     return _role_map.get(name)
+
+
+def country_id_by_name_or_code(name_or_code: str) -> int:
+    """
+    Return country ID for a given country name or 2-letter code.
+    Raises ValueError if not found.
+    """
+    country = country_by_name(name_or_code)
+    return country.id
