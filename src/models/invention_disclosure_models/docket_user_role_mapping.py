@@ -30,7 +30,7 @@ class DocketUserRoleMapping(BaseInvd):
         server_default=func.now(),
         nullable=False,
     )
-    modified_on = Column(  # Java: modified_date
+    modified_on = Column(  # Java: modified_on
         DateTime(timezone=True),
         server_default=func.now(),
         onupdate=func.now(),

@@ -9,8 +9,8 @@ class Status(BaseDrafting):
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
     status = Column(String)
-    added_time = Column(TIMESTAMP)
-    modified_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationship Fields ----------------------
     subdocket = relationship(

@@ -4,6 +4,7 @@ import logging
 import pandas as pd
 from logging.handlers import TimedRotatingFileHandler
 from sqlalchemy.orm import Session
+import pprint
 
 # ----------------- Internal Imports ----------------- #
 from db.session import get_session
@@ -17,7 +18,7 @@ from services.docket_review_service.pmv_dr_docket_review_service import (
 )
 from services.drafting_service.drafting_docket_service import DraftingService
 from services.drafting_service.drafting_subdocket_service import (
-    DraftingSubdocketService,
+    save_drafting_subdocket,
 )
 from services.utils.subdocket_static_cache import preload_all_subdocket_cache
 from services.centralize_subdocket_services.centralize_subdocket_service import (
@@ -74,69 +75,69 @@ def import_excel(
             level = row.get(COLS.DOCKET_LEVEL, "").strip().lower()
 
             try:
-                # if level == "docket level":
-                #     docket_number = row.get(COLS.DOCKET_NUMBER)
-                #     logger.info("Row %s: importing docket '%s'", idx, docket_number)
+                if level == "docket level":
+                    docket_number = row.get(COLS.DOCKET_NUMBER)
+                    logger.info("Row %s: importing docket '%s'", idx, docket_number)
 
-                #     ic_docket_dto = DocketService.create_docket(
-                #         ic_session,
-                #         tenant_id=tenant_id,
-                #         import_user_id=import_user,
-                #         row=row,
-                #     )
+                    ic_docket_dto = DocketService.create_docket(
+                        ic_session,
+                        tenant_id=tenant_id,
+                        import_user_id=import_user,
+                        row=row,
+                    )
 
-                #     if ic_docket_dto is None:
-                #         rows_skipped += 1
-                #         logger.warning("Row %s: Docket skipped (DTO is None)", idx)
-                #         continue
+                    if ic_docket_dto is None:
+                        rows_skipped += 1
+                        logger.warning("Row %s: Docket skipped (DTO is None)", idx)
+                        continue
 
-                #     rows_processed += 1
-                #     logger.debug(
-                #         "[DTO DEBUG] Parsed DocketDTO for row %s: %s",
-                #         idx,
-                #         ic_docket_dto,
-                #     )
+                    rows_processed += 1
+                    logger.debug(
+                        "[DTO DEBUG] Parsed DocketDTO for row %s: %s",
+                        idx,
+                        ic_docket_dto,
+                    )
 
-                #     if ic_docket_dto.send_for_review:
-                #         try:
-                #             save_from_invention_docket(
-                #                 dr_session=dr_session,
-                #                 inv_docket=ic_docket_dto,
-                #                 tenant_id=tenant_id,
-                #                 import_user_id=import_user,
-                #                 status_name=row.get(COLS.CURRENT_STATUS) or None,
-                #                 attachments=[],
-                #             )
-                #         except ReviewSaveError as e:
-                #             logger.error(" DR save failed row %s: %s", idx, e)
+                    if ic_docket_dto.send_for_review:
+                        try:
+                            save_from_invention_docket(
+                                dr_session=dr_session,
+                                inv_docket=ic_docket_dto,
+                                tenant_id=tenant_id,
+                                import_user_id=import_user,
+                                status_name=row.get(COLS.CURRENT_STATUS) or None,
+                                attachments=[],
+                            )
+                        except ReviewSaveError as e:
+                            logger.error(" DR save failed row %s: %s", idx, e)
 
-                #     if ic_docket_dto.send_for_drafting:
-                #         try:
-                #             DraftingService.save_docket(
-                #                 session=drafting_session,
-                #                 dto=ic_docket_dto,
-                #             )
-                #             logger.info(
-                #                 "✓ Drafting saved for docket '%s'",
-                #                 ic_docket_dto.manual_docket_number,
-                #             )
-                #         except Exception as e:
-                #             logger.error(
-                #                 " Drafting save failed row %s: %s",
-                #                 idx,
-                #                 e,
-                #                 exc_info=True,
-                #             )
-                #             raise RuntimeError(
-                #                 f"Drafting save failed for docket '{ic_docket_dto.manual_docket_number}' – {e}"
-                #             ) from e
+                    if ic_docket_dto.send_for_drafting:
+                        try:
+                            DraftingService.save_docket(
+                                session=drafting_session,
+                                dto=ic_docket_dto,
+                            )
+                            logger.info(
+                                "✓ Drafting saved for docket '%s'",
+                                ic_docket_dto.manual_docket_number,
+                            )
+                        except Exception as e:
+                            logger.error(
+                                " Drafting save failed row %s: %s",
+                                idx,
+                                e,
+                                exc_info=True,
+                            )
+                            raise RuntimeError(
+                                f"Drafting save failed for docket '{ic_docket_dto.manual_docket_number}' – {e}"
+                            ) from e
 
-                #     ic_session.commit()
-                #     dr_session.commit()
-                #     drafting_session.commit()
-                #     logger.info(
-                #         "✓ Row %s committed for docket '%s'", idx, docket_number
-                #     )
+                    ic_session.commit()
+                    dr_session.commit()
+                    drafting_session.commit()
+                    logger.info(
+                        "✓ Row %s committed for docket '%s'", idx, docket_number
+                    )
 
                 logger.info(
                     "Row %s: importing subdocket for docket '%s'",
@@ -164,10 +165,11 @@ def import_excel(
 
                     # --- Step 2: Save to downstream (Drafting) database using the DTO ---
                     logger.info(
-                        "Row %s: Saving corresponding entry to drafting database...",
-                        idx,
-                    )
-                    DraftingSubdocketService.save_from_dto(
+                      "Row %s: Saving corresponding entry to drafting database with DTO:\n%s",
+                             idx,
+                       pprint.pformat(subdocket_dto)
+)
+                    save_drafting_subdocket(
                         session=drafting_session, dto=subdocket_dto, row=row
                     )
 

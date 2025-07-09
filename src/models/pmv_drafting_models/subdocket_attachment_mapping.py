@@ -12,7 +12,7 @@ class SubdocketAttachmentMapping(BaseDrafting):
     location = Column(String)
     fileName = Column(String)
     created_on = Column(TIMESTAMP)
-    modified_date = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
     tenantId = Column(CHAR(36))
 
     # ---------------------- Foreign Keys ----------------------

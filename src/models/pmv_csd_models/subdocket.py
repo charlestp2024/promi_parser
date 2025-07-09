@@ -69,17 +69,15 @@ class Subdocket(BaseCsd):
 
     archived_by = Column(CHAR(36), ForeignKey("user.uuid"))
 
+    subdocket_user_role_mappings = relationship(
+        "SubdocketUserRolesMapping",
+        back_populates="subdocket",
+        cascade="all, delete-orphan",
+    )
 
-subdocket_user_role_mappings = relationship(
-    "SubdocketUserRolesMapping",
-    back_populates="subdocket",
-    cascade="all, delete-orphan",  # Optional: Deletes mappings when a subdocket is deleted
-)
-
-
-# This relationship allows you to access `subdocket.subdocket_foreign_filing_country_mappings`
-subdocket_foreign_filing_country_mappings = relationship(
-    "ForeignFilingCountry",
-    back_populates="subdocket",
-    cascade="all, delete-orphan",
-)
+    subdocket_foreign_filing_country_mappings = relationship(
+        "ForeignFilingCountry",
+        back_populates="subdocket",
+        cascade="all, delete-orphan",
+    )
+    

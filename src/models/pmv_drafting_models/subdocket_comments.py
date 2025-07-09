@@ -10,7 +10,7 @@ class SubdocketComments(BaseDrafting):
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
     created_on = Column(TIMESTAMP)
-    modified_date = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
     comment = Column(String)
     deleted = Column(Boolean)
     tenantId = Column(CHAR(36))

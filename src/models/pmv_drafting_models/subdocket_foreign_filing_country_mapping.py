@@ -9,7 +9,7 @@ class SubdocketForeignFilingCountryMapping(BaseDrafting):
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
     created_on = Column(TIMESTAMP)
-    modified_date = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationships ----------------------
     subdocket_id = Column(Integer, ForeignKey("subdocket.id"))
@@ -17,4 +17,4 @@ class SubdocketForeignFilingCountryMapping(BaseDrafting):
         "SubDocket", back_populates="subdocketForeignFilingCountryMapping"
     )
 
-    countries_id = Column(Integer, ForeignKey("countries.id"))
+    country_id = Column(Integer, ForeignKey("countries.id"))

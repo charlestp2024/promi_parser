@@ -10,7 +10,7 @@ class SubdocketLogs(BaseDrafting):
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
     operation_type = Column(String)
-    added_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     modified_on = Column(TIMESTAMP)
     tenant_id = Column(CHAR(36))
 

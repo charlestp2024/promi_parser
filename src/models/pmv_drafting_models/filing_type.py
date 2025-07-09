@@ -9,8 +9,8 @@ class FilingType(BaseDrafting):
     id = Column(Integer, primary_key=True, autoincrement=True)
     filing_type = Column(String(255))
     filing_type_code = Column(String(255))
-    added_time = Column(DateTime, name="created_on")
-    modified_time = Column(DateTime, name="modified_on")
+    created_on = Column(DateTime, name="created_on")
+    modified_on = Column(DateTime, name="modified_on")
 
     # Relationship to Docket
     docket = relationship(

@@ -9,8 +9,8 @@ class FilingEntityType(BaseDrafting):
     # ---------------------- Normal Fields ----------------------
     id = Column(Integer, primary_key=True, autoincrement=True)
     filing_entity_type = Column(String)
-    added_time = Column(TIMESTAMP)
-    modified_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     docket = relationship(
         "Docket", back_populates="filing_entity_type", cascade="all, delete-orphan"

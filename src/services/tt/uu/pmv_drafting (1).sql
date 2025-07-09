@@ -2536,7 +2536,7 @@ CREATE TABLE `subdocket_foreign_filing_country` (
 
 CREATE TABLE `subdocket_logs` (
   `id` int NOT NULL,
-  `added_time` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `created_on` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   `operation_type` varchar(300) DEFAULT NULL,
   `subdocket_id` int DEFAULT NULL,
   `created_by` char(36) DEFAULT NULL,

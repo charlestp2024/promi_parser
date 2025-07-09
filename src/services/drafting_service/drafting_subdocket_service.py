@@ -91,6 +91,8 @@ def _handle_drafting_assignees(
         mapping = SubdocketAssigneeMapping(
             subdocket_id=drafting_subdocket_id,
             assignee_id=assignee.id,
+            created_on=datetime.utcnow(),
+            modified_on=datetime.utcnow(),
         )
         session.add(mapping)
     logger.info(f"✓ Mapped assignees for subdocket UUID {dto.uuid}")
@@ -104,13 +106,13 @@ def _handle_drafting_foreign_filing(
     if not dto.foreign_filing_countries_ids:
         return
 
-    for country_id in dto.foreign_filing_countries_ids:
+    for country__id in dto.foreign_filing_countries_ids:
         session.add(
             SubdocketForeignFilingCountryMapping(
                 subdocket_id=drafting_subdocket_id,
-                countries_id=country_id,  # Note the model uses 'countries_id'
+                country_id=country__id,  
                 created_on=datetime.utcnow(),
-                modified_date=datetime.utcnow(),
+                modified_on=datetime.utcnow(),
             )
         )
     logger.info(
@@ -121,13 +123,7 @@ def _handle_drafting_foreign_filing(
 # In services/drafting_subdocket_service.py
 
 
-class DraftingSubdocketService:
-    """
-    A service class to handle all operations related to subdockets in the drafting module.
-    """
 
-
-@staticmethod
 def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
     """
     Saves a subdocket from a DTO into the drafting database.
@@ -172,7 +168,7 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             docket_uuid=str(dto.docket_uuid),
             subdocket_number=dto.system_generated_subdocket_number,  # Or another primary identifier
             manual_subdocket_number=dto.manual_subdocket_number,
-            tenantId=dto.tenant_id,
+            tenant_id=dto.tenant_id,
             client_id=str(dto.client_id),
             added_by=str(dto.added_by),
             country_id=dto.country_of_filing_id,
@@ -193,8 +189,8 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             office_action_recieved_date=dto.recent_action_recieved_date,
             term_extension=dto.term_extention,
             # Timestamps
-            added_time=dto.created_on,
-            modifiedOn=dto.modified_on,
+            created_on=dto.created_on,
+            modified_on=dto.modified_on,
             deleted=False,
         )
 
@@ -213,7 +209,7 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             client_id=str(dto.client_id),
             tenant_id=dto.tenant_id,
             created_by=str(dto.added_by),
-            added_time=datetime.utcnow(),
+            created_on=datetime.utcnow(),
             modified_on=datetime.utcnow(),
             operation_type="Subdocket created successfully",
         )

@@ -1,5 +1,3 @@
-# In services/utils/subdocket_dto.py (or wherever your DTO is defined)
-
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from decimal import Decimal
@@ -52,3 +50,25 @@ class SubdocketDTO:
     inventor_ids: List[str] = field(default_factory=list)
     assignee_ids: List[int] = field(default_factory=list)
     foreign_filing_countries_ids: List[str] = field(default_factory=list)
+
+    # --- Helper to ensure defaults for missing optional values ---
+    @classmethod
+    def from_dict(cls, data: dict) -> "SubdocketDTO":
+        """
+        Create a SubdocketDTO from a dictionary, applying default values where needed.
+        """
+        # Generate UUIDs if missing
+        if "uuid" not in data:
+            data["uuid"] = str(uuid.uuid4())
+
+        # Ensure datetime fields are present
+        now = datetime.utcnow()
+        data.setdefault("created_on", now)
+        data.setdefault("modified_on", now)
+
+        # Lists
+        data.setdefault("inventor_ids", [])
+        data.setdefault("assignee_ids", [])
+        data.setdefault("foreign_filing_countries_ids", [])
+
+        return cls(**data)

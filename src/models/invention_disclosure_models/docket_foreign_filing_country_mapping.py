@@ -27,7 +27,7 @@ class DocketForeignFilingCountryMapping(BaseInvd):
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False,
-    )  # Java: added_time
+    )  
     modified_on = Column(
         DateTime(timezone=True),
         server_default=func.now(),

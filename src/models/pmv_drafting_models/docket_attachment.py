@@ -12,7 +12,7 @@ class DocketAttachment(BaseDrafting):
     location = Column(String)
     file_name = Column(String)
     created_on = Column(TIMESTAMP)
-    modified_date = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
     tenant_id = Column(CHAR(36))  # UUID stored as string
 
     # ---------------------- Relationship Fields ----------------------

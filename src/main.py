@@ -27,4 +27,4 @@ def process_excel(file_path: str, data_type: str = "client"):
 
 
 if __name__ == "__main__":
-    process_excel("D:/var/populated_patent_data_final.xlsx", data_type="client")
+    process_excel("C:/Work/Promive/populated_patent_data_final.xlsx", data_type="client")

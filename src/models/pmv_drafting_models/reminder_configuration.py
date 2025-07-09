@@ -13,8 +13,8 @@ class ReminderConfiguration(BaseDrafting):
     third_reminder = Column(Integer)
     forth_reminder = Column(Numeric(10, 2))
     priority = Column(Integer)
-    added_time = Column(TIMESTAMP)
-    modified_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationship Fields ----------------------
     filing_country = Column(Integer, ForeignKey("countries.id"))

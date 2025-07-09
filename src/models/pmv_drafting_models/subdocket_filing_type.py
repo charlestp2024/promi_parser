@@ -11,7 +11,7 @@ class SubdocketFilingType(BaseDrafting):
     filing_type = Column(String)
     filing_type_code = Column(String)
     created_on = Column(TIMESTAMP)
-    modified_date = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationships ----------------------
     subdocket = relationship(

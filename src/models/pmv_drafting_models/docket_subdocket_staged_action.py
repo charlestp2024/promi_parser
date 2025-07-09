@@ -11,7 +11,7 @@ class DocketSubdocketStagedAction(BaseDrafting):
     modified_on = Column(TIMESTAMP)
     complete = Column(Boolean)
     comment = Column(String)
-    added_timestamp = Column(TIMESTAMP)
+    created_onstamp = Column(TIMESTAMP)
     performed_on = Column(TIMESTAMP)
     attachment_mandatory = Column(Boolean)
 

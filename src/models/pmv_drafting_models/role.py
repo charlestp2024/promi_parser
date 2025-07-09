@@ -10,8 +10,8 @@ class Role(BaseDrafting):
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String)
     visibility = Column(Boolean)
-    added_time = Column(TIMESTAMP)
-    modified_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationship Fields ----------------------
     docket_subdocket_roles = relationship(

@@ -10,8 +10,8 @@ class Stages(BaseDrafting):
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String)
     serial_order = Column(Integer)
-    added_time = Column(TIMESTAMP)
-    modified_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # ---------------------- Relationship Fields ----------------------
     actions = relationship(
