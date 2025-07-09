@@ -4,7 +4,7 @@ from typing import Dict, List
 # ----------------- Centralized Logger ----------------- #
 from services.logger import (
     logger,
-)  
+)
 
 # ----------------- Internal Imports ----------------- #
 from services.utils.lookup_cache import (
@@ -15,7 +15,7 @@ from services.utils.lookup_cache import (
 )
 from excel.ExcelData import ExcelColumns
 from services.utils.parser_utils import split_multi
-from models.invention_disclosure_models import (
+from models.pmv_invention_disclosure_models import (
     Client,
     ClientDivision,
     Department,

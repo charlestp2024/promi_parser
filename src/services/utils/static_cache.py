@@ -17,11 +17,11 @@ from typing import Dict
 
 from sqlalchemy.orm import Session
 
-from models.invention_disclosure_models.status import Status
-from models.invention_disclosure_models.filing_entity_type import FilingEntityType
-from models.invention_disclosure_models.filing_type import FilingType
-from models.invention_disclosure_models.country import Countries
-from models.invention_disclosure_models.role import Role
+from models.pmv_invention_disclosure_models.status import Status
+from models.pmv_invention_disclosure_models.filing_entity_type import FilingEntityType
+from models.pmv_invention_disclosure_models.filing_type import FilingType
+from models.pmv_invention_disclosure_models.country import Countries
+from models.pmv_invention_disclosure_models.role import Role
 import logging
 
 logging.basicConfig(level=logging.INFO)

@@ -19,7 +19,7 @@ from services.utils.subdocket_static_cache import (
     subdocket_status_id_by_name,
     subdocket_filing_entity_id_by_name,
 )
-from models.invention_disclosure_models import Docket
+from models.pmv_invention_disclosure_models import Docket
 from services.utils.role_constants import RoleEnum
 from services.utils.subdocket_static_cache import (
     subdocket_filing_type_code_by_name,
@@ -368,7 +368,7 @@ def save_subdocket(
 
     # Handle User Role Mappings
     process_subdocket_roles(session, row, subdocket)
-    
+
     # --- 6. Finalize with a Log Entry ---
     log = SubdocketLogs(
         subdocket_id=subdocket.id,
@@ -383,8 +383,6 @@ def save_subdocket(
     logger.info(
         f"✓ Subdocket saved: {subdocket.manual_subdocket_number or subdocket.system_generated_subdocket_number} for docket: {docket_number}"
     )
-   
-
 
     # ---  Convert to DTO and Return (NEW) ---
     subdocket_dto = convert_subdocket_to_dto(subdocket)
@@ -400,12 +398,10 @@ def convert_subdocket_to_dto(subdocket: Subdocket) -> SubdocketDTO:
     the subdocket object has its ID and relationships populated.
     """
     # 1. Process user roles using role IDs for consistency and robustness.
-    
+
     # Create a map of {role_id: user_id} for single-user roles.
     # We now use `ur.role_id` as the key, which is more reliable than a string label.
-    role_map = {
-        ur.role_id: ur.user_id for ur in subdocket.subdocket_user_role_mappings
-    }
+    role_map = {ur.role_id: ur.user_id for ur in subdocket.subdocket_user_role_mappings}
 
     # Collect all user_ids for the Inventor role by comparing IDs.
     inventor_ids = [
@@ -438,7 +434,6 @@ def convert_subdocket_to_dto(subdocket: Subdocket) -> SubdocketDTO:
         country_of_filing_id=subdocket.country_of_filing_id,
         patent_office_id=subdocket.patent_office_id,
         filing_maintenance_cost_estimate=subdocket.filing_maintenance_cost_estimate,
-        
         # Dates
         filing_date=subdocket.filing_date,
         publication_date=subdocket.publication_date,
@@ -449,9 +444,7 @@ def convert_subdocket_to_dto(subdocket: Subdocket) -> SubdocketDTO:
         expected_filing_year=subdocket.expected_filing_year,
         recent_action_recieved_date=subdocket.recent_action_recieved_date,
         term_extention=subdocket.term_extention,
-        
         # Related IDs
-        
         patent_agent_id=role_map.get(RoleEnum.PATENT_AGENT.id),
         inventor_ids=inventor_ids,
         foreign_filing_countries_ids=foreign_country_ids,

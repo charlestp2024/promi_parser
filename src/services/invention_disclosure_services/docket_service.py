@@ -1,15 +1,16 @@
 from __future__ import annotations
-import uuid,os
+import uuid, os
 from datetime import datetime
 from typing import List
-from dotenv import load_dotenv,find_dotenv
+from dotenv import load_dotenv, find_dotenv
 from sqlalchemy import func
 from sqlalchemy.orm import Session
+import urllib.parse
 
 load_dotenv(find_dotenv(filename=".env.local"))
 
 # ----------------- Models ----------------- #
-from models.invention_disclosure_models import (
+from models.pmv_invention_disclosure_models import (
     Docket,
     Client,
     ClientDivision,
@@ -149,9 +150,15 @@ class DocketService:
             created_on=func.now(),
             modified_on=func.now(),
             added_by=str(import_user.uuid),
-            appid=str(os.getenv("ININVENTION_CENTRE_APP_ID")),
+            appid=str(os.getenv("INVENTION_CENTRE_APP_ID")),
             deleted=False,
         )
+        sent_for_review_value = row.get(COLS.SENT_FOR_REVIEW, "").strip().lower()
+        if sent_for_review_value == "yes":
+            encoded_docket_number = urllib.parse.quote(autogen_number, safe="")
+            docket.dr_link = (
+                os.getenv("DOCKET_REVIEW_REDIRECTION_URL") + encoded_docket_number
+            )
 
         # ----------------- Assign Dates ----------------- #
         docket.first_filing_date = parse_date(row.get(COLS.FIRST_FILING_DATE))

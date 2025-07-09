@@ -13,12 +13,30 @@ from models.pmv_drafting_models import (
     SubdocketAssigneeMapping,
     SubdocketForeignFilingCountryMapping,
     SubdocketLogs,
+    DocketSubdocketMapping,
 )
 
 # Import shared utilities
 from services.utils.role_constants import RoleEnum
 from excel.ExcelData import ExcelColumns  # To get assignee names from the row
 from services.logger import logger
+
+
+def _handle_docket_subdocket_mapping(
+    session: Session,
+    dto: SubdocketDTO,
+    drafting_docket_id: int,
+    drafting_subdocket_id: int,
+):
+    """Creates the mapping between the parent docket and the new subdocket."""
+    mapping = DocketSubdocketMapping(
+        docket_id=drafting_docket_id,
+        subdocket_id=drafting_subdocket_id,
+        created_on=datetime.utcnow(),
+        modified_on=datetime.utcnow(),
+    )
+    session.add(mapping)
+    logger.info(f"✓ Created Docket-Subdocket mapping for subdocket UUID {dto.uuid}")
 
 
 def _handle_drafting_roles(
@@ -110,7 +128,7 @@ def _handle_drafting_foreign_filing(
         session.add(
             SubdocketForeignFilingCountryMapping(
                 subdocket_id=drafting_subdocket_id,
-                country_id=country__id,  
+                country_id=country__id,
                 created_on=datetime.utcnow(),
                 modified_on=datetime.utcnow(),
             )
@@ -121,7 +139,6 @@ def _handle_drafting_foreign_filing(
 
 
 # In services/drafting_subdocket_service.py
-
 
 
 def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
@@ -202,7 +219,10 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
         _handle_drafting_roles(session, dto, drafting_docket_id, drafting_subdocket_id)
         _handle_drafting_assignees(session, dto, row, drafting_subdocket_id)
         _handle_drafting_foreign_filing(session, dto, drafting_subdocket_id)
-
+        drafting_subdocket_id = new_subdocket.id
+        _handle_docket_subdocket_mapping(
+            session, dto, drafting_docket_id, drafting_subdocket_id
+        )
         # 5. Create a log entry
         log = SubdocketLogs(
             subdocket_id=drafting_subdocket_id,

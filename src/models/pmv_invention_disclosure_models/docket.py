@@ -57,9 +57,9 @@ class Docket(BaseInvd):
     deleted = Column(Boolean, default=False)
     archived = Column(Boolean, default=False)
     send_for_review = Column(Boolean, default=False)
-
+    dr_link = Column(String(255))
     modified_on = Column(
-        DateTime(timezone=True),  
+        DateTime(timezone=True),
         onupdate=func.now(),
     )
     archive_date = Column(DateTime(timezone=True))
@@ -113,6 +113,7 @@ class Docket(BaseInvd):
         cascade="all, delete-orphan",
         lazy="select",
     )
+
     # ---------- Convenience ----------
     def __repr__(self) -> str:
         return (

@@ -102,11 +102,10 @@ def import_excel(
                         try:
                             save_from_invention_docket(
                                 dr_session=dr_session,
+                                row=row,
                                 inv_docket=ic_docket_dto,
                                 tenant_id=tenant_id,
                                 import_user_id=import_user,
-                                status_name=row.get(COLS.CURRENT_STATUS) or None,
-                                attachments=[],
                             )
                         except ReviewSaveError as e:
                             logger.error(" DR save failed row %s: %s", idx, e)
@@ -165,10 +164,10 @@ def import_excel(
 
                     # --- Step 2: Save to downstream (Drafting) database using the DTO ---
                     logger.info(
-                      "Row %s: Saving corresponding entry to drafting database with DTO:\n%s",
-                             idx,
-                       pprint.pformat(subdocket_dto)
-)
+                        "Row %s: Saving corresponding entry to drafting database with DTO:\n%s",
+                        idx,
+                        pprint.pformat(subdocket_dto),
+                    )
                     save_drafting_subdocket(
                         session=drafting_session, dto=subdocket_dto, row=row
                     )

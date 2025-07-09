@@ -1,8 +1,9 @@
 from __future__ import annotations
-import uuid
+import uuid, os
 from datetime import datetime
 from typing import List, Optional, Dict
-
+from dotenv import load_dotenv, find_dotenv
+import urllib.parse
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
 
@@ -18,9 +19,12 @@ from models.pmv_dr_models import (
     Status,
     User,
 )
+from excel.ExcelData import ExcelColumns
 
 # ----------------- Central Logger ----------------- #
 from services.logger import logger  # Reuse centralized rotating logger
+
+COLS = ExcelColumns()
 
 
 # ----------------- Custom Error ----------------- #
@@ -37,12 +41,10 @@ def _require(value, message: str):
 
 def save_from_invention_docket(
     dr_session: Session,
-    *,
+    row: dict,
     inv_docket: DocketDTO,
     tenant_id: str,
     import_user_id: str,
-    attachments: Optional[List[Dict[str, str]]] = None,
-    status_name: Optional[str] = None,
 ) -> DRDocket:
     """
     Save DR docket from an invention docket DTO.
@@ -98,11 +100,19 @@ def save_from_invention_docket(
         modified_on=datetime.utcnow(),
         active=True,
     )
+    sent_for_drafting_value = row.get(COLS.SENT_FOR_DRAFTING, "").strip().lower()
+    if sent_for_drafting_value == "yes":
+        encoded_docket_number = urllib.parse.quote(
+            inv_docket.system_generated_docket_number, safe=""
+        )
+        dr_docket.drafting_link = (
+            os.getenv("DRAFTING_REDIRECTION_URL") + encoded_docket_number
+        )
     dr_session.add(dr_docket)
     dr_session.flush()
 
     logger.info("✓ DR docket created: id=%s, title='%s'", dr_docket.id, dr_docket.title)
-
+    status_name = row.get(COLS.SENT_FOR_REVIEW, "").strip()
     # ---------------------- Add Status (optional) ---------------------- #
     if status_name:
         status = dr_session.query(Status).filter_by(status=status_name).first()

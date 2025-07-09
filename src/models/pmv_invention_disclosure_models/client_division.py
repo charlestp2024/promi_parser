@@ -12,7 +12,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import relationship
 from models.base import BaseInvd
-from models.invention_disclosure_models.client import Client
+from models.pmv_invention_disclosure_models.client import Client
 
 
 class ClientDivision(BaseInvd):
