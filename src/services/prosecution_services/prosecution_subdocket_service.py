@@ -13,6 +13,7 @@ from models.pmv_prosecution_models import (
     Assignee as ProsecutionAssignee,
     SubdocketAssigneeMapping as ProsecutionSubdocketAssigneeMapping,
     SubdocketLogs as ProsecutionSubdocketLogs,
+    Source,
 )
 
 
@@ -39,7 +40,9 @@ def _handle_prosecution_roles(session: Session, dto: SubdocketDTO, subdocket_id:
     logger.info(f"✓ Added {len(roles)} role mappings for subdocket UUID {dto.uuid}")
 
 
-def _handle_prosecution_assignees(session: Session, dto: SubdocketDTO, row: dict, subdocket_id: int):
+def _handle_prosecution_assignees(
+    session: Session, dto: SubdocketDTO, row: dict, subdocket_id: int
+):
     assignee_names = row.get(ExcelColumns.ASSIGNEE_NAME, "")
     if not assignee_names:
         return
@@ -61,7 +64,7 @@ def _handle_prosecution_assignees(session: Session, dto: SubdocketDTO, row: dict
                 tenant_id=dto.tenant_id,
                 created_on=datetime.utcnow(),
                 modified_on=datetime.utcnow(),
-                added_by=dto.added_by
+                added_by=dto.added_by,
             )
             session.add(assignee)
             session.flush()
@@ -77,8 +80,6 @@ def _handle_prosecution_assignees(session: Session, dto: SubdocketDTO, row: dict
     logger.info(f"✓ Mapped assignees for subdocket UUID {dto.uuid}")
 
 
-
-
 def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
     """
     Save a prosecution subdocket using only prosecution models — no Docket linkage.
@@ -91,9 +92,7 @@ def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
     try:
         # 1. Check if subdocket already exists (idempotency)
         existing_subdocket = (
-            session.query(ProsecutionSubDocket)
-            .filter_by(uuid=str(dto.uuid))
-            .first()
+            session.query(ProsecutionSubDocket).filter_by(uuid=str(dto.uuid)).first()
         )
         if existing_subdocket:
             logger.info(f"✓ Skipping: Subdocket UUID {dto.uuid} already exists.")
@@ -118,6 +117,7 @@ def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             publication_number=dto.publication_number,
             filing_date=dto.filing_date,
             publication_date=dto.publication_date,
+            source=Source.PMV_DRAFTING,
             # grant_date=dto.grant_date,
             priority_date=dto.priority_date,
             prior_filing_year=dto.prior_filing_date,
@@ -126,7 +126,6 @@ def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             # office_action_recieved_date=dto.recent_action_recieved_date,
             # term_extension=dto.term_extention,
             created_on=dto.created_on,
-    
             modified_on=dto.modified_on,
             deleted=False,
         )
@@ -136,7 +135,7 @@ def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
         # 3. Map relationships (roles, assignees, countries)
         _handle_prosecution_roles(session, dto, subdocket.id)
         _handle_prosecution_assignees(session, dto, row, subdocket.id)
-        
+
         # 4. Add creation log
         log = ProsecutionSubdocketLogs(
             subdocket_id=subdocket.id,
@@ -149,7 +148,9 @@ def save_prosecution_subdocket(session: Session, dto: SubdocketDTO, row: dict):
         )
         session.add(log)
 
-        logger.info(f"✓ Successfully saved prosecution subdocket '{dto.manual_subdocket_number}'")
+        logger.info(
+            f"✓ Successfully saved prosecution subdocket '{dto.manual_subdocket_number}'"
+        )
         return subdocket
 
     except Exception as e:

@@ -25,7 +25,8 @@ from services.centralize_subdocket_services.centralize_subdocket_service import 
     save_subdocket,
 )
 from services.prosecution_services.prosecution_subdocket_service import (
-    save_prosecution_subdocket,         )
+    save_prosecution_subdocket,
+)
 
 # ----------------- Logging Configuration ----------------- #
 from services.logger import logger
@@ -65,7 +66,7 @@ def import_excel(
     dr_session = get_session("pmv_dr")
     drafting_session = get_session("pmv_drafting")
     csd_session = get_session("pmv_csd")
-    prosecution_session = get_session("pmv_prosecution")    
+    prosecution_session = get_session("pmv_prosecution")
     preload_all(ic_session)
     preload_all_subdocket_cache(csd_session)
 
@@ -94,7 +95,7 @@ def import_excel(
                         continue
 
                     rows_processed += 1
-                    logger.debug(
+                    logger.info(
                         "[DTO DEBUG] Parsed DocketDTO for row %s: %s",
                         idx,
                         ic_docket_dto,
@@ -163,7 +164,7 @@ def import_excel(
                         logger.warning("Row %s: Subdocket skipped (DTO is None)", idx)
                         # No need to commit or rollback anything, as nothing was added to the session
                         continue
-                    
+
                     # --- Step 2: Save to downstream (Drafting) database using the DTO ---
                     logger.info(
                         "Row %s: Saving corresponding entry to drafting database with DTO:\n%s",
@@ -173,17 +174,15 @@ def import_excel(
                     save_drafting_subdocket(
                         session=drafting_session, dto=subdocket_dto, row=row
                     )
-                    
+
                     if row.get(COLS.SENT_FOR_PROSECUTION, "").strip().lower() == "yes":
-                      
-                      save_prosecution_subdocket(
-                      session=prosecution_session,
-                        dto=subdocket_dto,
-                          row=row,
-                            )
-    
-      
-                        
+
+                        save_prosecution_subdocket(
+                            session=prosecution_session,
+                            dto=subdocket_dto,
+                            row=row,
+                        )
+
                     # --- Step 3: Commit transactions for both databases together ---
                     csd_session.commit()
                     prosecution_session.commit()
@@ -230,4 +229,4 @@ def import_excel(
         dr_session.close()
         drafting_session.close()
         csd_session.close()
-        prosecution_session.close()  
+        prosecution_session.close()

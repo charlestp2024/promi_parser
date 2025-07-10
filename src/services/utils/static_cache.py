@@ -160,3 +160,15 @@ def country_id_by_name_or_code(name_or_code: str) -> int:
     """
     country = country_by_name(name_or_code)
     return country.id
+
+
+def country_name_by_id(country_id: int) -> str:
+    """
+    Return the country name for a given country ID.
+    Searches existing _COUNTRY_BY_NAME values.
+    Raises ValueError if not found.
+    """
+    for country in _COUNTRY_BY_NAME.values():
+        if country.id == country_id:
+            return country.name
+    raise ValueError(f"Country name not found for ID '{country_id}' in static cache")

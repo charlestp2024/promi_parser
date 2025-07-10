@@ -7,17 +7,17 @@ from sqlalchemy import (
     Boolean,
     TIMESTAMP,
     ForeignKey,
-    Enum as PgEnum,
 )
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
 from models import BaseProsecution
 import enum
+from enum import IntEnum
 
 
-class Source(enum.Enum):
-    INTERNAL = 0
-    EXTERNAL = 1
+class Source(IntEnum):
+    PMV_DRAFTING = 0
+    PMV_OWN = 1
 
 
 class Subdocket(BaseProsecution):
@@ -58,7 +58,7 @@ class Subdocket(BaseProsecution):
     deleted = Column(Boolean, default=False)
     application_number = Column(String(255))
 
-    source = Column(PgEnum(Source), nullable=True)
+    source = Column(Integer, nullable=True)
     send_to_dca = Column(Boolean, default=False)
 
     department_id = Column(CHAR(36), ForeignKey("department.uuid"))
@@ -126,7 +126,7 @@ class Subdocket(BaseProsecution):
         cascade="all, delete-orphan",
         lazy="select",
     )
-  
+
     custom_reminders = relationship(
         "CustomReminder",
         back_populates="subdocket",
@@ -135,8 +135,8 @@ class Subdocket(BaseProsecution):
     )
 
     mailing_queues = relationship(
-    "MailingQueue",
-    back_populates="subdocket",
-    cascade="all, delete-orphan",
-    lazy="select"
-      )
+        "MailingQueue",
+        back_populates="subdocket",
+        cascade="all, delete-orphan",
+        lazy="select",
+    )

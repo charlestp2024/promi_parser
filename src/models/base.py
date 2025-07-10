@@ -6,3 +6,4 @@ BaseDr = declarative_base()  #  ← pmv_dr
 BaseDrafting = declarative_base()  #  ← pmv_drafting
 BaseCsd = declarative_base()  #  ← pmv_csd
 BaseProsecution = declarative_base()  #  ← pmv_prosecuion
+BaseDca = declarative_base()
