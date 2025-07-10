@@ -3,8 +3,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
-from models import BaseProsecution  # Import BaseProsecution from __init__.py
-
+from models import BaseProsecution  
 
 class Assignee(BaseProsecution):
     __tablename__ = "assignee"
@@ -20,7 +19,7 @@ class Assignee(BaseProsecution):
 
     # Foreign key to client table
     client_id = Column(Integer, ForeignKey("client.id"))
-    client = relationship("Client", back_populates="assignees")
+    
 
     # Reverse mapping to subdocket_assignee_mapping
     subdocket_assignee_mapping = relationship(
@@ -35,5 +34,5 @@ class Assignee(BaseProsecution):
     modified_on = Column(TIMESTAMP)
 
     # Foreign key to user who added this entry
-    added_by = Column(Integer, ForeignKey("user.id"))
-    added_by_user = relationship("User", back_populates="assignees_added")
+    added_by = Column(Integer, ForeignKey("user.uuid"))
+   

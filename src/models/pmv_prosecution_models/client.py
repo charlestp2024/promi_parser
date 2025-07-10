@@ -1,6 +1,7 @@
 # models/pmv_prosecution_models/client.py
 
 from sqlalchemy import Column, String, Integer, TIMESTAMP
+from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.mysql import CHAR
 from models import BaseProsecution  # Shared declarative base
 
@@ -20,3 +21,12 @@ class Client(BaseProsecution):
 
     created_on = Column(TIMESTAMP)
     modified_on = Column(TIMESTAMP)
+
+    departments = relationship("Department", back_populates="client")
+    subdocket = relationship("Subdocket", back_populates="client")
+    user_client_mapping = relationship(
+    "UserClientMapping",
+    back_populates="client",
+    cascade="all, delete-orphan",
+    lazy="select"
+)

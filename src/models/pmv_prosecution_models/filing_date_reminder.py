@@ -27,9 +27,7 @@ class FilingDateReminder(BaseProsecution):
     subdocket_stage_action_id = Column(
         Integer, ForeignKey("subdocket_staged_action.id")
     )
-    subdocket_stage_action = relationship(
-        "SubdocketStagedAction", back_populates="filing_date_reminders"
-    )
+    
 
     # Reminder details
     reminder_date = Column(TIMESTAMP)

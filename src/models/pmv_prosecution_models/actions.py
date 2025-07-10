@@ -20,8 +20,8 @@ class Actions(BaseProsecution):
     countries = relationship("Countries", back_populates="actions")
 
     # Optional reminder configuration
-    reminder_config_id = Column(Integer, ForeignKey("reminder_configuration.id"))
-    reminder_config = relationship("ReminderConfiguration", back_populates="actions")
+    reminder_config = Column(Integer, ForeignKey("reminder_configuration.id"))
+    
 
     # Other fields
     messages = Column(String(1000))
@@ -29,19 +29,8 @@ class Actions(BaseProsecution):
     attachment_mandatory = Column(Boolean, nullable=True)
 
     # Reverse relationships
-    subdocket_stage_action = relationship(
-        "SubdocketStagedAction",
-        back_populates="actions",
-        cascade="all, delete-orphan",
-        lazy="select",
-    )
+   
 
-    subdocket_reminder = relationship(
-        "SubdocketReminder",
-        back_populates="actions",
-        cascade="all, delete-orphan",
-        lazy="select",
-    )
 
     action_input_config = relationship(
         "ActionInputConfig",

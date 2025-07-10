@@ -156,9 +156,11 @@ class DocketService:
         sent_for_review_value = row.get(COLS.SENT_FOR_REVIEW, "").strip().lower()
         if sent_for_review_value == "yes":
             encoded_docket_number = urllib.parse.quote(autogen_number, safe="")
-            docket.dr_link = (
-                os.getenv("DOCKET_REVIEW_REDIRECTION_URL") + encoded_docket_number
-            )
+            base_url = os.getenv("DOCKET_REVIEW_REDIRECTION_URL")
+        if base_url is None:
+            raise ValueError("Environment variable DOCKET_REVIEW_REDIRECTION_URL is not set")
+
+        docket.dr_link = base_url + encoded_docket_number
 
         # ----------------- Assign Dates ----------------- #
         docket.first_filing_date = parse_date(row.get(COLS.FIRST_FILING_DATE))

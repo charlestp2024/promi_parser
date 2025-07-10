@@ -21,15 +21,15 @@ class CustomReminder(BaseProsecution):
     cc_address = Column(String(255))
 
     # Timestamp tracking
-    added_time = Column(TIMESTAMP)
-    updated_timestamp = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
+    modified_on = Column(TIMESTAMP)
 
     # Foreign key to subdocket
     subdocket_id = Column(Integer, ForeignKey("subdocket.id"))
     subdocket = relationship("Subdocket", back_populates="custom_reminders")
 
     # Foreign key to user
-    added_by = Column(Integer, ForeignKey("user.id"))
+    added_by = Column(Integer, ForeignKey("user.uuid"))
     user = relationship("User", back_populates="custom_reminders")
 
     # Tenant ID
@@ -37,4 +37,4 @@ class CustomReminder(BaseProsecution):
 
     # Foreign key to client
     client_id = Column(CHAR(36), ForeignKey("client.id"))
-    client = relationship("Client", back_populates="custom_reminders")
+

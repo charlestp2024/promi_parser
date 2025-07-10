@@ -25,12 +25,11 @@ class SubdocketAttachmentMapping(BaseProsecution):
     modified_date = Column(TIMESTAMP)
 
     # Foreign key to User (added_by)
-    added_by = Column(Integer, ForeignKey("user.id"))
+    added_by = Column(Integer, ForeignKey("user.uuid"))
     user = relationship("User", back_populates="subdocket_attachment_mapping")
 
     # Foreign key to Client
     client_id = Column(CHAR(36), ForeignKey("client.id"))
-    client = relationship("Client", back_populates="subdocket_attachment_mapping")
-
+    
     # Tenant
     tenant_id = Column(CHAR(36), nullable=False)

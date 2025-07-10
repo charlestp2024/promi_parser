@@ -13,7 +13,7 @@ class ActionInputConfig(BaseProsecution):
 
     # Foreign key to Actions table
     action_id = Column(Integer, ForeignKey("actions.id"))
-    actions = relationship("Actions", back_populates="input_configs")
+    actions = relationship("Actions", back_populates="action_input_config")
 
     # Configuration fields
     label = Column(String(255))

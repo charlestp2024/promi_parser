@@ -43,7 +43,7 @@ class Subdocket(BaseProsecution):
     )
 
     filing_entity_type_id = Column(Integer, ForeignKey("filing_entity_type.id"))
-    filing_entity_type = relationship("FilingEntityType", back_populates="subdocket")
+    filing_entity_type = relationship("FilingEntityType", back_populates="subdockets")
 
     prior_filing_year = Column(TIMESTAMP)
     filing_date = Column(TIMESTAMP)
@@ -54,7 +54,7 @@ class Subdocket(BaseProsecution):
     client_id = Column(CHAR(36), ForeignKey("client.id"))
     client = relationship("Client", back_populates="subdocket")
 
-    added_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     deleted = Column(Boolean, default=False)
     application_number = Column(String(255))
 
@@ -64,7 +64,7 @@ class Subdocket(BaseProsecution):
     department_id = Column(CHAR(36), ForeignKey("department.uuid"))
     department = relationship("Department", back_populates="subdocket")
 
-    added_by = Column(Integer, ForeignKey("user.id"))
+    added_by = Column(Integer, ForeignKey("user.uuid"))
     user = relationship("User", back_populates="subdocket")
 
     tenant_id = Column(CHAR(36), nullable=False)
@@ -114,7 +114,7 @@ class Subdocket(BaseProsecution):
         cascade="all, delete-orphan",
         lazy="select",
     )
-    filing_date_reminder = relationship(
+    filing_date_reminders = relationship(
         "FilingDateReminder",
         back_populates="subdocket",
         cascade="all, delete-orphan",
@@ -126,15 +126,17 @@ class Subdocket(BaseProsecution):
         cascade="all, delete-orphan",
         lazy="select",
     )
-    mailing_queue = relationship(
-        "MailingQueue",
-        back_populates="subdocket",
-        cascade="all, delete-orphan",
-        lazy="select",
-    )
-    custom_reminder = relationship(
+  
+    custom_reminders = relationship(
         "CustomReminder",
         back_populates="subdocket",
         cascade="all, delete-orphan",
         lazy="select",
     )
+
+    mailing_queues = relationship(
+    "MailingQueue",
+    back_populates="subdocket",
+    cascade="all, delete-orphan",
+    lazy="select"
+      )

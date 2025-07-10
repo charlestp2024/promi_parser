@@ -20,5 +20,5 @@ class SubdocketAssigneeMapping(BaseProsecution):
     subdocket = relationship("Subdocket", back_populates="subdocket_assignee_mapping")
 
     # Timestamps
-    added_time = Column(TIMESTAMP)
+    created_on = Column(TIMESTAMP)
     modified_on = Column(TIMESTAMP)

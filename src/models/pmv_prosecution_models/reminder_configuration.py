@@ -25,10 +25,7 @@ class ReminderConfiguration(BaseProsecution):
     # Email template
     template = Column(String(1000))
 
-    # One-to-many: Actions
-    actions = relationship(
-        "Actions",
-        back_populates="reminder_config",
-        cascade="all, delete-orphan",
-        lazy="select",
-    )
+  
+  
+    subdocket_filing_country = relationship("Countries",  
+      back_populates="reminder_configuration")

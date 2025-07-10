@@ -20,3 +20,13 @@ from .status import Status
 from .subdocket import Subdocket
 from .subdocket_assignee_mapping import SubdocketAssigneeMapping
 from .subdocket_attachment_mapping import SubdocketAttachmentMapping
+from .subdocket_checklist_additional_detail import SubdocketChecklistAdditionalDetail
+from .subdocket_comments import SubdocketComments
+from .subdocket_filing_type import SubdocketFilingType
+from .subdocket_logs import SubdocketLogs
+from .subdocket_reminder import SubdocketReminder
+from .subdocket_stage_attachment_mapping import SubdocketStageAttachmentMapping
+from .subdocket_staged_action import SubdocketStagedAction
+from .subdocket_user_roles import SubdocketUserRoles
+from .user import User
+from .user_client_mapping import UserClientMapping

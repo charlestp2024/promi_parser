@@ -102,6 +102,7 @@ def save_from_invention_docket(
     )
     sent_for_drafting_value = row.get(COLS.SENT_FOR_DRAFTING, "").strip().lower()
     if sent_for_drafting_value == "yes":
+        dr_docket.sent_for_drafting = True
         encoded_docket_number = urllib.parse.quote(
             inv_docket.system_generated_docket_number, safe=""
         )
