@@ -1,3 +1,4 @@
+# ----------------- Python Standard Imports ----------------- #
 import os
 import time
 import logging
@@ -27,10 +28,10 @@ from services.centralize_subdocket_services.centralize_subdocket_service import 
 from services.prosecution_services.prosecution_subdocket_service import (
     save_prosecution_subdocket,
 )
+from services.pmv_dca_services.casereference_service import save_casereference
 
 # ----------------- Logging Configuration ----------------- #
 from services.logger import logger
-
 
 # ----------------- Excel Column Definitions ----------------- #
 COLS = ExcelColumns()
@@ -54,9 +55,7 @@ def import_excel(
     try:
         df = pd.read_excel(excel_file, header=0, dtype=str).fillna("")
     except Exception as e:
-        logger.error(
-            " Failed to read Excel file '%s': %s", excel_file, e, exc_info=True
-        )
+        logger.error("Failed to read Excel file '%s': %s", excel_file, e, exc_info=True)
         raise RuntimeError(f"Unable to read Excel file: {e}") from e
 
     normalise_columns(df, COLUMN_ALIASES)
@@ -67,6 +66,7 @@ def import_excel(
     drafting_session = get_session("pmv_drafting")
     csd_session = get_session("pmv_csd")
     prosecution_session = get_session("pmv_prosecution")
+    dca_session = get_session("pmv_dca")
     preload_all(ic_session)
     preload_all_subdocket_cache(csd_session)
 
@@ -141,14 +141,14 @@ def import_excel(
                         "✓ Row %s committed for docket '%s'", idx, docket_number
                     )
 
-                logger.info(
-                    "Row %s: importing subdocket for docket '%s'",
-                    idx,
-                    row.get(COLS.DOCKET_NUMBER),
-                )
                 if level == "subdocket level":
+                    logger.info(
+                        "Row %s: importing subdocket for docket '%s'",
+                        idx,
+                        row.get(COLS.DOCKET_NUMBER),
+                    )
+
                     # --- Step 1: Save to the primary (CSD) database ---
-                    # This now returns a DTO or None
                     subdocket_dto = save_subdocket(
                         session=csd_session,
                         ict_session=ic_session,
@@ -158,14 +158,12 @@ def import_excel(
                         import_user_id=import_user,
                     )
 
-                    # If the DTO is None, it means the subdocket was skipped (e.g., already exists)
                     if subdocket_dto is None:
                         rows_skipped += 1
                         logger.warning("Row %s: Subdocket skipped (DTO is None)", idx)
-                        # No need to commit or rollback anything, as nothing was added to the session
                         continue
 
-                    # --- Step 2: Save to downstream (Drafting) database using the DTO ---
+                    # --- Step 2: Save to downstream (Drafting) database ---
                     logger.info(
                         "Row %s: Saving corresponding entry to drafting database with DTO:\n%s",
                         idx,
@@ -175,18 +173,28 @@ def import_excel(
                         session=drafting_session, dto=subdocket_dto, row=row
                     )
 
+                    # --- Step 3: Optionally save to Prosecution and Annuity ---
                     if row.get(COLS.SENT_FOR_PROSECUTION, "").strip().lower() == "yes":
-
                         save_prosecution_subdocket(
                             session=prosecution_session,
                             dto=subdocket_dto,
                             row=row,
+
                         )
 
-                    # --- Step 3: Commit transactions for both databases together ---
+                        # 🟢 Save annuity/casereference from prosecution DTO
+                        save_casereference(
+                            session=dca_session,
+                            row=row,
+                            subdocketDto=subdocket_dto,
+                            import_user_id=import_user,
+                        )
+
+                    # --- Step 4: Commit transactions ---
                     csd_session.commit()
                     prosecution_session.commit()
                     drafting_session.commit()
+                    dca_session.commit()
                     rows_processed += 1
                     logger.info(
                         "✓ Row %s committed for subdocket of '%s'",
@@ -194,15 +202,12 @@ def import_excel(
                         row.get(COLS.DOCKET_NUMBER),
                     )
 
-                    # else:
-                    #     rows_skipped += 1
-                    #     logger.debug("Row %s skipped (no matching level)", idx)
-
             except Exception as exc:
                 ic_session.rollback()
                 dr_session.rollback()
                 drafting_session.rollback()
                 csd_session.rollback()
+                prosecution_session.rollback()
                 logger.error("✗ Row %s failed – %s", idx, exc, exc_info=True)
                 raise RuntimeError(
                     f"Excel row {idx} (Docket '{row.get(COLS.DOCKET_NUMBER)}') failed – {exc}"
@@ -230,3 +235,4 @@ def import_excel(
         drafting_session.close()
         csd_session.close()
         prosecution_session.close()
+        dca_session.close()

@@ -113,16 +113,11 @@ def save_from_invention_docket(
     dr_session.flush()
 
     logger.info("✓ DR docket created: id=%s, title='%s'", dr_docket.id, dr_docket.title)
-    status_name = row.get(COLS.SENT_FOR_REVIEW, "").strip()
-    # ---------------------- Add Status (optional) ---------------------- #
-    if status_name:
-        status = dr_session.query(Status).filter_by(status=status_name).first()
-        _require(status, f"Status '{status_name}' not found in pmv_dr.status")
-
-        dr_session.add(
+    
+    dr_session.add(
             DocketStatusMapping(
                 docket_id=dr_docket.id,
-                current_status_id=status.id,
+                current_status_id=inv_docket.status_id,
                 current_status_date=datetime.utcnow(),
                 added_by=uuid.UUID(import_user.uuid),
                 tenant_id=uuid.UUID(tenant_id),
@@ -132,7 +127,7 @@ def save_from_invention_docket(
                 modified_on=datetime.utcnow(),
             )
         )
-        logger.info("✓ DR docket status set to '%s'", status_name)
+  
 
     # ---------------------- Add Inventors ---------------------- #
     for inventor_id in inv_docket.inventor_ids:

@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, SmallInteger
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class Country(BaseAnnuity):
+class Country(BaseDca):
     __tablename__ = "country"
 
     id = Column(Integer, primary_key=True, autoincrement=True)

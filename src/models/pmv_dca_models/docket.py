@@ -1,10 +1,10 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, UniqueConstraint
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class Docket(BaseAnnuity):
+class Docket(BaseDca):
     __tablename__ = "docket"
 
     id = Column(Integer, primary_key=True, autoincrement=True)

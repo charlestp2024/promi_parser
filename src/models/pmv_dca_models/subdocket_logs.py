@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class SubdocketLogs(BaseAnnuity):
+class SubdocketLogs(BaseDca):
     __tablename__ = "subdocket_logs"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -13,4 +13,4 @@ class SubdocketLogs(BaseAnnuity):
 
     # Relationships
     casereference = relationship("Casereference", back_populates="subdocket_logs")
-    user = relationship("User", back_populates="subdocket_logs_added")
+   

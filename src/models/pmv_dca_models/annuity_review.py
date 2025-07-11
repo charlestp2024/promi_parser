@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, Date, ForeignKey
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class AnnuityReview(BaseAnnuity):
+class AnnuityReview(BaseDca):
     __tablename__ = "annuity_review"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -23,19 +23,6 @@ class AnnuityReview(BaseAnnuity):
     casereference_annuity = relationship(
         "CasereferenceAnnuity", back_populates="annuity_reviews"
     )
-    attorney = relationship(
-        "User", back_populates="attorney_annuity_reviews", foreign_keys=[attorney_id]
-    )
+   
 
-    attorney_decision = relationship(
-        "AttorneyDecision", uselist=False, back_populates="annuity_review"
-    )
-    attorney_checklists = relationship(
-        "AttorneyChecklist", back_populates="annuity_review"
-    )
-    reviewer_decisions = relationship(
-        "ReviewerDecision", back_populates="annuity_review"
-    )
-    reviewer_checklists = relationship(
-        "ReviewerChecklist", back_populates="annuity_review"
-    )
+    

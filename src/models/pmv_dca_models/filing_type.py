@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class FilingType(BaseAnnuity):
+class FilingType(BaseDca):
     __tablename__ = "filing_type"
 
     id = Column(Integer, primary_key=True, autoincrement=True)

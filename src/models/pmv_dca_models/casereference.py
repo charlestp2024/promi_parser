@@ -9,10 +9,10 @@ from sqlalchemy import (
 )
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class Casereference(BaseAnnuity):
+class Casereference(BaseDca):
     __tablename__ = "casereference"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -63,5 +63,6 @@ class Casereference(BaseAnnuity):
         "CasereferenceAnnuity", back_populates="casereference"
     )
     case_reference_annuity_reminder = relationship(
-        "CaseReferenceAnnuityReminder", back_populates="casereference"
+        "CasereferenceAnnuityReminder", back_populates="casereference"
     )
+    subdocket_logs = relationship("SubdocketLogs", back_populates="casereference")

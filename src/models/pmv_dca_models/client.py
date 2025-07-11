@@ -1,10 +1,10 @@
 from sqlalchemy import Column, String, Integer, Boolean, Index
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class Client(BaseAnnuity):
+class Client(BaseDca):
     __tablename__ = "client"
 
     uuid = Column(CHAR(36), primary_key=True)

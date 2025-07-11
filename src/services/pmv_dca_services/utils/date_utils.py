@@ -68,3 +68,30 @@ def get_yyyymmdd_date(date: datetime) -> str:
     Return a date in 'YYYY-MM-DD' format.
     """
     return date.strftime("%Y-%m-%d")
+
+
+
+def subtract_date(date: datetime, count: int, date_type: str) -> datetime:
+    """
+    Subtracts a duration from a given date.
+    
+    Args:
+        date (datetime): The date to subtract from.
+        count (int): The number of units to subtract.
+        date_type (str): The type of units ('days', 'months', 'years').
+
+    Returns:
+        datetime: The resulting date.
+    """
+    if not isinstance(date, datetime):
+        raise ValueError("Input 'date' must be a datetime object.")
+
+    date_type = date_type.lower()
+    if date_type == "days":
+        return date - timedelta(days=count)
+    elif date_type == "months":
+        return date - relativedelta(months=count)
+    elif date_type == "years":
+        return date - relativedelta(years=count)
+    else:
+        raise ValueError(f"Unsupported date_type '{date_type}'. Must be 'days', 'months', or 'years'.")

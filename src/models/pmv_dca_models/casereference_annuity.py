@@ -9,10 +9,10 @@ from sqlalchemy import (
     Float,
 )
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class CasereferenceAnnuity(BaseAnnuity):
+class CasereferenceAnnuity(BaseDca):
     __tablename__ = "casereference_annuity"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -39,6 +39,4 @@ class CasereferenceAnnuity(BaseAnnuity):
     annuity_reviews = relationship(
         "AnnuityReview", back_populates="casereference_annuity"
     )
-    annuity_payment_records = relationship(
-        "AnnuityPaymentRecord", back_populates="casereference_annuity"
-    )
+  

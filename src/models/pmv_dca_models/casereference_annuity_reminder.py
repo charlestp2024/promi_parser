@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, Boolean, Date, ForeignKey
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class CasereferenceAnnuityReminder(BaseAnnuity):
+class CasereferenceAnnuityReminder(BaseDca):
     __tablename__ = "case_reference_annuity_reminder"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -16,5 +16,5 @@ class CasereferenceAnnuityReminder(BaseAnnuity):
     reminder_date = Column(Date, nullable=False)
 
     # Relationships
-    casereference = relationship("Casereference", back_populates="annuity_reminders")
-    template = relationship("ReminderMailTemplate", back_populates="annuity_reminders")
+    casereference = relationship("Casereference", back_populates="case_reference_annuity_reminder")
+    

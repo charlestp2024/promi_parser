@@ -1,10 +1,10 @@
 from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
-from models import BaseAnnuity
+from models import BaseDca
 
 
-class Department(BaseAnnuity):
+class Department(BaseDca):
     __tablename__ = "department"
 
     uuid = Column(CHAR(36), primary_key=True)

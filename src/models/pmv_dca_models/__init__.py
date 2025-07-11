@@ -1,3 +1,4 @@
+from .casereference_annuity_reminder import CasereferenceAnnuityReminder
 from .casereference import Casereference
 from .annuity_review import AnnuityReview
 from .docket import Docket
@@ -8,4 +9,4 @@ from .filing_type import FilingType
 from .user import User
 from .casereference_annuity import CasereferenceAnnuity
 from .subdocket_logs import SubdocketLogs
-from .casereference_annuity_reminder import CasereferenceAnnuityReminder
+from .reminder_mail_template import ReminderMailTemplate
