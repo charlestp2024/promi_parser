@@ -179,16 +179,15 @@ def import_excel(
                             session=prosecution_session,
                             dto=subdocket_dto,
                             row=row,
-
                         )
 
-                        # 🟢 Save annuity/casereference from prosecution DTO
-                        save_casereference(
-                            session=dca_session,
-                            row=row,
-                            subdocketDto=subdocket_dto,
-                            import_user_id=import_user,
-                        )
+                        # # 🟢 Save annuity/casereference from prosecution DTO
+                        # save_casereference(
+                        #     session=dca_session,
+                        #     row=row,
+                        #     subdocketDto=subdocket_dto,
+                        #     import_user_id=import_user,
+                        # )
 
                     # --- Step 4: Commit transactions ---
                     csd_session.commit()

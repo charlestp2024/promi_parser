@@ -13,7 +13,6 @@ from models.pmv_dr_models import (
     Docket as DRDocket,
     DocketInventorsMapping,
     DocketReviewersMapping,
-    DocketAttachmentMapping,
     DocketStatusMapping,
     ActivityLogs,
     Status,
@@ -101,33 +100,25 @@ def save_from_invention_docket(
         active=True,
     )
     sent_for_drafting_value = row.get(COLS.SENT_FOR_DRAFTING, "").strip().lower()
-    if sent_for_drafting_value == "yes":
-        dr_docket.sent_for_drafting = True
-        encoded_docket_number = urllib.parse.quote(
-            inv_docket.system_generated_docket_number, safe=""
-        )
-        dr_docket.drafting_link = (
-            os.getenv("DRAFTING_REDIRECTION_URL") + encoded_docket_number
-        )
+
     dr_session.add(dr_docket)
     dr_session.flush()
 
     logger.info("✓ DR docket created: id=%s, title='%s'", dr_docket.id, dr_docket.title)
-    
+
     dr_session.add(
-            DocketStatusMapping(
-                docket_id=dr_docket.id,
-                current_status_id=inv_docket.status_id,
-                current_status_date=datetime.utcnow(),
-                added_by=uuid.UUID(import_user.uuid),
-                tenant_id=uuid.UUID(tenant_id),
-                client_id=uuid.UUID(inv_docket.client_id),
-                is_current=True,
-                created_on=datetime.utcnow(),
-                modified_on=datetime.utcnow(),
-            )
+        DocketStatusMapping(
+            docket_id=dr_docket.id,
+            current_status_id=inv_docket.status_id,
+            current_status_date=datetime.utcnow(),
+            added_by=inv_docket.patent_agent_id,
+            tenant_id=uuid.UUID(tenant_id),
+            client_id=uuid.UUID(inv_docket.client_id),
+            is_current=True,
+            created_on=datetime.utcnow(),
+            modified_on=datetime.utcnow(),
         )
-  
+    )
 
     # ---------------------- Add Inventors ---------------------- #
     for inventor_id in inv_docket.inventor_ids:
@@ -165,6 +156,26 @@ def save_from_invention_docket(
             modified_on=datetime.utcnow(),
         )
     )
+    if sent_for_drafting_value == "yes":
+        dr_docket.is_sent_to_drafting = True
+        encoded_docket_number = urllib.parse.quote(
+            inv_docket.system_generated_docket_number, safe=""
+        )
+        dr_docket.drafting_link = (
+            os.getenv("DRAFTING_DOCKET_DETAIL_PAGE_LINK") + encoded_docket_number
+        )
+        dr_session.add(
+            ActivityLogs(
+                docket_id=dr_docket.id,
+                message="Docket sent to drafting",
+                added_by=inv_docket.patent_agent_id,
+                tenant_id=uuid.UUID(tenant_id),
+                client_id=str(inv_docket.client_id),
+                created_on=datetime.utcnow(),
+                modified_on=datetime.utcnow(),
+            )
+        )
+
     logger.info(
         "✓ DR docket finalized with inventors=%d reviewers=%d",
         len(inv_docket.inventor_ids),

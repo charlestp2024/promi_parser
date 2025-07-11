@@ -8,7 +8,7 @@ from models.pmv_drafting_models import (
     DocketLogs,
     DocketSubdocketRoles,
     DocketForeignFilingCountryMapping,
-    SourceEnum
+    SourceEnum,
 )
 from services.utils.docket_dto import DocketDTO
 from services.utils.role_constants import RoleEnum
@@ -68,9 +68,9 @@ class DraftingService:
                 temp_number=dto.temp_number,
             )
             session.add(docket)
-            if dto.send_for_review==True:
+            if dto.send_for_review == True:
                 docket.source = SourceEnum.PMV_DR
-            
+
             logger.debug("[Drafting] Docket entity prepared and added to session.")
 
             # ---------------------- Log Entry ---------------------- #
@@ -80,8 +80,8 @@ class DraftingService:
                     client_id=dto.client_id,
                     modified_on=now,
                     docket=docket,
-                    created_by=dto.added_by,
-                    operation_type="Saved Docket from INVD to Drafting",
+                    created_by=dto.patent_agent_id,
+                    operation_type="Docket received from Docket Review",
                     created_on=now,
                 )
             )

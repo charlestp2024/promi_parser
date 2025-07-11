@@ -2,6 +2,7 @@
 
 from datetime import datetime
 from sqlalchemy.orm import Session
+import os
 
 # Import your DTO and all required Drafting Models
 from services.utils.subdocket_dto import SubdocketDTO
@@ -15,11 +16,15 @@ from models.pmv_drafting_models import (
     SubdocketLogs,
     DocketSubdocketMapping,
 )
+from dotenv import load_dotenv, find_dotenv
+import urllib.parse
 
 # Import shared utilities
 from services.utils.role_constants import RoleEnum
 from excel.ExcelData import ExcelColumns  # To get assignee names from the row
 from services.logger import logger
+
+COLS = ExcelColumns()
 
 
 def _handle_docket_subdocket_mapping(
@@ -203,6 +208,8 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             prior_filing_year=dto.prior_filing_date,  # Mapping names
             tentative_filing_date=dto.tentative_filing_date,
             expected_filing_year=dto.expected_filing_year,
+            priority_of_filing=True,
+            prosecution=True,
             office_action_recieved_date=dto.recent_action_recieved_date,
             term_extension=dto.term_extention,
             # Timestamps
@@ -233,6 +240,26 @@ def save_drafting_subdocket(session: Session, dto: SubdocketDTO, row: dict):
             modified_on=datetime.utcnow(),
             operation_type="Subdocket created successfully",
         )
+
+        sent_for_prosecution = row.get(COLS.SENT_FOR_PROSECUTION, "").strip().lower()
+        if sent_for_prosecution == "yes":
+            new_subdocket.prosecution = True
+            encoded_sub_docket_number = urllib.parse.quote(
+                new_subdocket.subdocket_number, safe=""
+            )
+            new_subdocket.prosecution_subdocket_link = (
+                os.getenv("PROSECUTION_SUBDOCKET_DETAIL_PAGE_LINK")
+                + encoded_sub_docket_number
+            )
+            log = SubdocketLogs(
+                subdocket_id=drafting_subdocket_id,
+                client_id=str(dto.client_id),
+                tenant_id=dto.tenant_id,
+                created_by=str(dto.added_by),
+                created_on=datetime.utcnow(),
+                modified_on=datetime.utcnow(),
+                operation_type="Subdocket successfullysent for prosecution.",
+            )
         session.add(log)
 
         logger.info(
